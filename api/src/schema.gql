@@ -6,13 +6,14 @@ type CrimeLog {
   id: ID!
   schoolCode: String!
   caseNumber: String!
-  reportDatetime: DateTime!
+  reportDatetime: DateTime
   occurredDatetime: DateTime!
   location: String!
-  latitude: Float
-  longitude: Float
-  description: String
-  disposition: String
+  latitude: Float!
+  longitude: Float!
+  description: String!
+  disposition: String!
+  narrative: String
 }
 
 """
@@ -42,13 +43,14 @@ type Mutation {
 input CreateCrimeLogInput {
   schoolCode: String!
   caseNumber: String!
-  reportDatetime: DateTime!
+  reportDatetime: DateTime
   occurredDatetime: DateTime!
   location: String!
-  latitude: Float
-  longitude: Float
-  description: String
-  disposition: String
+  latitude: Float!
+  longitude: Float!
+  description: String!
+  disposition: String!
+  narrative: String
 }
 
 input UpdateCrimeLogInput {
@@ -62,4 +64,5 @@ input UpdateCrimeLogInput {
   longitude: Float
   description: String
   disposition: String
+  narrative: String
 }

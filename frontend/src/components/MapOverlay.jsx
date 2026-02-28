@@ -1,62 +1,118 @@
 export default function MapOverlay({ summaryData }) {
   if (!summaryData) {
     return (
-      <div className="absolute top-4 right-4 z-[1000] w-72 rounded-xl border border-neutral-200 bg-white/90 shadow-lg backdrop-blur-sm p-4">
-        <p className="text-sm text-neutral-500">No summary data. Run a query or send a chat message.</p>
+      <div className="absolute top-6 right-6 z-[1000] w-80 rounded-2xl bg-white/80 backdrop-blur-md border border-white/40 shadow-xl p-5">
+        <div className="text-xs uppercase tracking-wide text-neutral-500 mb-2">
+          Summary
+        </div>
+        <div className="text-sm text-neutral-600">
+          Run a query or send a chat message to generate summary data.
+        </div>
       </div>
     );
   }
-  const { totalReports, reportsByDisposition, reportsBySchool, earliestOccurred, latestOccurred, lastUpdated } = summaryData;
-  const lastUpdatedStr = lastUpdated ? new Date(lastUpdated).toLocaleString() : "—";
+
+  const {
+    totalReports,
+    reportsByDisposition,
+    reportsBySchool,
+    earliestOccurred,
+    latestOccurred,
+    lastUpdated,
+  } = summaryData;
+
+  const lastUpdatedStr = lastUpdated
+    ? new Date(lastUpdated).toLocaleString()
+    : "—";
+
   return (
-    <div className="absolute top-4 right-4 z-[1000] w-72 rounded-xl border border-neutral-200 bg-white/90 shadow-lg backdrop-blur-sm p-4 text-sm">
-      <h3 className="font-semibold text-neutral-800 mb-3">Summary</h3>
-      <dl className="space-y-2 text-neutral-700">
+    <div className="absolute top-6 right-6 z-[1000] w-80 rounded-2xl bg-white/80 backdrop-blur-md border border-white/40 shadow-2xl p-6 text-sm">
+
+      {/* Header */}
+      <div className="flex items-center justify-between mb-5">
         <div>
-          <dt className="font-medium text-neutral-600">Total Reports</dt>
-          <dd>{totalReports}</dd>
+          <div className="text-xs uppercase tracking-wide text-neutral-500">
+            Summary
+          </div>
+          <div className="text-2xl font-semibold text-neutral-900">
+            {totalReports}
+          </div>
+          <div className="text-xs text-neutral-500">
+            Total Reports
+          </div>
         </div>
-        <div>
-          <dt className="font-medium text-neutral-600">By Disposition</dt>
-          <dd className="mt-0.5">
-            {Object.keys(reportsByDisposition).length === 0 ? (
-              "—"
-            ) : (
-              <ul className="list-disc list-inside">
-                {Object.entries(reportsByDisposition).map(([k, v]) => (
-                  <li key={k}>{k}: {v}</li>
-                ))}
-              </ul>
-            )}
-          </dd>
+        <div className="text-[11px] text-neutral-500 text-right">
+          <div>Last Updated</div>
+          <div className="font-medium text-neutral-700">
+            {lastUpdatedStr}
+          </div>
         </div>
-        <div>
-          <dt className="font-medium text-neutral-600">By School</dt>
-          <dd className="mt-0.5">
-            {Object.keys(reportsBySchool).length === 0 ? (
-              "—"
-            ) : (
-              <ul className="list-disc list-inside">
-                {Object.entries(reportsBySchool).map(([k, v]) => (
-                  <li key={k}>{k}: {v}</li>
-                ))}
-              </ul>
-            )}
-          </dd>
+      </div>
+
+      {/* Disposition Section */}
+      <div className="mb-4">
+        <div className="text-xs uppercase tracking-wide text-neutral-500 mb-2">
+          By Disposition
         </div>
-        <div>
-          <dt className="font-medium text-neutral-600">Earliest Occurred</dt>
-          <dd>{earliestOccurred ? new Date(earliestOccurred).toLocaleString() : "—"}</dd>
+
+        {Object.keys(reportsByDisposition).length === 0 ? (
+          <div className="text-neutral-400 text-sm">—</div>
+        ) : (
+          <div className="flex flex-wrap gap-2">
+            {Object.entries(reportsByDisposition).map(([k, v]) => (
+              <span
+                key={k}
+                className="px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-700 text-xs font-medium"
+              >
+                {k} • {v}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* School Section */}
+      <div className="mb-4">
+        <div className="text-xs uppercase tracking-wide text-neutral-500 mb-2">
+          By School
         </div>
-        <div>
-          <dt className="font-medium text-neutral-600">Latest Occurred</dt>
-          <dd>{latestOccurred ? new Date(latestOccurred).toLocaleString() : "—"}</dd>
+
+        {Object.keys(reportsBySchool).length === 0 ? (
+          <div className="text-neutral-400 text-sm">—</div>
+        ) : (
+          <div className="flex flex-wrap gap-2">
+            {Object.entries(reportsBySchool).map(([k, v]) => (
+              <span
+                key={k}
+                className="px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-700 text-xs font-medium"
+              >
+                {k} • {v}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* Timeline Section */}
+      <div className="border-t border-neutral-200 pt-4 space-y-2 text-xs text-neutral-600">
+        <div className="flex justify-between">
+          <span>Earliest Occurred</span>
+          <span className="font-medium text-neutral-800">
+            {earliestOccurred
+              ? new Date(earliestOccurred).toLocaleString()
+              : "—"}
+          </span>
         </div>
-        <div>
-          <dt className="font-medium text-neutral-600">Last Updated</dt>
-          <dd>{lastUpdatedStr}</dd>
+
+        <div className="flex justify-between">
+          <span>Latest Occurred</span>
+          <span className="font-medium text-neutral-800">
+            {latestOccurred
+              ? new Date(latestOccurred).toLocaleString()
+              : "—"}
+          </span>
         </div>
-      </dl>
+      </div>
     </div>
   );
 }

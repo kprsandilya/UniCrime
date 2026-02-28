@@ -23,9 +23,9 @@ export class CrimeLog {
   @Field()
   caseNumber: string;
 
-  @Column({ type: 'timestamptz', name: 'report_datetime' })
-  @Field(() => GraphQLISODateTime)
-  reportDatetime: Date;
+  @Column({ type: 'timestamptz', name: 'report_datetime', nullable: true })
+  @Field(() => GraphQLISODateTime, { nullable: true })
+  reportDatetime: Date | null;
 
   @Column({ type: 'timestamptz', name: 'occurred_datetime' })
   @Field(() => GraphQLISODateTime)
@@ -35,21 +35,25 @@ export class CrimeLog {
   @Field()
   location: string;
 
-  @Column({ type: 'decimal', precision: 10, scale: 7, nullable: true })
-  @Field(() => Float, { nullable: true })
-  latitude: number | null;
+  @Column({ type: 'decimal', precision: 10, scale: 7 })
+  @Field(() => Float)
+  latitude: number;
 
-  @Column({ type: 'decimal', precision: 10, scale: 7, nullable: true })
-  @Field(() => Float, { nullable: true })
-  longitude: number | null;
+  @Column({ type: 'decimal', precision: 10, scale: 7 })
+  @Field(() => Float)
+  longitude: number;
+
+  @Column({ type: 'text' })
+  @Field()
+  description: string;
+
+  @Column({ type: 'text' })
+  @Field()
+  disposition: string;
 
   @Column({ type: 'text', nullable: true })
   @Field(() => String, { nullable: true })
-  description: string | null;
-
-  @Column({ type: 'text', nullable: true })
-  @Field(() => String, { nullable: true })
-  disposition: string | null;
+  narrative: string | null;
 }
 
 @InputType()
@@ -60,8 +64,8 @@ export class CreateCrimeLogInput {
   @Field()
   caseNumber: string;
 
-  @Field(() => GraphQLISODateTime)
-  reportDatetime: Date;
+  @Field(() => GraphQLISODateTime, { nullable: true })
+  reportDatetime?: Date | null;
 
   @Field(() => GraphQLISODateTime)
   occurredDatetime: Date;
@@ -69,17 +73,20 @@ export class CreateCrimeLogInput {
   @Field()
   location: string;
 
-  @Field(() => Float, { nullable: true })
-  latitude?: number | null;
+  @Field(() => Float)
+  latitude: number;
 
-  @Field(() => Float, { nullable: true })
-  longitude?: number | null;
+  @Field(() => Float)
+  longitude: number;
+
+  @Field()
+  description: string;
+
+  @Field()
+  disposition: string;
 
   @Field(() => String, { nullable: true })
-  description?: string | null;
-
-  @Field(() => String, { nullable: true })
-  disposition?: string | null;
+  narrative?: string | null;
 }
 
 @InputType()
@@ -113,4 +120,7 @@ export class UpdateCrimeLogInput {
 
   @Field(() => String, { nullable: true })
   disposition?: string | null;
+
+  @Field(() => String, { nullable: true })
+  narrative?: string | null;
 }

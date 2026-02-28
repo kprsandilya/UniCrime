@@ -22,17 +22,23 @@ export class CrimeLogResolver {
     @Args('occurredAfter', {
       type: () => GraphQLISODateTime,
       nullable: true,
-      description: 'Only include logs where occurredDatetime >= this time (inclusive)',
+      description:
+        'Only include logs where occurredDatetime >= this time (inclusive)',
     })
     occurredAfter?: Date,
     @Args('occurredBefore', {
       type: () => GraphQLISODateTime,
       nullable: true,
-      description: 'Only include logs where occurredDatetime <= this time (inclusive)',
+      description:
+        'Only include logs where occurredDatetime <= this time (inclusive)',
     })
     occurredBefore?: Date,
   ) {
-    return this.crimeLogService.findAll(schoolCode, occurredAfter, occurredBefore);
+    return this.crimeLogService.findAll(
+      schoolCode,
+      occurredAfter,
+      occurredBefore,
+    );
   }
 
   @Query(() => CrimeLog, { name: 'crimeLog' })
