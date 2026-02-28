@@ -1,0 +1,65 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CrimeLog {
+  id: ID!
+  schoolCode: String!
+  caseNumber: String!
+  reportDatetime: DateTime!
+  occurredDatetime: DateTime!
+  location: String!
+  latitude: Float
+  longitude: Float
+  description: String
+  disposition: String
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  crimeLogs(
+    schoolCode: String
+
+    """Only include logs where occurredDatetime >= this time (inclusive)"""
+    occurredAfter: DateTime
+
+    """Only include logs where occurredDatetime <= this time (inclusive)"""
+    occurredBefore: DateTime
+  ): [CrimeLog!]!
+  crimeLog(id: String!): CrimeLog!
+}
+
+type Mutation {
+  createCrimeLog(input: CreateCrimeLogInput!): CrimeLog!
+  updateCrimeLog(input: UpdateCrimeLogInput!): CrimeLog!
+  removeCrimeLog(id: String!): CrimeLog!
+}
+
+input CreateCrimeLogInput {
+  schoolCode: String!
+  caseNumber: String!
+  reportDatetime: DateTime!
+  occurredDatetime: DateTime!
+  location: String!
+  latitude: Float
+  longitude: Float
+  description: String
+  disposition: String
+}
+
+input UpdateCrimeLogInput {
+  id: ID!
+  schoolCode: String
+  caseNumber: String
+  reportDatetime: DateTime
+  occurredDatetime: DateTime
+  location: String
+  latitude: Float
+  longitude: Float
+  description: String
+  disposition: String
+}
