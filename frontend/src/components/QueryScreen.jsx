@@ -1,5 +1,5 @@
-import { useState, useMemo } from "react";
-import { fetchCrimeLogs } from "../api/client.js";
+import { useState, useMemo, useEffect } from "react";
+import { fetchCrimeLogs, fetchSchools } from "../api/client.js";
 import { generateSummary } from "../data/mockData.js";
 
 // Columns match crime-log.entity.ts: caseNumber, schoolCode, reportDatetime, occurredDatetime, location, description, disposition, narrative
@@ -49,7 +49,6 @@ function filterClientSide(data, filters) {
   const hasFilter = Object.values(filters).some((v) => v != null && String(v).trim() !== "");
   if (!hasFilter) return data;
   return data.filter((row) => {
-    if (filters.schoolCode && !String(row.School_Code || "").toLowerCase().includes(filters.schoolCode.toLowerCase())) return false;
     if (filters.caseNumber && !String(row.Number || "").toLowerCase().includes(filters.caseNumber.toLowerCase())) return false;
     if (filters.location && !String(row.Location || "").toLowerCase().includes(filters.location.toLowerCase())) return false;
     if (filters.description && !String(row.Description || "").toLowerCase().includes(filters.description.toLowerCase())) return false;
@@ -62,7 +61,8 @@ function filterClientSide(data, filters) {
 export default function QueryScreen({ records, setRecords, setSummaryData }) {
   const [occurredAfter, setOccurredAfter] = useState("2026-02-01");
   const [occurredBefore, setOccurredBefore] = useState("2026-02-28");
-  const [schoolCode, setSchoolCode] = useState("");
+  const [selectedSchoolCode, setSelectedSchoolCode] = useState("");
+  const [schoolOptions, setSchoolOptions] = useState([]);
   const [caseNumber, setCaseNumber] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
@@ -72,6 +72,32 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
   const [error, setError] = useState(null);
   const [sortKey, setSortKey] = useState(null);
   const [sortDir, setSortDir] = useState("asc");
+
+  // Build dropdown: only schools that appear in crime log data (fetch with current date range)
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const after = localStartOfDayToUTC(occurredAfter);
+        const before = localEndOfDayToUTC(occurredBefore);
+        if (!after || !before) return;
+        const [logs, schools] = await Promise.all([
+          fetchCrimeLogs({ occurredAfter: after, occurredBefore: before }),
+          fetchSchools(),
+        ]);
+        if (cancelled) return;
+        const codesInData = new Set((logs || []).map((r) => (r.School_Code || "").trim()).filter(Boolean));
+        const options = (schools || [])
+          .filter((s) => s.schoolCode && codesInData.has(String(s.schoolCode).trim()))
+          .map((s) => ({ code: String(s.schoolCode).trim(), name: s.schoolName || s.schoolCode }));
+        options.sort((a, b) => (a.name || a.code).localeCompare(b.name || b.code));
+        setSchoolOptions(options);
+      } catch (e) {
+        if (!cancelled) setSchoolOptions([]);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [occurredAfter, occurredBefore]);
 
   const sortedRecords = useMemo(() => {
     const list = records ?? [];
@@ -114,9 +140,9 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
       const data = await fetchCrimeLogs({
         occurredAfter: occurredAfterUTC,
         occurredBefore: occurredBeforeUTC,
+        schoolCode: selectedSchoolCode.trim() || null,
       });
       const filtered = filterClientSide(data, {
-        schoolCode: schoolCode.trim() || null,
         caseNumber: caseNumber.trim() || null,
         location: location.trim() || null,
         description: description.trim() || null,
@@ -137,7 +163,6 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
   const filters = [
     { label: "Occurred from", value: occurredAfter, onChange: setOccurredAfter, type: "date" },
     { label: "Occurred to", value: occurredBefore, onChange: setOccurredBefore, type: "date" },
-    { label: "School code", value: schoolCode, onChange: setSchoolCode, type: "text", placeholder: "Filter by school code" },
     { label: "Case number", value: caseNumber, onChange: setCaseNumber, type: "text", placeholder: "Filter by case number" },
     { label: "Location", value: location, onChange: setLocation, type: "text", placeholder: "Filter by location" },
     { label: "Description", value: description, onChange: setDescription, type: "text", placeholder: "Filter by description" },
@@ -150,6 +175,21 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
       <div className="p-4 border-b border-neutral-200 space-y-3">
         <div className="text-sm font-semibold text-neutral-700">Filters</div>
         <div className="grid grid-cols-2 gap-2">
+          <label className="col-span-2">
+            <span className="block text-xs text-neutral-500 mb-0.5">School</span>
+            <select
+              value={selectedSchoolCode}
+              onChange={(e) => setSelectedSchoolCode(e.target.value)}
+              className="w-full px-2.5 py-1.5 text-sm border border-neutral-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-400 bg-white"
+            >
+              <option value="">All schools</option>
+              {schoolOptions.map((opt) => (
+                <option key={opt.code} value={opt.code}>
+                  {opt.name || opt.code}
+                </option>
+              ))}
+            </select>
+          </label>
           {filters.map((f) => (
             <label key={f.label} className={f.type === "date" ? "" : "col-span-2"}>
               <span className="block text-xs text-neutral-500 mb-0.5">

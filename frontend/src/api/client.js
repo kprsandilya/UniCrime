@@ -2,10 +2,11 @@ const API_URL = import.meta.env.VITE_GRAPHQL_URL || "http://localhost:3000/graph
 
 /**
  * GraphQL query for crimeLogs. Matches api/src/crime-log/crime-log.entity.ts
+ * schoolCode is optional; when set, filters server-side.
  */
 const CRIME_LOGS_QUERY = `
-  query CrimeLogs($occurredAfter: DateTime!, $occurredBefore: DateTime!) {
-    crimeLogs(occurredAfter: $occurredAfter, occurredBefore: $occurredBefore) {
+  query CrimeLogs($occurredAfter: DateTime!, $occurredBefore: DateTime!, $schoolCode: String) {
+    crimeLogs(occurredAfter: $occurredAfter, occurredBefore: $occurredBefore, schoolCode: $schoolCode) {
       id
       schoolCode
       caseNumber
@@ -17,6 +18,23 @@ const CRIME_LOGS_QUERY = `
       description
       disposition
       narrative
+    }
+  }
+`;
+
+/**
+ * GraphQL query for schools. Matches api/src/school/school.entity.ts
+ */
+const SCHOOLS_QUERY = `
+  query Schools {
+    schools {
+      id
+      schoolCode
+      schoolName
+      address
+      city
+      stateCode
+      zipCode
     }
   }
 `;
@@ -44,16 +62,20 @@ export function normalizeCrimeLog(row) {
 
 /**
  * Fetch crime logs from GraphQL API.
- * @param {{ occurredAfter: string, occurredBefore: string }} params - ISO date strings
+ * @param {{ occurredAfter: string, occurredBefore: string, schoolCode?: string }} params
  * @returns {Promise<Array>} Normalized records
  */
-export async function fetchCrimeLogs({ occurredAfter, occurredBefore }) {
+export async function fetchCrimeLogs({ occurredAfter, occurredBefore, schoolCode }) {
   const res = await fetch(API_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       query: CRIME_LOGS_QUERY,
-      variables: { occurredAfter, occurredBefore },
+      variables: {
+        occurredAfter,
+        occurredBefore,
+        schoolCode: schoolCode && schoolCode.trim() ? schoolCode.trim() : null,
+      },
     }),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -61,4 +83,20 @@ export async function fetchCrimeLogs({ occurredAfter, occurredBefore }) {
   if (json.errors?.length) throw new Error(json.errors[0].message ?? "GraphQL error");
   const list = json.data?.crimeLogs ?? [];
   return list.map(normalizeCrimeLog);
+}
+
+/**
+ * Fetch all schools from GraphQL API. Matches api/src/school/school.entity.ts
+ * @returns {Promise<Array<{ id: string, schoolCode: string|null, schoolName: string|null, ... }>>}
+ */
+export async function fetchSchools() {
+  const res = await fetch(API_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ query: SCHOOLS_QUERY }),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const json = await res.json();
+  if (json.errors?.length) throw new Error(json.errors[0].message ?? "GraphQL error");
+  return json.data?.schools ?? [];
 }
