@@ -20,9 +20,11 @@ headers = [
     "Status"
 ]
 
-with open("clery_data.csv", "w", newline="", encoding="utf-8") as f:
+SCHOOL_CODE = "002290"
+
+with open(f"./crime_logs/{SCHOOL_CODE}_michstate.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(headers)
     writer.writerows(rows)
 
-print("CSV file written: clery_data.csv")
+print(f"CSV file written: ./crime_logs/{SCHOOL_CODE}_michstate.csv")
