@@ -798,5 +798,337 @@
   "E Green St/S Fifth St, Champaign, Illinois, USA": [
     40.110284,
     -88.232058
+  ],
+  "1500 E MEDICAL CENTER DR, Michigan, USA": [
+    42.2827172,
+    -83.7267932
+  ],
+  "1239 KIPKE DR, Michigan, USA": [
+    42.265239,
+    -83.7439554
+  ],
+  "432 S STATE ST, Michigan, USA": [
+    43.6937859,
+    -85.4842443
+  ],
+  "606 E HOOVER AVE, Michigan, USA": [
+    42.2694673,
+    -83.7422564
+  ],
+  "1620 E MEDICAL CENTER DR, Michigan, USA": [
+    42.2853465,
+    -83.7310464
+  ],
+  "930 N UNIVERSITY AVE, Michigan, USA": [
+    42.2780097,
+    -83.7365709
+  ],
+  "540 THOMPSON ST, Michigan, USA": [
+    42.2747975,
+    -83.7437152
+  ],
+  "1655 DEAN RD, Michigan, USA": [
+    42.2967869,
+    -83.6977863
+  ],
+  "1600 E MEDICAL CENTER DR, Michigan, USA": [
+    42.2853439,
+    -83.7310242
+  ],
+  "2375 HUBBARD RD, Michigan, USA": [
+    42.2955073,
+    -83.7201345
+  ],
+  "4270 PLYMOUTH RD, Michigan, USA": [
+    42.3087948,
+    -83.6727391
+  ],
+  "919 S UNIVERSITY AVE, Michigan, USA": [
+    42.2756112,
+    -83.7371821
+  ],
+  "1150 W MEDICAL CENTER DR, Michigan, USA": [
+    42.2849017,
+    -83.7324945
+  ],
+  "ZINA PITCHER PL / E ANN ST, Michigan, USA": [
+    42.2822971,
+    -83.7335587
+  ],
+  "419 S STATE ST, Michigan, USA": [
+    43.6934495,
+    -85.483495
+  ],
+  "428 S STATE ST, Michigan, USA": [
+    43.6937938,
+    -85.4842445
+  ],
+  "1001 HILL ST, Michigan, USA": [
+    42.2722312,
+    -83.7371591
+  ],
+  "500 CHURCH ST, Michigan, USA": [
+    42.2768901,
+    -83.734888
+  ],
+  "530 S STATE ST, Michigan, USA": [
+    43.693408,
+    -85.484218
+  ],
+  "1425 E ANN ST, Michigan, USA": [
+    42.2831396,
+    -83.7310911
+  ],
+  "911 N UNIVERSITY AVE, Michigan, USA": [
+    42.2793182,
+    -83.7377271
+  ],
+  "201 FLETCHER ST, Michigan, USA": [
+    42.2801878,
+    -83.7364619
+  ],
+  "204 WASHTENAW AVE, Michigan, USA": [
+    42.2798988,
+    -83.7353058
+  ],
+  "200 WASHTENAW AVE, Michigan, USA": [
+    42.2801218,
+    -83.7345826
+  ],
+  "1041 WALL ST, Michigan, USA": [
+    42.9725101,
+    -82.4344871
+  ],
+  "1116 S STATE ST, Michigan, USA": [
+    43.6857293,
+    -85.4837293
+  ],
+  "2250 CRAM PL, Michigan, USA": [
+    42.2964195,
+    -83.7157867
+  ],
+  "701 E UNIVERSITY AVE, Michigan, USA": [
+    42.2729285,
+    -83.7351459
+  ],
+  "324 S OBSERVATORY ST, Michigan, USA": [
+    42.2787978,
+    -83.7314685
+  ],
+  "4260 PLYMOUTH RD, Michigan, USA": [
+    42.3079851,
+    -83.6739827
+  ],
+  "1051 N CANTON CENTER RD, Michigan, USA": [
+    42.314004,
+    -83.4888291
+  ],
+  "541 THOMPSON ST, Michigan, USA": [
+    42.2748013,
+    -83.7428968
+  ],
+  "1100 FULLER RD, Michigan, USA": [
+    43.2736092,
+    -85.8981404
+  ],
+  "600 E MADISON ST, Michigan, USA": [
+    42.2736688,
+    -83.7421033
+  ],
+  "906 S UNIVERSITY AVE, Michigan, USA": [
+    42.274525,
+    -83.7379233
+  ],
+  "1519 FULLER RD, Michigan, USA": [
+    42.2878815,
+    -83.7285663
+  ],
+  "1540 E HOSPITAL DR, Michigan, USA": [
+    42.281749,
+    -83.7280454
+  ],
+  "830 N UNIVERSITY AVE, Michigan, USA": [
+    42.2781689,
+    -83.738927
+  ],
+  "1931 DUFFIELD ST, Michigan, USA": [
+    42.2937497,
+    -83.720873
+  ],
+  "1415 WASHINGTON HTS, Michigan, USA": [
+    42.2808145,
+    -83.7303297
+  ],
+  "1600 HURON PKWY, Michigan, USA": [
+    42.3003717,
+    -83.7019786
+  ],
+  "1315 E ANN ST, Michigan, USA": [
+    42.2827112,
+    -83.7326961
+  ],
+  "1800 FULLER RD, Michigan, USA": [
+    42.2871545,
+    -83.7237455
+  ],
+  "1100 BAITS DR, Michigan, USA": [
+    42.2903759,
+    -83.7207718
+  ],
+  "1919 GREEN RD, Michigan, USA": [
+    42.2993966,
+    -83.6939366
+  ],
+  "380 PARKLAND PLAZA, Michigan, USA": [
+    42.2797369,
+    -83.8151056
+  ],
+  "1502 E MEDICAL CENTER DR, Michigan, USA": [
+    42.2814383,
+    -83.7272242
+  ],
+  "500 KRAUSE ST, Michigan, USA": [
+    42.2797713,
+    -83.7536735
+  ],
+  "3621 S STATE ST, Michigan, USA": [
+    42.2344473,
+    -83.7384865
+  ],
+  "508 THOMPSON ST, Michigan, USA": [
+    42.2754613,
+    -83.7436224
+  ],
+  "1535 E HOSPITAL DR, Michigan, USA": [
+    42.282068,
+    -83.7282416
+  ],
+  "2500 GREEN RD, Michigan, USA": [
+    42.3106374,
+    -83.6899364
+  ],
+  "2335 STONE RD, Michigan, USA": [
+    43.5554752,
+    -82.7427429
+  ],
+  "1900 FULLER RD, Michigan, USA": [
+    42.2855135,
+    -83.721906
+  ],
+  "2301 COMMONWEALTH BLVD, Michigan, USA": [
+    42.3090993,
+    -83.6961653
+  ],
+  "605 OXFORD RD, Michigan, USA": [
+    42.8407545,
+    -83.2596158
+  ],
+  "100 S OBSERVATORY ST, Michigan, USA": [
+    42.2812445,
+    -83.7317988
+  ],
+  "1503 WASHINGTON HTS, Michigan, USA": [
+    42.2808891,
+    -83.7288791
+  ],
+  "701 TAPPAN ST, Michigan, USA": [
+    42.4065626,
+    -83.0264426
+  ],
+  "216 S THAYER ST, Michigan, USA": [
+    42.27975,
+    -83.7399337
+  ],
+  "1000 VICTORS WAY, Michigan, USA": [
+    42.2387603,
+    -83.7320408
+  ],
+  "2260 HAYWARD ST, Michigan, USA": [
+    42.2930138,
+    -83.716372
+  ],
+  "HUBBARD ST / S HURON PKWY, Michigan, USA": [
+    42.2541373,
+    -83.6970302
+  ],
+  "PACKARD ST / THOMPSON ST, Michigan, USA": [
+    42.2734322,
+    -83.7433395
+  ],
+  "THOMPSON ST / E MADISON ST, Michigan, USA": [
+    42.274273,
+    -83.743214
+  ],
+  "1163 MCINTYRE DR, Michigan, USA": [
+    42.2972283,
+    -83.7109894
+  ],
+  "1300 E ANN ST, Michigan, USA": [
+    42.282037,
+    -83.7329291
+  ],
+  "7500 CHALLIS RD, Michigan, USA": [
+    42.5420501,
+    -83.8015516
+  ],
+  "1430 HUBBARD RD, Michigan, USA": [
+    41.886719,
+    -83.515214
+  ],
+  "920 N UNIVERSITY AVE, Michigan, USA": [
+    42.2780964,
+    -83.7368867
+  ],
+  "2281 BONISTEEL BLVD, Michigan, USA": [
+    42.2912754,
+    -83.7156345
+  ],
+  "402(400) BLK S OBSERVATORY ST, Michigan, USA": [
+    42.2782132,
+    -83.7310214
+  ],
+  "S 5TH AVE / HILL ST, Michigan, USA": [
+    45.058074,
+    -83.448669
+  ],
+  "2349 BISHOP AVE, Michigan, USA": [
+    42.0907431,
+    -86.4427874
+  ],
+  "500 S STATE ST, Michigan, USA": [
+    43.6936519,
+    -85.4842415
+  ],
+  "105 S STATE ST, Michigan, USA": [
+    43.6978574,
+    -85.4839578
+  ],
+  "1521 E SIMPSON RD, Michigan, USA": [
+    44.4376007,
+    -85.0643323
+  ],
+  "623 OXFORD RD, Michigan, USA": [
+    42.2743606,
+    -83.7255587
+  ],
+  "1221 BEAL AVE, Michigan, USA": [
+    42.291525,
+    -83.7138369
+  ],
+  "1011 N UNIVERSITY AVE, Michigan, USA": [
+    42.2789274,
+    -83.7364252
+  ],
+  "1000 BAITS DR, Michigan, USA": [
+    42.2888486,
+    -83.7216424
+  ],
+  "625 S STATE ST, Michigan, USA": [
+    43.690858,
+    -85.4835186
+  ],
+  "3003 S STATE ST, Michigan, USA": [
+    42.243225,
+    -83.7372406
   ]
 }

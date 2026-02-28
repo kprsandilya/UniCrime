@@ -81,15 +81,17 @@ def geocode_location(
     location: str,
     cache: dict[str, tuple[float, float] | None] | None = None,
     api_key: str | None = None,
+    region: str = "Illinois, USA",
 ) -> tuple[float | None, float | None]:
     """
     Resolve an address string to (latitude, longitude) using Google Maps Geocoding API.
     Set GOOGLE_MAPS_API_KEY in the environment (or pass api_key). Uses an optional cache.
+    region: appended to the address for geocoding (e.g. "Illinois, USA", "Michigan, USA").
     """
     if not location or not str(location).strip():
         return (None, None)
     location = str(location).strip()
-    query = f"{location}, Illinois, USA"
+    query = f"{location}, {region}"
 
     cache = cache if cache is not None else {}
     cache_key = query
