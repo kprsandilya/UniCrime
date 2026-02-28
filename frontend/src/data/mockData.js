@@ -127,8 +127,8 @@ export function generateSummary(records) {
   let earliestOccurred = records[0].Occurred_From_Date_Time;
   let latestOccurred = records[0].Occurred_From_Date_Time;
   for (const r of records) {
-    reportsByDisposition[r.Disposition] = (reportsByDisposition[r.Disposition] || 0) + 1;
-    reportsBySchool[r.School_Code] = (reportsBySchool[r.School_Code] || 0) + 1;
+    if (r.Disposition) reportsByDisposition[r.Disposition] = (reportsByDisposition[r.Disposition] || 0) + 1;
+    if (r.School_Code) reportsBySchool[r.School_Code] = (reportsBySchool[r.School_Code] || 0) + 1;
     if (r.Occurred_From_Date_Time < earliestOccurred) earliestOccurred = r.Occurred_From_Date_Time;
     if (r.Occurred_From_Date_Time > latestOccurred) latestOccurred = r.Occurred_From_Date_Time;
   }

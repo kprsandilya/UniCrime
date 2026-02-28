@@ -49,12 +49,14 @@ function MapContent({ records }) {
       />
       <FitBounds records={records} />
       {validRecords.map((r) => (
-        <Marker key={r.Number} position={[r.latitude, r.longitude]} icon={defaultIcon}>
+        <Marker key={r.id ?? r.Number} position={[r.latitude, r.longitude]} icon={defaultIcon}>
           <Popup>
-            <div className="text-sm">
+            <div className="text-sm space-y-1 min-w-[180px]">
               <p><strong>{r.Number}</strong></p>
               <p>{r.Location}</p>
-              <p>{r.Description} – {r.Disposition}</p>
+              {r.Description && <p>{r.Description}</p>}
+              {r.Disposition && <p className="text-neutral-600">{r.Disposition}</p>}
+              {r.Narrative && <p className="text-xs text-neutral-500 line-clamp-2">{r.Narrative}</p>}
             </div>
           </Popup>
         </Marker>
