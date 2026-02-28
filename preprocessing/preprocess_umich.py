@@ -1,10 +1,12 @@
 """
-Process UMich crime log CSV (umich_data.csv) into the same schema as the processed UIUC data.
+Process UMich crime log CSV into the same schema as the processed UIUC data.
+Expects filename to start with school code (e.g. 002325_umich.csv).
 Output matches: school_code, case_number, report_datetime, occurred_datetime, location,
 latitude, longitude, description, disposition, narrative.
 """
 
 import html
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -34,9 +36,15 @@ UMICH_LOCATION = "Location"
 UMICH_DESCRIPTION = "Description"
 UMICH_DISPOSITION = "Disposition"
 UMICH_NARRATIVE = "Narrative"
-UMICH_SCHOOL_CODE = "School_Code"
 UMICH_LAT = "latitude"
 UMICH_LON = "longitude"
+
+
+def _school_code_from_filename(path: Path) -> str:
+    """e.g. 002325_umich.csv -> 002325"""
+    stem = path.stem
+    match = re.match(r"^(\d+)", stem)
+    return match.group(1) if match else stem.split("_")[0] if "_" in stem else stem
 
 
 def _normalize_narrative(series: pd.Series) -> pd.Series:
@@ -64,7 +72,7 @@ def process_umich_csv(
     """
     Load UMich crime log CSV and transform to the same schema as processed UIUC data.
 
-    - csv_path: path to CSV (e.g. preprocessing/umich_data.csv)
+    - csv_path: path to CSV (e.g. preprocessing/crime_logs/002325_umich.csv)
     - geocode: if True, fill missing lat/lon via Google Maps (address + "Michigan, USA")
     - use_geocode_cache_file: if True, use shared geocode_cache.json
 
@@ -76,7 +84,8 @@ def process_umich_csv(
         raise FileNotFoundError(f"CSV not found: {csv_path}")
 
     df = pd.read_csv(csv_path)
-    required = (UMICH_NUMBER, UMICH_OCCURRED, UMICH_LOCATION, UMICH_SCHOOL_CODE)
+    df.columns = df.columns.str.strip()
+    required = (UMICH_NUMBER, UMICH_OCCURRED, UMICH_LOCATION)
     for col in required:
         if col not in df.columns:
             raise ValueError(f"Expected column '{col}' in {csv_path.name}")
@@ -96,8 +105,7 @@ def process_umich_csv(
     else:
         report_parsed = pd.Series([pd.NaT] * len(df))
 
-    # School code from CSV (e.g. 002325); ensure string
-    school_codes = df[UMICH_SCHOOL_CODE].astype(str).str.strip()
+    school_code = _school_code_from_filename(csv_path)
 
     # Use lat/lon from CSV when both present and numeric
     lat_raw = pd.to_numeric(df[UMICH_LAT], errors="coerce") if UMICH_LAT in df.columns else pd.Series([float("nan")] * len(df))
@@ -105,7 +113,7 @@ def process_umich_csv(
     has_csv_coords = lat_raw.notna() & lon_raw.notna()
 
     out = pd.DataFrame({
-        SCHOOL_CODE: school_codes,
+        SCHOOL_CODE: school_code,
         CASE_NUMBER: df[UMICH_NUMBER].astype(str),
         REPORT_DATETIME: report_parsed,
         OCCURRED_DATETIME: occurred_parsed,
@@ -137,14 +145,19 @@ def process_umich_csv(
 
 def main():
     base = Path(__file__).resolve().parent
-    csv_path = base / "umich_data.csv"
+    crime_logs_dir = base / "crime_logs"
+    if not crime_logs_dir.exists():
+        print(f"Crime logs directory not found: {crime_logs_dir}")
+        return
+
+    csv_path = crime_logs_dir / "002325_umich.csv"
     if not csv_path.exists():
         print(f"File not found: {csv_path}")
         return
 
     print(f"Processing {csv_path.name} (geocoding via Google Maps API, Michigan, USA)...")
     df = process_umich_csv(csv_path, geocode=True, use_geocode_cache_file=True)
-    out_path = base / "umich_data_processed.csv"
+    out_path = crime_logs_dir / "002325_umich_processed.csv"
     df.to_csv(out_path, index=False, date_format="%Y-%m-%dT%H:%M:%S.%fZ")
     print(f"Wrote {len(df)} rows to {out_path}")
 

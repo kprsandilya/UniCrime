@@ -8,7 +8,9 @@ BASE_URL = "https://www.dpss.umich.edu/api/GetCrimeLogCache"
 # ===== CONFIGURE YOUR DATE RANGE HERE =====
 START_DATE = "02/01/2026"
 END_DATE = "02/28/2026"
-OUTPUT_FILE = "umich_data.csv"
+SCHOOL_CODE = "002325"
+OUTPUT_FILE = f"./crime_logs/{SCHOOL_CODE}_umich.csv"
+
 
 FIELDNAMES = [
     "Number",
@@ -40,7 +42,7 @@ def transform_record(record):
         "Description": record.get("description", ""),
         "Disposition": (record.get("disposition", "")[:-4] or "Unknown"),
         "Narrative": record.get("narrative", ""),
-        "School_Code": "002325",
+        "School_Code": SCHOOL_CODE,
         "latitude": None,
         "longitude": None,
     }
