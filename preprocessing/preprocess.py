@@ -29,6 +29,7 @@ LATITUDE = "latitude"
 LONGITUDE = "longitude"
 DESCRIPTION = "description"
 DISPOSITION = "disposition"
+NARRATIVE = "narrative"
 
 # Cache to avoid re-querying same addresses (Google Maps API has usage quotas)
 GEOCODE_CACHE_PATH = Path(__file__).parent / "geocode_cache.json"
@@ -180,6 +181,7 @@ def process_crime_log_csv(
         LONGITUDE: pd.NA,
         DESCRIPTION: df[CSV_DESCRIPTION].astype(str).replace("nan", None) if CSV_DESCRIPTION in df.columns else None,
         DISPOSITION: _normalize_disposition(df[CSV_DISPOSITION]) if CSV_DISPOSITION in df.columns else None,
+        NARRATIVE: [None] * len(df),
     })
 
     if geocode:
