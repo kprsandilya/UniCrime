@@ -1130,5 +1130,505 @@
   "3003 S STATE ST, Michigan, USA": [
     42.243225,
     -83.7372406
+  ],
+  "Babcock Resisdence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1035008,
+    -88.2347149
+  ],
+  "Taft Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1021078,
+    -88.2336865
+  ],
+  "Weston Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.10895,
+    -88.22105
+  ],
+  "Allen Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1162884,
+    -88.2435155
+  ],
+  "Shelden Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.10895,
+    -88.22105
+  ],
+  "Florida Avenue Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.0991383,
+    -88.2211566
+  ],
+  "Leonard Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.101447,
+    -88.2849348
+  ],
+  "Snyder Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1020358,
+    -88.2354737
+  ],
+  "Oglesby Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1162884,
+    -88.2435155
+  ],
+  "Sherman Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1070935,
+    -88.2323492
+  ],
+  "Nugent Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1039195,
+    -88.2372435
+  ],
+  "Hopkins Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.102442,
+    -88.2377792
+  ],
+  "SDRP - Ikenberry Commons, CHAMPAIGN, Illinois, USA": [
+    40.1035008,
+    -88.2347149
+  ],
+  "Off Campus, CHAMPAIGN, Illinois, USA": [
+    40.1162884,
+    -88.2435155
+  ],
+  "Townsend Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.10895,
+    -88.22105
+  ],
+  "Lincoln Avenue Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1043281,
+    -88.2199577
+  ],
+  "Bousfield Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1017979,
+    -88.2379414
+  ],
+  "Trelease Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.0989469,
+    -88.2203305
+  ],
+  "Carr Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.10895,
+    -88.22105
+  ],
+  "Scott Residence Hall, CHAMPAIGN, Illinois, USA": [
+    40.1019657,
+    -88.2366612
+  ],
+  "On Campus Res Hall, CHAMPAIGN, Illinois, USA": [
+    40.1007672,
+    -88.236034
+  ],
+  "Babcock Resisdence Hall, Champaign, Illinois, USA": [
+    40.1035008,
+    -88.2347149
+  ],
+  "Taft Residence Hall, Champaign, Illinois, USA": [
+    40.1021078,
+    -88.2336865
+  ],
+  "Weston Residence Hall, Champaign, Illinois, USA": [
+    40.10895,
+    -88.22105
+  ],
+  "Allen Residence Hall, Champaign, Illinois, USA": [
+    40.1162884,
+    -88.2435155
+  ],
+  "Shelden Residence Hall, Champaign, Illinois, USA": [
+    40.10895,
+    -88.22105
+  ],
+  "Florida Avenue Residence Hall, Champaign, Illinois, USA": [
+    40.0991383,
+    -88.2211566
+  ],
+  "Leonard Residence Hall, Champaign, Illinois, USA": [
+    40.101447,
+    -88.2849348
+  ],
+  "Snyder Residence Hall, Champaign, Illinois, USA": [
+    40.1020358,
+    -88.2354737
+  ],
+  "Oglesby Residence Hall, Champaign, Illinois, USA": [
+    40.1162884,
+    -88.2435155
+  ],
+  "Sherman Residence Hall, Champaign, Illinois, USA": [
+    40.1070935,
+    -88.2323492
+  ],
+  "Nugent Residence Hall, Champaign, Illinois, USA": [
+    40.1039195,
+    -88.2372435
+  ],
+  "Hopkins Residence Hall, Champaign, Illinois, USA": [
+    40.102442,
+    -88.2377792
+  ],
+  "SDRP - Ikenberry Commons, Champaign, Illinois, USA": [
+    40.1035008,
+    -88.2347149
+  ],
+  "Off Campus, Champaign, Illinois, USA": [
+    40.1162884,
+    -88.2435155
+  ],
+  "Townsend Residence Hall, Champaign, Illinois, USA": [
+    40.10895,
+    -88.22105
+  ],
+  "Lincoln Avenue Residence Hall, Champaign, Illinois, USA": [
+    40.1043281,
+    -88.2199577
+  ],
+  "Bousfield Residence Hall, Champaign, Illinois, USA": [
+    40.1017979,
+    -88.2379414
+  ],
+  "Trelease Residence Hall, Champaign, Illinois, USA": [
+    40.0989469,
+    -88.2203305
+  ],
+  "Carr Residence Hall, Champaign, Illinois, USA": [
+    40.10895,
+    -88.22105
+  ],
+  "Scott Residence Hall, Champaign, Illinois, USA": [
+    40.1019657,
+    -88.2366612
+  ],
+  "On Campus Res Hall, Champaign, Illinois, USA": [
+    40.1007672,
+    -88.236034
+  ],
+  "1500 E MEDICAL CENTER DR, Ann Arbor, Michigan, USA": [
+    42.2827172,
+    -83.7267932
+  ],
+  "1239 KIPKE DR, Ann Arbor, Michigan, USA": [
+    42.265239,
+    -83.7439554
+  ],
+  "432 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.2769295,
+    -83.7415593
+  ],
+  "606 E HOOVER AVE, Ann Arbor, Michigan, USA": [
+    42.2694673,
+    -83.7422564
+  ],
+  "1620 E MEDICAL CENTER DR, Ann Arbor, Michigan, USA": [
+    42.2853465,
+    -83.7310464
+  ],
+  "930 N UNIVERSITY AVE, Ann Arbor, Michigan, USA": [
+    42.2780097,
+    -83.7365709
+  ],
+  "540 THOMPSON ST, Ann Arbor, Michigan, USA": [
+    42.2747975,
+    -83.7437152
+  ],
+  "1655 DEAN RD, Ann Arbor, Michigan, USA": [
+    42.2967869,
+    -83.6977863
+  ],
+  "1600 E MEDICAL CENTER DR, Ann Arbor, Michigan, USA": [
+    42.2853439,
+    -83.7310242
+  ],
+  "2375 HUBBARD RD, Ann Arbor, Michigan, USA": [
+    42.2955073,
+    -83.7201345
+  ],
+  "4270 PLYMOUTH RD, Ann Arbor, Michigan, USA": [
+    42.3087948,
+    -83.6727391
+  ],
+  "919 S UNIVERSITY AVE, Ann Arbor, Michigan, USA": [
+    42.2756112,
+    -83.7371821
+  ],
+  "1150 W MEDICAL CENTER DR, Ann Arbor, Michigan, USA": [
+    42.2849017,
+    -83.7324945
+  ],
+  "ZINA PITCHER PL / E ANN ST, Ann Arbor, Michigan, USA": [
+    42.2822971,
+    -83.7335587
+  ],
+  "419 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.276759,
+    -83.7407389
+  ],
+  "428 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.2770601,
+    -83.7411132
+  ],
+  "1001 HILL ST, Ann Arbor, Michigan, USA": [
+    42.2722312,
+    -83.7371591
+  ],
+  "500 CHURCH ST, Ann Arbor, Michigan, USA": [
+    42.2768901,
+    -83.734888
+  ],
+  "530 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.27522,
+    -83.7413201
+  ],
+  "1425 E ANN ST, Ann Arbor, Michigan, USA": [
+    42.2831396,
+    -83.7310911
+  ],
+  "911 N UNIVERSITY AVE, Ann Arbor, Michigan, USA": [
+    42.2793182,
+    -83.7377271
+  ],
+  "201 FLETCHER ST, Ann Arbor, Michigan, USA": [
+    42.2801878,
+    -83.7364619
+  ],
+  "204 WASHTENAW AVE, Ann Arbor, Michigan, USA": [
+    42.2798988,
+    -83.7353058
+  ],
+  "200 WASHTENAW AVE, Ann Arbor, Michigan, USA": [
+    42.2801218,
+    -83.7345826
+  ],
+  "1041 WALL ST, Ann Arbor, Michigan, USA": [
+    42.28806,
+    -83.73482
+  ],
+  "1116 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.2675741,
+    -83.7410082
+  ],
+  "2250 CRAM PL, Ann Arbor, Michigan, USA": [
+    42.2964195,
+    -83.7157867
+  ],
+  "701 E UNIVERSITY AVE, Ann Arbor, Michigan, USA": [
+    42.2729285,
+    -83.7351459
+  ],
+  "324 S OBSERVATORY ST, Ann Arbor, Michigan, USA": [
+    42.2787978,
+    -83.7314685
+  ],
+  "4260 PLYMOUTH RD, Ann Arbor, Michigan, USA": [
+    42.3079851,
+    -83.6739827
+  ],
+  "1051 N CANTON CENTER RD, Ann Arbor, Michigan, USA": [
+    42.2808256,
+    -83.7430378
+  ],
+  "541 THOMPSON ST, Ann Arbor, Michigan, USA": [
+    42.2748013,
+    -83.7428968
+  ],
+  "1100 FULLER RD, Ann Arbor, Michigan, USA": [
+    42.285363,
+    -83.7349722
+  ],
+  "600 E MADISON ST, Ann Arbor, Michigan, USA": [
+    42.2736688,
+    -83.7421033
+  ],
+  "906 S UNIVERSITY AVE, Ann Arbor, Michigan, USA": [
+    42.274525,
+    -83.7379233
+  ],
+  "1519 FULLER RD, Ann Arbor, Michigan, USA": [
+    42.2878815,
+    -83.7285663
+  ],
+  "1540 E HOSPITAL DR, Ann Arbor, Michigan, USA": [
+    42.281749,
+    -83.7280454
+  ],
+  "830 N UNIVERSITY AVE, Ann Arbor, Michigan, USA": [
+    42.2781689,
+    -83.738927
+  ],
+  "1931 DUFFIELD ST, Ann Arbor, Michigan, USA": [
+    42.2937497,
+    -83.720873
+  ],
+  "1415 WASHINGTON HTS, Ann Arbor, Michigan, USA": [
+    42.2808145,
+    -83.7303297
+  ],
+  "1600 HURON PKWY, Ann Arbor, Michigan, USA": [
+    42.3003717,
+    -83.7019786
+  ],
+  "1315 E ANN ST, Ann Arbor, Michigan, USA": [
+    42.2827112,
+    -83.7326961
+  ],
+  "1800 FULLER RD, Ann Arbor, Michigan, USA": [
+    42.2871545,
+    -83.7237455
+  ],
+  "1100 BAITS DR, Ann Arbor, Michigan, USA": [
+    42.2903759,
+    -83.7207718
+  ],
+  "1919 GREEN RD, Ann Arbor, Michigan, USA": [
+    42.2993966,
+    -83.6939366
+  ],
+  "380 PARKLAND PLAZA, Ann Arbor, Michigan, USA": [
+    42.2797369,
+    -83.8151056
+  ],
+  "1502 E MEDICAL CENTER DR, Ann Arbor, Michigan, USA": [
+    42.2814383,
+    -83.7272242
+  ],
+  "500 KRAUSE ST, Ann Arbor, Michigan, USA": [
+    42.2797713,
+    -83.7536735
+  ],
+  "3621 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.2344473,
+    -83.7384865
+  ],
+  "508 THOMPSON ST, Ann Arbor, Michigan, USA": [
+    42.2754613,
+    -83.7436224
+  ],
+  "1535 E HOSPITAL DR, Ann Arbor, Michigan, USA": [
+    42.282068,
+    -83.7282416
+  ],
+  "2500 GREEN RD, Ann Arbor, Michigan, USA": [
+    42.3106374,
+    -83.6899364
+  ],
+  "2335 STONE RD, Ann Arbor, Michigan, USA": [
+    42.2920847,
+    -83.69929
+  ],
+  "1900 FULLER RD, Ann Arbor, Michigan, USA": [
+    42.2855135,
+    -83.721906
+  ],
+  "2301 COMMONWEALTH BLVD, Ann Arbor, Michigan, USA": [
+    42.3090993,
+    -83.6961653
+  ],
+  "605 OXFORD RD, Ann Arbor, Michigan, USA": [
+    42.2750303,
+    -83.725632
+  ],
+  "100 S OBSERVATORY ST, Ann Arbor, Michigan, USA": [
+    42.2812445,
+    -83.7317988
+  ],
+  "1503 WASHINGTON HTS, Ann Arbor, Michigan, USA": [
+    42.2808891,
+    -83.7288791
+  ],
+  "701 TAPPAN ST, Ann Arbor, Michigan, USA": [
+    42.2727776,
+    -83.737529
+  ],
+  "216 S THAYER ST, Ann Arbor, Michigan, USA": [
+    42.27975,
+    -83.7399337
+  ],
+  "1000 VICTORS WAY, Ann Arbor, Michigan, USA": [
+    42.2387603,
+    -83.7320408
+  ],
+  "2260 HAYWARD ST, Ann Arbor, Michigan, USA": [
+    42.2930138,
+    -83.716372
+  ],
+  "HUBBARD ST / S HURON PKWY, Ann Arbor, Michigan, USA": [
+    42.2541373,
+    -83.6970302
+  ],
+  "PACKARD ST / THOMPSON ST, Ann Arbor, Michigan, USA": [
+    42.2734322,
+    -83.7433395
+  ],
+  "THOMPSON ST / E MADISON ST, Ann Arbor, Michigan, USA": [
+    42.274273,
+    -83.743214
+  ],
+  "1163 MCINTYRE DR, Ann Arbor, Michigan, USA": [
+    42.2972283,
+    -83.7109894
+  ],
+  "1300 E ANN ST, Ann Arbor, Michigan, USA": [
+    42.282037,
+    -83.7329291
+  ],
+  "7500 CHALLIS RD, Ann Arbor, Michigan, USA": [
+    42.2808256,
+    -83.7430378
+  ],
+  "1430 HUBBARD RD, Ann Arbor, Michigan, USA": [
+    42.2940916,
+    -83.7242659
+  ],
+  "920 N UNIVERSITY AVE, Ann Arbor, Michigan, USA": [
+    42.2780964,
+    -83.7368867
+  ],
+  "2281 BONISTEEL BLVD, Ann Arbor, Michigan, USA": [
+    42.2912754,
+    -83.7156345
+  ],
+  "402(400) BLK S OBSERVATORY ST, Ann Arbor, Michigan, USA": [
+    42.2782132,
+    -83.7310214
+  ],
+  "S 5TH AVE / HILL ST, Ann Arbor, Michigan, USA": [
+    42.2717324,
+    -83.7464934
+  ],
+  "2349 BISHOP AVE, Ann Arbor, Michigan, USA": [
+    42.2985437,
+    -83.7138071
+  ],
+  "500 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.2764869,
+    -83.7414389
+  ],
+  "105 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.2806065,
+    -83.7406428
+  ],
+  "1521 E SIMPSON RD, Ann Arbor, Michigan, USA": [
+    42.2827184,
+    -83.7294416
+  ],
+  "623 OXFORD RD, Ann Arbor, Michigan, USA": [
+    42.2743606,
+    -83.7255587
+  ],
+  "1221 BEAL AVE, Ann Arbor, Michigan, USA": [
+    42.291525,
+    -83.7138369
+  ],
+  "1011 N UNIVERSITY AVE, Ann Arbor, Michigan, USA": [
+    42.2789274,
+    -83.7364252
+  ],
+  "1000 BAITS DR, Ann Arbor, Michigan, USA": [
+    42.2888486,
+    -83.7216424
+  ],
+  "625 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.2741841,
+    -83.7391713
+  ],
+  "3003 S STATE ST, Ann Arbor, Michigan, USA": [
+    42.243225,
+    -83.7372406
   ]
 }

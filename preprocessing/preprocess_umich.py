@@ -25,6 +25,7 @@ from preprocess import (
     _load_geocode_cache,
     _normalize_disposition,
     _save_geocode_cache,
+    ensure_location_has_city,
     geocode_location,
 )
 
@@ -124,6 +125,8 @@ def process_umich_csv(
         DISPOSITION: _normalize_disposition(df[UMICH_DISPOSITION]) if UMICH_DISPOSITION in df.columns else None,
         NARRATIVE: _normalize_narrative(df[UMICH_NARRATIVE]) if UMICH_NARRATIVE in df.columns else [None] * len(df),
     })
+
+    ensure_location_has_city(out, school_code)
 
     # Geocode rows that have no lat/lon
     if geocode:

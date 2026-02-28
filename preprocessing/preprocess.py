@@ -30,7 +30,46 @@ NARRATIVE = "narrative"
 
 # Cache to avoid re-querying same addresses (Google Maps API has usage quotas)
 GEOCODE_CACHE_PATH = Path(__file__).parent / "geocode_cache.json"
+FEDERAL_SCHOOL_CODE_CSV = Path(__file__).parent / "2627FederalSchoolCodeList2ndQuarter.csv"
 
+
+def get_school_city_lookup(csv_path: str | Path | None = None) -> dict[str, str]:
+    """Load federal school code CSV and return a mapping of school_code -> City."""
+    path = Path(csv_path) if csv_path is not None else FEDERAL_SCHOOL_CODE_CSV
+    if not path.exists():
+        return {}
+    try:
+        df = pd.read_csv(path, encoding="utf-8")
+    except UnicodeDecodeError:
+        df = pd.read_csv(path, encoding="cp1252")
+    df.columns = df.columns.str.strip()
+    if "School Code" not in df.columns or "City" not in df.columns:
+        return {}
+    return df.set_index(df["School Code"].astype(str).str.strip())["City"].astype(str).str.strip().to_dict()
+
+
+def ensure_location_has_city(
+    out: pd.DataFrame,
+    school_code: str,
+    city_lookup: dict[str, str] | None = None,
+    location_column: str = LOCATION,
+) -> None:
+    """
+    For rows where the location string does not contain a comma, append ", {City}"
+    using the City from the federal school code CSV for the given school_code. Modifies out in place.
+    """
+    if city_lookup is None:
+        city_lookup = get_school_city_lookup()
+    city = city_lookup.get(str(school_code).strip())
+    if not city:
+        return
+    for idx in out.index:
+        city = city.title()
+        loc = out.at[idx, location_column]
+        if pd.isna(loc) or not str(loc).strip():
+            continue
+        if "," not in str(loc):
+            out.at[idx, location_column] = f"{str(loc).strip()}, {city}"
 
 
 
