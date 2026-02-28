@@ -21,6 +21,16 @@ A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date
 """
 scalar DateTime
 
+type School {
+  id: ID!
+  schoolCode: String
+  schoolName: String
+  address: String
+  city: String
+  stateCode: String
+  zipCode: Int
+}
+
 type Query {
   crimeLogs(
     schoolCode: String
@@ -32,12 +42,17 @@ type Query {
     occurredBefore: DateTime
   ): [CrimeLog!]!
   crimeLog(id: String!): CrimeLog!
+  schools(schoolCode: String, stateCode: String): [School!]!
+  school(id: String!): School!
 }
 
 type Mutation {
   createCrimeLog(input: CreateCrimeLogInput!): CrimeLog!
   updateCrimeLog(input: UpdateCrimeLogInput!): CrimeLog!
   removeCrimeLog(id: String!): CrimeLog!
+  createSchool(input: CreateSchoolInput!): School!
+  updateSchool(input: UpdateSchoolInput!): School!
+  removeSchool(id: String!): School!
 }
 
 input CreateCrimeLogInput {
@@ -65,4 +80,23 @@ input UpdateCrimeLogInput {
   description: String
   disposition: String
   narrative: String
+}
+
+input CreateSchoolInput {
+  schoolCode: String
+  schoolName: String
+  address: String
+  city: String
+  stateCode: String
+  zipCode: Int
+}
+
+input UpdateSchoolInput {
+  id: ID!
+  schoolCode: String
+  schoolName: String
+  address: String
+  city: String
+  stateCode: String
+  zipCode: Int
 }

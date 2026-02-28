@@ -6,6 +6,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 import { CrimeLogModule } from './crime-log/crime-log.module';
 import { CrimeLog } from './crime-log/crime-log.entity';
+import { SchoolModule } from './school/school.module';
+import { School } from './school/school.entity';
 
 @Module({
   imports: [
@@ -16,7 +18,7 @@ import { CrimeLog } from './crime-log/crime-log.entity';
     TypeOrmModule.forRoot({
       type: 'postgres',
       url: process.env.DATABASE_URL,
-      entities: [CrimeLog],
+      entities: [CrimeLog, School],
     }),
     GraphQLModule.forRoot<MercuriusDriverConfig>({
       driver: MercuriusDriver,
@@ -24,6 +26,7 @@ import { CrimeLog } from './crime-log/crime-log.entity';
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
     }),
     CrimeLogModule,
+    SchoolModule,
   ],
 })
 export class AppModule {}
