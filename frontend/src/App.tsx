@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, lazy, Suspense } from "react";
+import Navbar from "./components/Navbar.jsx";
+import QueryScreen from "./components/QueryScreen.jsx";
+import ChatScreen from "./components/ChatScreen.jsx";
+import "./index.css";
+
+const MapPanel = lazy(() => import("./components/MapPanel.jsx"));
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeScreen, setActiveScreen] = useState("query");
+  const [records, setRecords] = useState([]);
+  const [summaryData, setSummaryData] = useState<{
+    totalReports: number;
+    reportsByDisposition: Record<string, number>;
+    reportsBySchool: Record<string, number>;
+    earliestOccurred: string;
+    latestOccurred: string;
+    lastUpdated: string;
+  } | null>(null);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="h-screen flex bg-neutral-50">
+      <Navbar activeScreen={activeScreen} setActiveScreen={setActiveScreen} />
+      <div className="w-[450px] flex-shrink-0 min-h-0 flex flex-col">
+        {activeScreen === "query" && (
+          <QueryScreen records={records} setRecords={setRecords} setSummaryData={setSummaryData} />
+        )}
+        {activeScreen === "chat" && (
+          <ChatScreen setRecords={setRecords} setSummaryData={setSummaryData} />
+        )}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <Suspense fallback={<div className="flex-1 min-w-0 bg-neutral-200" />}>
+        <MapPanel records={records} summaryData={summaryData} />
+      </Suspense>
+    </div>
+  );
 }
 
-export default App
+export default App;
