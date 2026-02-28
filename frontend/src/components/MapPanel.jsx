@@ -36,6 +36,12 @@ const defaultIcon = L.icon({
   iconAnchor: [12, 41],
 });
 
+function formatPopupDate(value) {
+  if (!value) return "—";
+  const d = new Date(value);
+  return isNaN(d.getTime()) ? "—" : d.toLocaleString(undefined, { dateStyle: "short", timeStyle: "short" });
+}
+
 function MapContent({ records }) {
   const validRecords = useMemo(
     () => (records || []).filter((r) => r.latitude != null && r.longitude != null),
@@ -51,12 +57,18 @@ function MapContent({ records }) {
       {validRecords.map((r) => (
         <Marker key={r.id ?? r.Number} position={[r.latitude, r.longitude]} icon={defaultIcon}>
           <Popup>
-            <div className="text-sm space-y-1 min-w-[180px]">
-              <p><strong>{r.Number}</strong></p>
-              <p>{r.Location}</p>
-              {r.Description && <p>{r.Description}</p>}
-              {r.Disposition && <p className="text-neutral-600">{r.Disposition}</p>}
-              {r.Narrative && <p className="text-xs text-neutral-500 line-clamp-2">{r.Narrative}</p>}
+            <div className="text-sm space-y-1.5 min-w-[180px]">
+              {r.Description != null && r.Description !== "" && (
+                <p><strong>{r.Description}</strong></p>
+              )}
+              <p><span className="text-neutral-500">Occurred Time:</span> {formatPopupDate(r.Occurred_From_Date_Time)}</p>
+              <p><span className="text-neutral-500">Reported Time:</span> {formatPopupDate(r.Reported_Date_Time)}</p>
+              {r.Location != null && r.Location !== "" && <p><span className="text-neutral-500">Location:</span> {r.Location}</p>}
+              {r.Disposition != null && r.Disposition !== "" && <p><span className="text-neutral-500">Disposition:</span> {r.Disposition}</p>}
+              {r.School_Code != null && r.School_Code !== "" && <p><span className="text-neutral-500">School:</span> {r.School_Code}</p>}
+              {r.Narrative != null && r.Narrative !== "" && (
+                <p className="text-xs text-neutral-500 line-clamp-3"><span className="text-neutral-500">Narrative:</span> {r.Narrative}</p>
+              )}
             </div>
           </Popup>
         </Marker>

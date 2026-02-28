@@ -2,19 +2,18 @@ import { useState, useMemo, useEffect } from "react";
 import { fetchCrimeLogs, fetchSchools } from "../api/client.js";
 import { generateSummary } from "../data/mockData.js";
 
-// Columns match crime-log.entity.ts: caseNumber, schoolCode, reportDatetime, occurredDatetime, location, description, disposition, narrative
-const DISPLAY_COLUMNS = [
-  "Number",
-  "School_Code",
-  "Reported_Date_Time",
-  "Occurred_From_Date_Time",
-  "Location",
-  "Description",
-  "Disposition",
-  "Narrative",
+// Table shows: Description first, then School (name when All), Occurred, Location, Narrative. Number, Reported_Date_Time, Disposition are only in case popup.
+const DATE_COLUMNS = new Set(["Occurred_From_Date_Time"]);
+const CASE_POPUP_FIELDS = [
+  { key: "Number", label: "Case Number" },
+  { key: "Reported_Date_Time", label: "Reported Date/Time" },
+  { key: "Occurred_From_Date_Time", label: "Occurred Date/Time" },
+  { key: "Location", label: "Location" },
+  { key: "Description", label: "Description" },
+  { key: "Disposition", label: "Disposition" },
+  { key: "School_Code", label: "School" },
+  { key: "Narrative", label: "Narrative" },
 ];
-
-const DATE_COLUMNS = new Set(["Reported_Date_Time", "Occurred_From_Date_Time"]);
 
 /**
  * Interpret date (YYYY-MM-DD) in the user's local timezone, then return UTC ISO string
@@ -72,6 +71,22 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
   const [error, setError] = useState(null);
   const [sortKey, setSortKey] = useState(null);
   const [sortDir, setSortDir] = useState("asc");
+  const [popupRow, setPopupRow] = useState(null);
+  // School column visibility is based on what was selected when the query was last run
+  const [schoolCodeAtLastQuery, setSchoolCodeAtLastQuery] = useState("");
+
+  // Table columns: include School only when last query was "All schools"
+  const displayColumns = useMemo(() => {
+    const base = ["Description", "Occurred_From_Date_Time", "Location", "Narrative"];
+    if (!schoolCodeAtLastQuery.trim()) base.splice(1, 0, "School_Code");
+    return base;
+  }, [schoolCodeAtLastQuery]);
+
+  // Code -> name for school column and popup (from dropdown options)
+  const codeToName = useMemo(
+    () => Object.fromEntries(schoolOptions.map((o) => [o.code, o.name || o.code])),
+    [schoolOptions]
+  );
 
   // Build dropdown: only schools that appear in crime log data (fetch with current date range)
   useEffect(() => {
@@ -101,11 +116,11 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
 
   const sortedRecords = useMemo(() => {
     const list = records ?? [];
-    if (!sortKey) return list;
+    if (!sortKey || !displayColumns.includes(sortKey)) return list;
     const isDate = DATE_COLUMNS.has(sortKey);
     return [...list].sort((a, b) => {
-      const aVal = a[sortKey];
-      const bVal = b[sortKey];
+      const aVal = sortKey === "School_Code" ? codeToName[a[sortKey]] || a[sortKey] : a[sortKey];
+      const bVal = sortKey === "School_Code" ? codeToName[b[sortKey]] || b[sortKey] : b[sortKey];
       if (isDate) {
         const aT = aVal ? new Date(aVal).getTime() : 0;
         const bT = bVal ? new Date(bVal).getTime() : 0;
@@ -116,7 +131,7 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
       const cmp = aStr.localeCompare(bStr);
       return sortDir === "asc" ? cmp : -cmp;
     });
-  }, [records, sortKey, sortDir]);
+  }, [records, sortKey, sortDir, displayColumns, codeToName]);
 
   const handleSort = (col) => {
     if (sortKey === col) setSortDir((d) => (d === "asc" ? "desc" : "asc"));
@@ -151,6 +166,7 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
       });
       setRecords(filtered);
       setSummaryData(generateSummary(filtered));
+      setSchoolCodeAtLastQuery(selectedSchoolCode.trim());
     } catch (err) {
       setError(err.message ?? "Request failed.");
       setRecords([]);
@@ -194,7 +210,7 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
             <label key={f.label} className={f.type === "date" ? "" : "col-span-2"}>
               <span className="block text-xs text-neutral-500 mb-0.5">
                 {f.label}
-                {f.type === "date" ? " (local → UTC)" : ""}
+                {f.type === "date"}
               </span>
               <input
                 type={f.type}
@@ -218,16 +234,16 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
       </div>
 
       <div className="flex-1 overflow-auto">
-        <table className="w-full text-sm border-collapse min-w-[800px]">
+        <table className="w-full text-sm border-collapse min-w-[500px]">
           <thead className="sticky top-0 bg-neutral-50 border-b border-neutral-200">
             <tr className="text-neutral-600 text-xs uppercase tracking-wide">
-              {DISPLAY_COLUMNS.map((col) => (
+              {displayColumns.map((col) => (
                 <th
                   key={col}
                   className="px-2 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:bg-neutral-100 rounded"
                   onClick={() => handleSort(col)}
                 >
-                  {col.replaceAll("_", " ")}
+                  {col === "School_Code" ? "School" : col === "Occurred_From_Date_Time" ? "Occurred Time" : col.replaceAll("_", " ")}
                   {sortKey === col && (
                     <span className="ml-1 text-neutral-400" aria-hidden>
                       {sortDir === "asc" ? "↑" : "↓"}
@@ -240,11 +256,25 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
           <tbody>
             {sortedRecords.map((row) => (
               <tr key={row.id ?? row.Number} className="border-b border-neutral-100 hover:bg-neutral-50">
-                {DISPLAY_COLUMNS.map((col) => (
-                  <td key={col} className="px-2 py-2 text-neutral-800 max-w-[200px] truncate" title={row[col]}>
-                    {DATE_COLUMNS.has(col) ? formatDate(row[col]) : (row[col] ?? "—")}
-                  </td>
-                ))}
+                {displayColumns.map((col) => {
+                  const isDescription = col === "Description";
+                  const displayValue =
+                    col === "School_Code"
+                      ? codeToName[row.School_Code] || row.School_Code || "—"
+                      : DATE_COLUMNS.has(col)
+                        ? formatDate(row[col])
+                        : (row[col] ?? "—");
+                  return (
+                    <td
+                      key={col}
+                      className={`px-2 py-2 text-neutral-800 max-w-[200px] truncate ${isDescription ? "cursor-pointer underline decoration-dotted hover:bg-neutral-100" : ""}`}
+                      title={isDescription ? "Click for full case details" : row[col]}
+                      onClick={isDescription ? () => setPopupRow(row) : undefined}
+                    >
+                      {displayValue}
+                    </td>
+                  );
+                })}
               </tr>
             ))}
           </tbody>
@@ -253,6 +283,44 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
           <div className="p-6 text-sm text-neutral-500 text-center">No results. Run a query or adjust filters.</div>
         )}
       </div>
+
+      {popupRow && (
+        <div
+          className="fixed inset-0 z-[1100] flex items-center justify-center bg-black/40 p-4"
+          onClick={() => setPopupRow(null)}
+        >
+          <div
+            className="bg-white rounded-xl shadow-xl max-w-lg w-full max-h-[85vh] overflow-auto p-5"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-sm font-semibold text-neutral-800">Case details</h3>
+              <button
+                type="button"
+                onClick={() => setPopupRow(null)}
+                className="text-neutral-500 hover:text-neutral-700 text-lg leading-none"
+              >
+                ×
+              </button>
+            </div>
+            <dl className="space-y-3 text-sm">
+              {CASE_POPUP_FIELDS.map(({ key, label }) => {
+                const value = key === "School_Code"
+                  ? (codeToName[popupRow[key]] ? `${codeToName[popupRow[key]]} (${popupRow[key]})` : popupRow[key])
+                  : DATE_COLUMNS.has(key) || key === "Reported_Date_Time"
+                    ? formatDate(popupRow[key])
+                    : popupRow[key];
+                return (
+                  <div key={key}>
+                    <dt className="text-xs uppercase tracking-wide text-neutral-500 mb-0.5">{label}</dt>
+                    <dd className="text-neutral-800 break-words">{value ?? "—"}</dd>
+                  </div>
+                );
+              })}
+            </dl>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
