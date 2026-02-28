@@ -1,4 +1,21 @@
+import { useState, useEffect } from "react";
+import { fetchSchools } from "../api/client.js";
+
 export default function MapOverlay({ summaryData }) {
+  const [codeToName, setCodeToName] = useState({});
+
+  useEffect(() => {
+    fetchSchools()
+      .then((schools) => {
+        const map = {};
+        (schools || []).forEach((s) => {
+          if (s.schoolCode) map[String(s.schoolCode).trim()] = s.schoolName || s.schoolCode;
+        });
+        setCodeToName(map);
+      })
+      .catch(() => {});
+  }, []);
+
   if (!summaryData) {
     return (
       <div className="absolute top-6 right-6 z-[1000] w-80 rounded-2xl bg-white/80 backdrop-blur-md border border-white/40 shadow-xl p-5">
@@ -20,6 +37,14 @@ export default function MapOverlay({ summaryData }) {
     latestOccurred,
     lastUpdated,
   } = summaryData;
+
+  const TOP_N = 15;
+  const dispositionEntries = Object.entries(reportsByDisposition || {})
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, TOP_N);
+  const schoolEntries = Object.entries(reportsBySchool || {})
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, TOP_N);
 
   const lastUpdatedStr = lastUpdated
     ? new Date(lastUpdated).toLocaleString()
@@ -49,20 +74,25 @@ export default function MapOverlay({ summaryData }) {
         </div>
       </div>
 
-      {/* Disposition Section */}
+      {/* Disposition Section — top N by count */}
       <div className="mb-4">
         <div className="text-xs uppercase tracking-wide text-neutral-500 mb-2">
           By Disposition
+          {Object.keys(reportsByDisposition || {}).length > TOP_N && (
+            <span className="normal-case font-normal text-neutral-400 ml-1">
+              (top {TOP_N})
+            </span>
+          )}
         </div>
 
-        {Object.keys(reportsByDisposition).length === 0 ? (
+        {dispositionEntries.length === 0 ? (
           <div className="text-neutral-400 text-sm">—</div>
         ) : (
           <div className="flex flex-wrap gap-2">
-            {Object.entries(reportsByDisposition).map(([k, v]) => (
+            {dispositionEntries.map(([k, v]) => (
               <span
                 key={k}
-                className="px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-700 text-xs font-medium"
+                className="px-2.5 py-1 rounded-lg bg-neutral-100 text-neutral-700 text-xs font-medium max-w-[20rem] break-words"
               >
                 {k} • {v}
               </span>
@@ -71,24 +101,33 @@ export default function MapOverlay({ summaryData }) {
         )}
       </div>
 
-      {/* School Section */}
+      {/* School Section — top N by count */}
       <div className="mb-4">
         <div className="text-xs uppercase tracking-wide text-neutral-500 mb-2">
           By School
+          {Object.keys(reportsBySchool || {}).length > TOP_N && (
+            <span className="normal-case font-normal text-neutral-400 ml-1">
+              (top {TOP_N})
+            </span>
+          )}
         </div>
 
-        {Object.keys(reportsBySchool).length === 0 ? (
+        {schoolEntries.length === 0 ? (
           <div className="text-neutral-400 text-sm">—</div>
         ) : (
           <div className="flex flex-wrap gap-2">
-            {Object.entries(reportsBySchool).map(([k, v]) => (
-              <span
-                key={k}
-                className="px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-700 text-xs font-medium"
-              >
-                {k} • {v}
-              </span>
-            ))}
+            {schoolEntries.map(([code, v]) => {
+              const name = codeToName[code];
+              return (
+                <span
+                  key={code}
+                  className="px-2.5 py-1 rounded-lg bg-neutral-100 text-neutral-700 text-xs font-medium max-w-[20rem] break-words"
+                >
+                  {name ? `${name} (${code})` : `${code} • ${v}`}
+                  {name ? ` • ${v}` : ""}
+                </span>
+              );
+            })}
           </div>
         )}
       </div>
