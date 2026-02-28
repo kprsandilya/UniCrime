@@ -101,6 +101,7 @@ def geocode_location(
         print("Warning: GOOGLE_MAPS_API_KEY not set; skipping geocoding for this run.")
         return (None, None)
 
+    print(f"Geocoding (Google Maps): {query}")
     try:
         coords = _geocode_google(query, key)
         if coords[0] is not None and coords[1] is not None:
@@ -120,6 +121,18 @@ def _school_code_from_filename(path: Path) -> str:
 def _parse_datetime(series: pd.Series) -> pd.Series:
     """Parse 'MM/DD/YYYY HH:MM' into timezone-aware datetime (UTC for storage)."""
     return pd.to_datetime(series, format="%m/%d/%Y %H:%M", utc=True)
+
+
+def _normalize_disposition(series: pd.Series) -> pd.Series:
+    """Title-case disposition and remove surrounding quotation marks."""
+    s = series.astype(str).replace("nan", None)
+    return s.apply(
+        lambda x: (
+            None
+            if pd.isna(x) or x in (None, "", "nan")
+            else str(x).strip().strip('"\'').title()
+        )
+    )
 
 
 def process_crime_log_csv(
@@ -166,7 +179,7 @@ def process_crime_log_csv(
         LATITUDE: pd.NA,
         LONGITUDE: pd.NA,
         DESCRIPTION: df[CSV_DESCRIPTION].astype(str).replace("nan", None) if CSV_DESCRIPTION in df.columns else None,
-        DISPOSITION: df[CSV_DISPOSITION].astype(str).replace("nan", None) if CSV_DISPOSITION in df.columns else None,
+        DISPOSITION: _normalize_disposition(df[CSV_DISPOSITION]) if CSV_DISPOSITION in df.columns else None,
     })
 
     if geocode:

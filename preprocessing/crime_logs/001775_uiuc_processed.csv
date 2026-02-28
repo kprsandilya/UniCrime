@@ -1,65 +1,65 @@
 school_code,case_number,report_datetime,occurred_datetime,location,latitude,longitude,description,disposition
 001775,2026-00000002,2026-01-01T00:24:00.000000Z,2026-01-01T00:24:00.000000Z,"S Third St, Champaign",40.110245,-88.2353849,Fighting - Champaign Ordinance,Administratively Closed
-001775,2026-00000010,2026-01-01T03:47:00.000000Z,2026-01-01T03:28:00.000000Z,"211 E Green St, Champaign",40.1099746,-88.2356425,Criminal Defacement of Property,Cleared by Arrest
+001775,2026-00000010,2026-01-01T03:47:00.000000Z,2026-01-01T03:28:00.000000Z,"211 E Green St, Champaign",40.1099746,-88.2356425,Criminal Defacement of Property,Cleared By Arrest
 001775,2026-00000013,2026-01-01T06:51:00.000000Z,2026-01-01T01:36:00.000000Z,"306 Gregory Dr, Champaign",40.1043427,-88.2348018,Burglary - Building,Administratively Closed
-001775,FI26006343,2026-01-01T16:01:00.000000Z,2026-01-01T16:01:00.000000Z,"616 E HEALEY ST, CHAMPAIGN",40.1117963,-88.2295953,THEFT,ADMINISTRATIVELY CLOSED
-001775,2026-99900001,2026-01-02T19:12:00.000000Z,2025-12-27T11:16:00.000000Z,"615 S Wright St, Champaign",40.1109984,-88.2290655,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Cleared by Arrest
-001775,2026-99900001,2026-01-02T19:12:00.000000Z,2025-12-27T11:16:00.000000Z,"615 S Wright St, Champaign",40.1109984,-88.2290655,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
+001775,FI26006343,2026-01-01T16:01:00.000000Z,2026-01-01T16:01:00.000000Z,"616 E HEALEY ST, CHAMPAIGN",40.1117963,-88.2295953,THEFT,Administratively Closed
+001775,2026-99900001,2026-01-02T19:12:00.000000Z,2025-12-27T11:16:00.000000Z,"615 S Wright St, Champaign",40.1109984,-88.2290655,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Cleared By Arrest
+001775,2026-99900001,2026-01-02T19:12:00.000000Z,2025-12-27T11:16:00.000000Z,"615 S Wright St, Champaign",40.1109984,-88.2290655,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
 001775,2026-00000068,2026-01-02T19:55:00.000000Z,2026-01-01T01:00:00.000000Z,"706 S Fifth St, Champaign",40.1097564,-88.2317521,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Administratively Closed
-001775,2026-00000094,2026-01-03T17:29:00.000000Z,2026-01-03T17:25:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Cleared by Arrest
+001775,2026-00000094,2026-01-03T17:29:00.000000Z,2026-01-03T17:25:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Cleared By Arrest
 001775,2026-00000098,2026-01-03T18:46:00.000000Z,2026-01-03T18:46:00.000000Z,"512 S Neil St, Champaign",40.1107061,-88.2429904,Theft-General - Champaign Ordinance,Administratively Closed
 001775,2026-00000110,2026-01-04T00:55:00.000000Z,2026-01-04T00:55:00.000000Z,"411 E Green St, Champaign",40.1101029,-88.2322478,Public Urination - Champaign Ordinance,Administratively Closed
-001775,2026-00000111,2026-01-04T01:04:00.000000Z,2026-01-04T01:04:00.000000Z,"N Lincoln Av, Urbana",40.1312145,-88.2196249,DUI - Alcohol Concentration in Blood or Breath 0.08 or More,Cleared by Arrest
-001775,2026-00000111,2026-01-04T01:04:00.000000Z,2026-01-04T01:04:00.000000Z,"N Lincoln Av, Urbana",40.1312145,-88.2196249,Possession of Controlled Substance,Cleared by Arrest
-001775,2026-00000111,2026-01-04T01:04:00.000000Z,2026-01-04T01:04:00.000000Z,"N Lincoln Av, Urbana",40.1312145,-88.2196249,DUI - Under the Influence of Alcohol,Cleared by Arrest
+001775,2026-00000111,2026-01-04T01:04:00.000000Z,2026-01-04T01:04:00.000000Z,"N Lincoln Av, Urbana",40.1312145,-88.2196249,DUI - Alcohol Concentration in Blood or Breath 0.08 or More,Cleared By Arrest
+001775,2026-00000111,2026-01-04T01:04:00.000000Z,2026-01-04T01:04:00.000000Z,"N Lincoln Av, Urbana",40.1312145,-88.2196249,Possession of Controlled Substance,Cleared By Arrest
+001775,2026-00000111,2026-01-04T01:04:00.000000Z,2026-01-04T01:04:00.000000Z,"N Lincoln Av, Urbana",40.1312145,-88.2196249,DUI - Under the Influence of Alcohol,Cleared By Arrest
 001775,2026-00000158,2026-01-05T07:53:00.000000Z,2026-01-05T07:50:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00000159,2026-01-05T08:34:00.000000Z,2026-01-01T17:45:00.000000Z,"1800 S First St, Champaign",40.096253,-88.2359041,Theft of Lost or Mislaid Property,Pending Investigation
 001775,2026-00000159,2026-01-05T08:34:00.000000Z,2026-01-01T17:45:00.000000Z,"1800 S First St, Champaign",40.096253,-88.2359041,Use of Stolen/Counterfeited/Forged/Expired/Revoked/Unissued Credit or Debit Card With Intent to Defraud,Pending Investigation
 001775,2026-00000169,2026-01-05T14:01:00.000000Z,2025-12-20T12:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Forgery,Administratively Closed
-001775,2026-00000171,2026-01-05T16:13:00.000000Z,2026-01-05T16:13:00.000000Z,"600 S Mathews Av, Urbana",40.1075481,-88.2248227,Criminal Trespass to State Supported Land,Cleared by Arrest
+001775,2026-00000171,2026-01-05T16:13:00.000000Z,2026-01-05T16:13:00.000000Z,"600 S Mathews Av, Urbana",40.1075481,-88.2248227,Criminal Trespass to State Supported Land,Cleared By Arrest
 001775,2026-00000270,2026-01-08T00:20:00.000000Z,2026-01-08T00:18:00.000000Z,"601 E John St, Champaign",40.1088331,-88.230034,UI No Trespass - University Wide - University Ordinance,Administratively Closed
 001775,2026-00000270,2026-01-08T00:20:00.000000Z,2026-01-08T00:18:00.000000Z,"601 E John St, Champaign",40.1088331,-88.230034,Minor Remains in Public Place or on Premises of any Establishment During Curfew Hours,Administratively Closed
 001775,2026-00000277,2026-01-08T10:02:00.000000Z,2025-01-08T10:02:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Criminal Trespass to Vehicles,Administratively Closed
-001775,2026-00000287,2026-01-08T13:38:00.000000Z,2026-01-07T11:33:00.000000Z,"1107 W Green St, Urbana",40.110185,-88.2230618,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Cleared by Arrest
+001775,2026-00000287,2026-01-08T13:38:00.000000Z,2026-01-07T11:33:00.000000Z,"1107 W Green St, Urbana",40.110185,-88.2230618,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Cleared By Arrest
 001775,2026-99900003,2026-01-09T17:57:00.000000Z,2026-01-09T09:55:00.000000Z,"507 S Fourth St, Champaign",40.1118436,-88.2339945,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-99900004,2026-01-09T21:59:00.000000Z,2025-12-19T14:00:00.000000Z,"51 E John St, Champaign",40.1085291,-88.2397023,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Administratively Closed
 001775,2026-00000345,2026-01-09T23:18:00.000000Z,2026-01-09T23:18:00.000000Z,"112 E Green St, Champaign",40.1104327,-88.237485,Aggravated Robbery,Pending Investigation
 001775,2026-00000345,2026-01-09T23:18:00.000000Z,2026-01-09T23:18:00.000000Z,"112 E Green St, Champaign",40.1104327,-88.237485,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Pending Investigation
-001775,2026-00000347,2026-01-10T01:30:00.000000Z,2026-01-10T00:15:00.000000Z,"E Springfield Av, Champaign",40.1126489,-88.2362084,DUI - Under the Influence of Drugs or Combination of Drugs,Cleared by Arrest
+001775,2026-00000347,2026-01-10T01:30:00.000000Z,2026-01-10T00:15:00.000000Z,"E Springfield Av, Champaign",40.1126489,-88.2362084,DUI - Under the Influence of Drugs or Combination of Drugs,Cleared By Arrest
 001775,2026-00000359,2026-01-10T15:14:00.000000Z,2026-01-10T15:14:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Administratively Closed
 001775,2026-00000359,2026-01-10T15:14:00.000000Z,2026-01-10T15:14:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,Criminal Damage to Property,Administratively Closed
-001775,2026-00000362,2026-01-10T17:12:00.000000Z,2026-01-10T17:12:00.000000Z,"S Lincoln Av, Urbana",40.1031653,-88.2191832,Possession Adult Use Cannabis In Passenger Area of Motor Vehicle - Driver,Cleared by Arrest
-001775,2026-00000362,2026-01-10T17:12:00.000000Z,2026-01-10T17:12:00.000000Z,"S Lincoln Av, Urbana",40.1031653,-88.2191832,Possession of Cannabis - more than 30g but less than 100g,Cleared by Arrest
-001775,2026-00000362,2026-01-10T17:12:00.000000Z,2026-01-10T17:12:00.000000Z,"S Lincoln Av, Urbana",40.1031653,-88.2191832,Illegal Transportation or Possession of Alcoholic Liquor by Driver in Motor Vehicle,Cleared by Arrest
+001775,2026-00000362,2026-01-10T17:12:00.000000Z,2026-01-10T17:12:00.000000Z,"S Lincoln Av, Urbana",40.1031653,-88.2191832,Possession Adult Use Cannabis In Passenger Area of Motor Vehicle - Driver,Cleared By Arrest
+001775,2026-00000362,2026-01-10T17:12:00.000000Z,2026-01-10T17:12:00.000000Z,"S Lincoln Av, Urbana",40.1031653,-88.2191832,Possession of Cannabis - more than 30g but less than 100g,Cleared By Arrest
+001775,2026-00000362,2026-01-10T17:12:00.000000Z,2026-01-10T17:12:00.000000Z,"S Lincoln Av, Urbana",40.1031653,-88.2191832,Illegal Transportation or Possession of Alcoholic Liquor by Driver in Motor Vehicle,Cleared By Arrest
 001775,2026-00000364,2026-01-10T17:39:00.000000Z,2026-01-10T17:39:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,Retail Theft - Taking Merchandise from Retail Establishment With Intent to Deprive Merchant Without Paying,Administratively Closed
 001775,2026-00000369,2026-01-10T18:13:00.000000Z,2026-01-08T00:00:00.000000Z,"111 E Healey St, Champaign",40.1112612,-88.2372652,Possession of Controlled Substance,Administratively Closed
 001775,2026-00000369,2026-01-10T18:13:00.000000Z,2026-01-08T00:00:00.000000Z,"111 E Healey St, Champaign",40.1112612,-88.2372652,Residential Burglary,Administratively Closed
 001775,2026-00000379,2026-01-10T22:52:00.000000Z,2025-10-01T12:00:00.000000Z,"812 S Sixth St, Champaign",40.10815,-88.230137,Mail and Wire Fraud - Wire Fraud,Administratively Closed
 001775,2026-00000379,2026-01-10T22:52:00.000000Z,2025-10-01T12:00:00.000000Z,"812 S Sixth St, Champaign",40.10815,-88.230137,Stalking,Pending Investigation
-001775,2026-00000395,2026-01-11T11:28:00.000000Z,2026-01-11T11:28:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Burglary - From Motor Vehicle,Cleared by Arrest
-001775,FI26006379,2026-01-11T09:59:00.000000Z,2026-01-11T09:59:00.000000Z,"407 E GREEN ST, CHAMPAIGN",40.1100026,-88.2326644,CRIMINAL TRESPASS,ADMINISTRATIVELY CLOSED
+001775,2026-00000395,2026-01-11T11:28:00.000000Z,2026-01-11T11:28:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Burglary - From Motor Vehicle,Cleared By Arrest
+001775,FI26006379,2026-01-11T09:59:00.000000Z,2026-01-11T09:59:00.000000Z,"407 E GREEN ST, CHAMPAIGN",40.1100026,-88.2326644,CRIMINAL TRESPASS,Administratively Closed
 001775,2026-99900005,2026-01-12T08:42:00.000000Z,2025-12-30T13:30:00.000000Z,"1110 W Green St, Urbana",40.1115891,-88.2231505,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Administratively Closed
 001775,2026-00000430,2026-01-12T09:28:00.000000Z,2026-01-10T12:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Forgery,Pending Investigation
 001775,2026-00000455,2026-01-12T18:17:00.000000Z,2026-01-12T18:17:00.000000Z,"528 E Green St, Champaign",40.1104889,-88.2306332,Aggravated Battery - Person 60 YOA or Older - Minor or No Injury - No Dangerous Weapon,Administratively Closed
-001775,2026-00000457,2026-01-12T18:36:00.000000Z,2026-01-12T18:32:00.000000Z,"616 E Green St, Champaign",40.1106254,-88.2296083,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared by Arrest
+001775,2026-00000457,2026-01-12T18:36:00.000000Z,2026-01-12T18:32:00.000000Z,"616 E Green St, Champaign",40.1106254,-88.2296083,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared By Arrest
 001775,2026-00000474,2026-01-13T03:10:00.000000Z,2026-01-12T17:00:00.000000Z,"908 S Oak St, Champaign",40.1071455,-88.2412624,Burglary - From Motor Vehicle,Administratively Closed
-001775,2026-00000476,2026-01-13T07:50:00.000000Z,2026-01-13T07:50:00.000000Z,"2904 W John St, Champaign",40.1095451,-88.2940269,"Manufacture, Deliver, Possess with Intent to Deliver Cannabis - more than 30g but less than 500g",Cleared by Arrest
+001775,2026-00000476,2026-01-13T07:50:00.000000Z,2026-01-13T07:50:00.000000Z,"2904 W John St, Champaign",40.1095451,-88.2940269,"Manufacture, Deliver, Possess with Intent to Deliver Cannabis - more than 30g but less than 500g",Cleared By Arrest
 001775,2026-00000483,2026-01-13T11:36:00.000000Z,2026-01-10T00:01:00.000000Z,"616 E Green St, Champaign",40.1106254,-88.2296083,Theft-General - Champaign Ordinance,Administratively Closed
 001775,2026-99900006,2026-01-13T12:49:00.000000Z,2025-12-24T12:25:00.000000Z,"103 E Healey St, Champaign",40.1111979,-88.2382669,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00000491,2026-01-13T15:17:00.000000Z,2026-01-12T18:00:00.000000Z,"1004 Locust St, Champaign",40.1061064,-88.2399081,Motor Vehicle Theft,Administratively Closed
-001775,2026-00000497,2026-01-13T18:02:00.000000Z,2026-01-13T18:02:00.000000Z,"E Green St, Champaign",40.1102235,-88.2379271,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
-001775,2026-00000497,2026-01-13T18:02:00.000000Z,2026-01-13T18:02:00.000000Z,"E Green St, Champaign",40.1102235,-88.2379271,Possession of Liquor on School Property with Person Present,Cleared by Arrest
+001775,2026-00000497,2026-01-13T18:02:00.000000Z,2026-01-13T18:02:00.000000Z,"E Green St, Champaign",40.1102235,-88.2379271,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
+001775,2026-00000497,2026-01-13T18:02:00.000000Z,2026-01-13T18:02:00.000000Z,"E Green St, Champaign",40.1102235,-88.2379271,Possession of Liquor on School Property with Person Present,Cleared By Arrest
 001775,2026-99900007,2026-01-14T19:06:00.000000Z,2026-01-14T12:42:00.000000Z,"108 E Healey St, Champaign",40.1117362,-88.2377734,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00000554,2026-01-15T08:16:00.000000Z,2026-01-15T08:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Cleared by Arrest
-001775,2026-00000554,2026-01-15T08:16:00.000000Z,2026-01-15T08:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,"Aggravated Assault - Offense Based ONLY on Victim - State of IL, Municipality Employee Performing Official Duties",Cleared by Arrest
-001775,2026-00000554,2026-01-15T08:16:00.000000Z,2026-01-15T08:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
+001775,2026-00000554,2026-01-15T08:16:00.000000Z,2026-01-15T08:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Cleared By Arrest
+001775,2026-00000554,2026-01-15T08:16:00.000000Z,2026-01-15T08:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,"Aggravated Assault - Offense Based ONLY on Victim - State of IL, Municipality Employee Performing Official Duties",Cleared By Arrest
+001775,2026-00000554,2026-01-15T08:16:00.000000Z,2026-01-15T08:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
 001775,2026-00000563,2026-01-15T12:19:00.000000Z,2026-01-15T01:00:00.000000Z,"202 Gregory Dr, Champaign",40.1042844,-88.237271,Criminal Damage to Property,Administratively Closed
 001775,2026-00000563,2026-01-15T12:19:00.000000Z,2026-01-15T01:00:00.000000Z,"202 Gregory Dr, Champaign",40.1042844,-88.237271,Burglary - Building,Administratively Closed
-001775,2026-00000570,2026-01-15T14:21:00.000000Z,2026-01-14T19:00:00.000000Z,"812 S Fifth St, Champaign",40.1087647,-88.230825,Burglary - From Motor Vehicle,"Cleared by Arrest, Juvenile"
-001775,2026-00000574,2026-01-15T17:47:00.000000Z,2026-01-14T17:00:00.000000Z,"812 S Fifth St, Champaign",40.1087647,-88.230825,Burglary - From Motor Vehicle,"Cleared by Arrest, Juvenile"
-001775,2026-00000574,2026-01-15T17:47:00.000000Z,2026-01-14T17:00:00.000000Z,"812 S Fifth St, Champaign",40.1087647,-88.230825,UI No Trespass - University Wide - University Ordinance,"Cleared by Arrest, Juvenile"
+001775,2026-00000570,2026-01-15T14:21:00.000000Z,2026-01-14T19:00:00.000000Z,"812 S Fifth St, Champaign",40.1087647,-88.230825,Burglary - From Motor Vehicle,"Cleared By Arrest, Juvenile"
+001775,2026-00000574,2026-01-15T17:47:00.000000Z,2026-01-14T17:00:00.000000Z,"812 S Fifth St, Champaign",40.1087647,-88.230825,Burglary - From Motor Vehicle,"Cleared By Arrest, Juvenile"
+001775,2026-00000574,2026-01-15T17:47:00.000000Z,2026-01-14T17:00:00.000000Z,"812 S Fifth St, Champaign",40.1087647,-88.230825,UI No Trespass - University Wide - University Ordinance,"Cleared By Arrest, Juvenile"
 001775,2026-00000579,2026-01-15T18:31:00.000000Z,2025-12-20T17:00:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Motor Vehicle Theft,Administratively Closed
-001775,FI26006407,2026-01-17T12:05:00.000000Z,2026-01-17T12:05:00.000000Z,"1800 S FIRST ST, CHAMPAIGN",40.096253,-88.2359041,UNLAWFUL USE OF ID,ADMINISTRATIVELY CLOSED
+001775,FI26006407,2026-01-17T12:05:00.000000Z,2026-01-17T12:05:00.000000Z,"1800 S FIRST ST, CHAMPAIGN",40.096253,-88.2359041,UNLAWFUL USE OF ID,Administratively Closed
 001775,2026-99900008,2026-01-17T13:01:00.000000Z,2026-01-14T11:00:00.000000Z,"506 S Fourth St, Champaign",40.1121456,-88.2330973,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Pending Investigation
 001775,2026-00000652,2026-01-17T16:40:00.000000Z,2026-01-17T16:40:00.000000Z,"1909 S Oak St, Champaign",40.0915895,-88.2411227,Criminal Damage to Government Supported Property,Administratively Closed
 001775,2026-00000654,2026-01-17T17:39:00.000000Z,2026-01-17T17:00:00.000000Z,"202 E Green St, Champaign",40.1105234,-88.2366661,Criminal Trespass to Residence,Administratively Closed
@@ -69,7 +69,7 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-00000727,2026-01-19T07:50:00.000000Z,2026-01-19T01:53:00.000000Z,"1001 Dorner Dr, Urbana",40.1041814,-88.2218608,Criminal Damage to Property,Administratively Closed
 001775,2026-00000727,2026-01-19T07:50:00.000000Z,2026-01-19T01:53:00.000000Z,"1001 Dorner Dr, Urbana",40.1041814,-88.2218608,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Administratively Closed
 001775,2026-00000739,2026-01-19T14:01:00.000000Z,2025-12-15T13:00:00.000000Z,"401 E Daniel St, Champaign",40.1075945,-88.2330997,Motor Vehicle Theft,Administratively Closed
-001775,FI26006416,2026-01-19T14:53:00.000000Z,2026-01-19T14:53:00.000000Z,"E GREEN ST/LOCUST ST, CHAMPAIGN",40.1102127,-88.2402578,CRIMINAL TRESPASS,ADMINISTRATIVELY CLOSED
+001775,FI26006416,2026-01-19T14:53:00.000000Z,2026-01-19T14:53:00.000000Z,"E GREEN ST/LOCUST ST, CHAMPAIGN",40.1102127,-88.2402578,CRIMINAL TRESPASS,Administratively Closed
 001775,2026-99900010,2026-01-19T20:13:00.000000Z,2026-01-19T16:30:00.000000Z,"2061 S Orchard St, Urbana",40.0918857,-88.2125702,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00000727,2026-01-19T07:50:00.000000Z,2026-01-19T01:53:00.000000Z,"1001 Dorner Dr, Urbana",40.1041814,-88.2218608,Liquor Underage,Student Disc Referral
 001775,2026-99900011,2026-01-20T12:01:00.000000Z,2026-01-19T22:30:00.000000Z,"1005 Gregory Dr, Urbana",40.1040214,-88.2214176,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
@@ -84,20 +84,20 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-99900013,2026-01-21T17:54:00.000000Z,2025-12-19T19:00:00.000000Z,"1213 S Fourth St, Champaign",40.1020051,-88.2336414,Motor Vehicle Theft,Administratively Closed
 001775,2026-99900013,2026-01-21T17:54:00.000000Z,2025-12-19T19:00:00.000000Z,"1213 S Fourth St, Champaign",40.1020051,-88.2336414,Criminal Damage to Property,Administratively Closed
 001775,2026-00000856,2026-01-21T18:31:00.000000Z,2026-01-21T15:00:00.000000Z,"110 E John St, Champaign",40.109311,-88.2375468,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,FI26006428,2026-01-21T01:52:00.000000Z,2026-01-21T01:52:00.000000Z,"E GREEN ST/S WRIGHT ST, CHAMPAIGN",40.1103024,-88.2288748,LIQUOR-UNDERAGE,STUDENT DISC REFERRAL
-001775,FI26006433,2026-01-22T00:33:00.000000Z,2026-01-22T00:33:00.000000Z,"300 E GREEN ST, CHANPAIGN",40.110245,-88.2353849,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
+001775,FI26006428,2026-01-21T01:52:00.000000Z,2026-01-21T01:52:00.000000Z,"E GREEN ST/S WRIGHT ST, CHAMPAIGN",40.1103024,-88.2288748,LIQUOR-UNDERAGE,Student Disc Referral
+001775,FI26006433,2026-01-22T00:33:00.000000Z,2026-01-22T00:33:00.000000Z,"300 E GREEN ST, CHANPAIGN",40.110245,-88.2353849,LIQUOR-UNDERAGE,Administratively Closed
 001775,2026-00000894,2026-01-22T10:31:00.000000Z,2026-01-15T18:00:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,Forgery,Pending Investigation
-001775,2026-00000896,2026-01-22T13:10:00.000000Z,2026-01-22T12:48:00.000000Z,"1010 W Illinois St, Urbana",40.1101134,-88.2218778,Burglary - Building,Cleared by Arrest
-001775,2026-00000896,2026-01-22T13:10:00.000000Z,2026-01-22T12:48:00.000000Z,"1010 W Illinois St, Urbana",40.1101134,-88.2218778,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
+001775,2026-00000896,2026-01-22T13:10:00.000000Z,2026-01-22T12:48:00.000000Z,"1010 W Illinois St, Urbana",40.1101134,-88.2218778,Burglary - Building,Cleared By Arrest
+001775,2026-00000896,2026-01-22T13:10:00.000000Z,2026-01-22T12:48:00.000000Z,"1010 W Illinois St, Urbana",40.1101134,-88.2218778,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
 001775,2026-00000898,2026-01-22T13:42:00.000000Z,2026-01-21T17:17:00.000000Z,"1800 S First St, Champaign",40.096253,-88.2359041,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Administratively Closed
-001775,2026-00000902,2026-01-22T15:10:00.000000Z,2025-09-16T02:01:00.000000Z,"UNKNOWN LOCATION, URBANA",40.1105875,-88.2072697,Child Pornography,Cleared by Arrest
-001775,FI26006434,2026-01-22T01:19:00.000000Z,2026-01-22T01:19:00.000000Z,"910 S THIRD ST, CHAMPAIGN",40.1071287,-88.2349079,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
+001775,2026-00000902,2026-01-22T15:10:00.000000Z,2025-09-16T02:01:00.000000Z,"UNKNOWN LOCATION, URBANA",40.1105875,-88.2072697,Child Pornography,Cleared By Arrest
+001775,FI26006434,2026-01-22T01:19:00.000000Z,2026-01-22T01:19:00.000000Z,"910 S THIRD ST, CHAMPAIGN",40.1071287,-88.2349079,LIQUOR-UNDERAGE,Administratively Closed
 001775,2026-00000919,2026-01-22T22:35:00.000000Z,2026-01-22T18:00:00.000000Z,"E Green St, Champaign",40.1102235,-88.2379271,Aggravated Domestic Battery,Administratively Closed
-001775,FI26006435,2026-01-22T03:01:00.000000Z,2026-01-22T03:01:00.000000Z,"GREGORY DR/S SIXTH ST, CHAMPAIGN",40.1041494,-88.2302724,LIQUOR-UNDERAGE,STUDENT DISC REFERRAL
-001775,2026-00000931,2026-01-23T01:48:00.000000Z,2026-01-23T01:48:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared by Arrest
-001775,2026-00000931,2026-01-23T01:48:00.000000Z,2026-01-23T01:48:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,Possession of Controlled Substance,Cleared by Arrest
-001775,2026-00000931,2026-01-23T01:48:00.000000Z,2026-01-23T01:48:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
-001775,2026-00000931,2026-01-23T01:48:00.000000Z,2026-01-23T01:48:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,Mob Action,Cleared by Arrest
+001775,FI26006435,2026-01-22T03:01:00.000000Z,2026-01-22T03:01:00.000000Z,"GREGORY DR/S SIXTH ST, CHAMPAIGN",40.1041494,-88.2302724,LIQUOR-UNDERAGE,Student Disc Referral
+001775,2026-00000931,2026-01-23T01:48:00.000000Z,2026-01-23T01:48:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared By Arrest
+001775,2026-00000931,2026-01-23T01:48:00.000000Z,2026-01-23T01:48:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,Possession of Controlled Substance,Cleared By Arrest
+001775,2026-00000931,2026-01-23T01:48:00.000000Z,2026-01-23T01:48:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
+001775,2026-00000931,2026-01-23T01:48:00.000000Z,2026-01-23T01:48:00.000000Z,"59 E Green St, Champaign",40.1100197,-88.2392727,Mob Action,Cleared By Arrest
 001775,2026-00000935,2026-01-23T08:18:00.000000Z,2026-01-22T19:00:00.000000Z,"1009 S First St, Champaign",40.1057403,-88.2390131,Criminal Trespass to Vehicles,Administratively Closed
 001775,2026-00000942,2026-01-23T10:49:00.000000Z,2026-01-22T14:42:00.000000Z,"615 S Wright St, Champaign",40.1109984,-88.2290655,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Administratively Closed
 001775,2026-00000942,2026-01-23T10:49:00.000000Z,2026-01-22T14:42:00.000000Z,"615 S Wright St, Champaign",40.1109984,-88.2290655,Intimidation,Administratively Closed
@@ -106,14 +106,14 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-00000948,2026-01-23T12:29:00.000000Z,2026-01-19T19:00:00.000000Z,"812 S Fifth St, Champaign",40.1087647,-88.230825,Burglary - From Motor Vehicle,Pending Investigation
 001775,2026-00000953,2026-01-23T15:40:00.000000Z,2026-01-22T19:00:00.000000Z,"601 S First St, Champaign",40.1111747,-88.2389303,Motor Vehicle Theft,Administratively Closed
 001775,2026-00000953,2026-01-23T15:40:00.000000Z,2026-01-22T19:00:00.000000Z,"601 S First St, Champaign",40.1111747,-88.2389303,Criminal Damage to Property,Administratively Closed
-001775,FI26006442,2026-01-23T19:59:00.000000Z,2026-01-23T19:59:00.000000Z,"1007 LOCUST ST, CHAMPAIGN",40.1058726,-88.2405909,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
+001775,FI26006442,2026-01-23T19:59:00.000000Z,2026-01-23T19:59:00.000000Z,"1007 LOCUST ST, CHAMPAIGN",40.1058726,-88.2405909,LIQUOR-UNDERAGE,Administratively Closed
 001775,2026-00000976,2026-01-23T22:02:00.000000Z,2026-01-23T22:00:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Burglary - From Motor Vehicle,Pending Investigation
 001775,2026-00000976,2026-01-23T22:02:00.000000Z,2026-01-23T22:00:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Criminal Trespass to Vehicles,Pending Investigation
 001775,2026-00000976,2026-01-23T22:02:00.000000Z,2026-01-23T22:00:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Burglary - From Motor Vehicle X4,Pending Investigation
 001775,2026-00000982,2026-01-23T23:41:00.000000Z,2026-01-23T20:00:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Criminal Trespass to Vehicles,Pending Investigation
 001775,2026-00000982,2026-01-23T23:41:00.000000Z,2026-01-23T20:00:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Burglary - From Motor Vehicle,Pending Investigation
 001775,2026-00000982,2026-01-23T23:41:00.000000Z,2026-01-23T20:00:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Burglary - From Motor Vehicle X2,Pending Investigation
-001775,FI26006437,2026-01-23T02:41:00.000000Z,2026-01-23T02:41:00.000000Z,"616 E GREEN ST, CHAMPAIGN",40.1106254,-88.2296083,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
+001775,FI26006437,2026-01-23T02:41:00.000000Z,2026-01-23T02:41:00.000000Z,"616 E GREEN ST, CHAMPAIGN",40.1106254,-88.2296083,LIQUOR-UNDERAGE,Administratively Closed
 001775,2026-00001008,2026-01-24T03:02:00.000000Z,2026-01-24T00:01:00.000000Z,"106 E John St, Champaign",40.1093292,-88.2380089,Criminal Trespass to Vehicles,Pending Investigation
 001775,2026-00001008,2026-01-24T03:02:00.000000Z,2026-01-24T00:01:00.000000Z,"106 E John St, Champaign",40.1093292,-88.2380089,Burglary - From Motor Vehicle,Pending Investigation
 001775,2026-00001023,2026-01-24T12:03:00.000000Z,2026-01-23T20:00:00.000000Z,"28 E Green St, Champaign",40.1106966,-88.2417068,Burglary - From Motor Vehicle,Administratively Closed
@@ -121,16 +121,16 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-00001032,2026-01-24T17:40:00.000000Z,2026-01-23T23:30:00.000000Z,"202 E Daniel St, Champaign",40.108248,-88.236608,Criminal Damage to Property,Administratively Closed
 001775,2026-00001031,2026-01-24T17:44:00.000000Z,2026-01-21T13:30:00.000000Z,"54 Chalmers St, Champaign",40.1069094,-88.2398003,Criminal Trespass to Vehicles,Administratively Closed
 001775,2026-99900018,2026-01-24T19:45:00.000000Z,2026-01-23T22:00:00.000000Z,"102 E Green St, Champaign",40.1104381,-88.2384162,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Burglary - From Motor Vehicle,Cleared by Arrest
-001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Illegal Transportation or Possession of Alcoholic Liquor by Driver in Motor Vehicle,Cleared by Arrest
-001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Criminal Damage to Property,Cleared by Arrest
-001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Motor Vehicle Theft,Cleared by Arrest
-001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Criminal Trespass to State Supported Land,Cleared by Arrest
-001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,DUI - Under the Influence of Alcohol,Cleared by Arrest
+001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Burglary - From Motor Vehicle,Cleared By Arrest
+001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Illegal Transportation or Possession of Alcoholic Liquor by Driver in Motor Vehicle,Cleared By Arrest
+001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Criminal Damage to Property,Cleared By Arrest
+001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Motor Vehicle Theft,Cleared By Arrest
+001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Criminal Trespass to State Supported Land,Cleared By Arrest
+001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,DUI - Under the Influence of Alcohol,Cleared By Arrest
 001775,2026-99900021,2026-01-25T11:07:00.000000Z,2026-01-23T15:30:00.000000Z,"201 Peabody Dr, Champaign",40.1005955,-88.2359921,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Motor Vehicle Theft,Cleared by Arrest
-001775,2026-00001126,2026-01-26T02:36:00.000000Z,2026-01-26T02:36:00.000000Z,"W Florida Av, Urbana",40.0981853,-88.2175269,Possession of Hypodermic Syringe/Needle,Cleared by Arrest
-001775,2026-00001126,2026-01-26T02:36:00.000000Z,2026-01-26T02:36:00.000000Z,"W Florida Av, Urbana",40.0981853,-88.2175269,Possession of Controlled Substance,Cleared by Arrest
+001775,2026-00001075,2026-01-25T03:05:00.000000Z,2026-01-25T03:05:00.000000Z,"302 E John St, Champaign",40.1093134,-88.2348478,Motor Vehicle Theft,Cleared By Arrest
+001775,2026-00001126,2026-01-26T02:36:00.000000Z,2026-01-26T02:36:00.000000Z,"W Florida Av, Urbana",40.0981853,-88.2175269,Possession of Hypodermic Syringe/Needle,Cleared By Arrest
+001775,2026-00001126,2026-01-26T02:36:00.000000Z,2026-01-26T02:36:00.000000Z,"W Florida Av, Urbana",40.0981853,-88.2175269,Possession of Controlled Substance,Cleared By Arrest
 001775,2026-99900022,2026-01-26T09:14:00.000000Z,2026-01-23T15:42:00.000000Z,"615 S Wright St, Champaign",40.1109984,-88.2290655,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-99900023,2026-01-26T18:00:00.000000Z,2026-01-26T17:50:00.000000Z,"201 Peabody Dr, Champaign",40.1005955,-88.2359921,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00001156,2026-01-26T18:48:00.000000Z,2026-01-26T01:00:00.000000Z,"909 S Fifth St, Champaign",40.1073502,-88.2322949,Criminal Damage to Government Supported Property,Pending Investigation
@@ -138,11 +138,11 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-00001160,2026-01-26T20:53:00.000000Z,2026-01-25T16:00:00.000000Z,"904 S Third St, Champaign",40.1076759,-88.2351152,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Administratively Closed
 001775,2026-00001160,2026-01-26T20:53:00.000000Z,2026-01-25T16:00:00.000000Z,"904 S Third St, Champaign",40.1076759,-88.2351152,Hate Crime,Administratively Closed
 001775,2026-00001176,2026-01-27T01:00:00.000000Z,2026-01-27T01:00:00.000000Z,"202 E Green St, Champaign",40.1105234,-88.2366661,Criminal Trespass to Residence,Administratively Closed
-001775,2026-00001190,2026-01-27T07:43:00.000000Z,2026-01-27T07:43:00.000000Z,"1406 N McKinley Av, Champaign",40.1307237,-88.2624858,"Manufacture, Deliver, Possess with Intent to Deliver Cannabis - more than 30g but less than 500g",Cleared by Arrest
+001775,2026-00001190,2026-01-27T07:43:00.000000Z,2026-01-27T07:43:00.000000Z,"1406 N McKinley Av, Champaign",40.1307237,-88.2624858,"Manufacture, Deliver, Possess with Intent to Deliver Cannabis - more than 30g but less than 500g",Cleared By Arrest
 001775,2026-99900025,2026-01-27T12:12:00.000000Z,2026-01-27T09:00:00.000000Z,"1405 Springfield Av, Urbana",40.1124684,-88.228295,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00001212,2026-01-27T15:17:00.000000Z,2026-01-24T22:00:00.000000Z,"408 E Healey St, Champaign",40.1117664,-88.2331107,Theft - From Motor Vehicle,Administratively Closed
 001775,2026-00001176,2026-01-27T01:00:00.000000Z,2026-01-27T01:00:00.000000Z,"202 E Green St, Champaign",40.1105234,-88.2366661,Simple Assault X2,Administratively Closed
-001775,FI26006456,2026-01-27T01:11:00.000000Z,2026-01-27T01:11:00.000000Z,"907 S THIRD ST, CHAMPAIGN",40.1073318,-88.2356742,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
+001775,FI26006456,2026-01-27T01:11:00.000000Z,2026-01-27T01:11:00.000000Z,"907 S THIRD ST, CHAMPAIGN",40.1073318,-88.2356742,LIQUOR-UNDERAGE,Administratively Closed
 001775,2026-99900026,2026-01-27T22:14:00.000000Z,2026-01-24T14:38:00.000000Z,"615 S Wright St, Champaign",40.1109984,-88.2290655,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00001233,2026-01-27T23:01:00.000000Z,2026-01-27T19:30:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Theft From Building,Administratively Closed
 001775,2026-00001233,2026-01-27T23:01:00.000000Z,2026-01-27T19:30:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Administratively Closed
@@ -154,7 +154,7 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,00298-2026,2026-01-27T08:27:00.000000Z,2026-01-25T00:08:00.000000Z,Leonard Residence Hall,40.7686459,-87.9219823,Liquor-Underage,Student Discipline Referral
 001775,00299-2026,2026-01-27T08:32:00.000000Z,2026-01-25T01:10:00.000000Z,Snyder Residence Hall,39.2825,-87.6675,Liquor-Underage,Student Discipline Referral
 001775,00318-2026,2026-01-27T08:48:00.000000Z,2026-01-27T02:06:00.000000Z,Oglesby Residence Hall,41.2953126,-89.0595266,Liquor-Underage,Student Discipline Referral
-001775,2026-00001248,2026-01-28T09:00:00.000000Z,2026-01-28T08:00:00.000000Z,"601 S Sixth St, Champaign",40.1110329,-88.2305517,Criminal Trespass to Real Property,Cleared by Arrest
+001775,2026-00001248,2026-01-28T09:00:00.000000Z,2026-01-28T08:00:00.000000Z,"601 S Sixth St, Champaign",40.1110329,-88.2305517,Criminal Trespass to Real Property,Cleared By Arrest
 001775,2026-00001257,2026-01-28T11:29:00.000000Z,2026-01-28T11:29:00.000000Z,"1402 S First St, Champaign",40.0992443,-88.2357734,"False Bomb, Explosive, Container Holding Poisonous Gas, Contaminant, or Radioactive Substance Alarm",Pending Investigation
 001775,2026-99900027,2026-01-28T17:05:00.000000Z,2026-01-13T12:25:00.000000Z,"503 Locust St, Champaign",40.1121373,-88.2403695,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00001289,2026-01-28T21:43:00.000000Z,2026-01-28T07:00:00.000000Z,"909 S Fifth St, Champaign",40.1073502,-88.2322949,Criminal Defacement of Property,Pending Investigation
@@ -162,24 +162,24 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-00001329,2026-01-29T20:55:00.000000Z,2026-01-29T19:00:00.000000Z,"303 Chalmers St, Champaign",40.1062589,-88.234779,Burglary - From Motor Vehicle,Pending Investigation
 001775,00341-2026,2026-01-29T09:16:00.000000Z,2026-01-28T15:53:00.000000Z,Sherman Residence Hall,39.8936608,-89.6048231,Criminal Damage,Administratively Closed
 001775,2026-99900030,2026-01-30T00:58:00.000000Z,2026-01-27T18:30:00.000000Z,"205 E Healey St, Champaign",40.1111999,-88.2362827,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00001347,2026-01-30T01:28:00.000000Z,2026-01-30T01:28:00.000000Z,"306 N Wright St, Urbana",40.1149213,-88.2280232,Criminal Trespass to State Supported Land,Cleared by Arrest
+001775,2026-00001347,2026-01-30T01:28:00.000000Z,2026-01-30T01:28:00.000000Z,"306 N Wright St, Urbana",40.1149213,-88.2280232,Criminal Trespass to State Supported Land,Cleared By Arrest
 001775,2026-00001355,2026-01-30T08:32:00.000000Z,2026-01-29T20:00:00.000000Z,"507 S Second St, Champaign",40.1117063,-88.2374267,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Pending Investigation
 001775,2026-00001373,2026-01-30T17:04:00.000000Z,2026-01-29T17:10:00.000000Z,"102 E Healey St, Champaign",40.1116251,-88.2384879,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00001377,2026-01-30T17:57:00.000000Z,2026-01-30T17:50:00.000000Z,"505 S Mathews Av, Urbana",40.1087058,-88.2253023,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Administratively Closed
 001775,2026-00001398,2026-01-30T23:30:00.000000Z,2026-01-30T23:30:00.000000Z,"102 E Green St, Champaign",40.1104381,-88.2384162,Battery -City - Champaign Ordinance,Administratively Closed
 001775,2026-00001355,2026-01-30T08:32:00.000000Z,2026-01-29T20:00:00.000000Z,"507 S Second St, Champaign",40.1117063,-88.2374267,Theft,Pending Investigation
-001775,FI26006485,2026-01-31T00:20:00.000000Z,2026-01-31T00:20:00.000000Z,"32 E GREEN ST, CHAMPAIGN",40.1104059,-88.2410247,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
-001775,FI26006496,2026-01-31T16:31:00.000000Z,2026-01-31T16:31:00.000000Z,"201 PEABODY DR, CHAMPAIGN",40.1005955,-88.2359921,CRIMINAL TRESPASS,ADMINISTRATIVELY CLOSED
+001775,FI26006485,2026-01-31T00:20:00.000000Z,2026-01-31T00:20:00.000000Z,"32 E GREEN ST, CHAMPAIGN",40.1104059,-88.2410247,LIQUOR-UNDERAGE,Administratively Closed
+001775,FI26006496,2026-01-31T16:31:00.000000Z,2026-01-31T16:31:00.000000Z,"201 PEABODY DR, CHAMPAIGN",40.1005955,-88.2359921,CRIMINAL TRESPASS,Administratively Closed
 001775,2026-99900032,2026-01-31T16:55:00.000000Z,2026-01-31T15:15:00.000000Z,"201 Peabody Dr, Champaign",40.1005955,-88.2359921,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00001443,2026-01-31T17:34:00.000000Z,2026-01-31T17:26:00.000000Z,"Gregory Dr, Champaign",40.1041561,-88.2288426,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared by Arrest
-001775,2026-00001443,2026-01-31T17:34:00.000000Z,2026-01-31T17:26:00.000000Z,"Gregory Dr, Champaign",40.1041561,-88.2288426,Possession of Drug Paraphernalia,Cleared by Arrest
-001775,FI26006495,2026-01-31T17:48:00.000000Z,2026-01-31T17:48:00.000000Z,"102 E GREEN ST, CHAMPAIGN",40.1104381,-88.2384162,UNLAWFUL USE OF ID,ADMINISTRATIVELY CLOSED
+001775,2026-00001443,2026-01-31T17:34:00.000000Z,2026-01-31T17:26:00.000000Z,"Gregory Dr, Champaign",40.1041561,-88.2288426,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared By Arrest
+001775,2026-00001443,2026-01-31T17:34:00.000000Z,2026-01-31T17:26:00.000000Z,"Gregory Dr, Champaign",40.1041561,-88.2288426,Possession of Drug Paraphernalia,Cleared By Arrest
+001775,FI26006495,2026-01-31T17:48:00.000000Z,2026-01-31T17:48:00.000000Z,"102 E GREEN ST, CHAMPAIGN",40.1104381,-88.2384162,UNLAWFUL USE OF ID,Administratively Closed
 001775,2026-00001446,2026-01-31T18:10:00.000000Z,2026-01-25T00:00:00.000000Z,"1201 W University Av, Urbana",40.1158552,-88.224891,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Administratively Closed
 001775,2026-00001449,2026-01-31T18:45:00.000000Z,2026-01-30T22:15:00.000000Z,"1106 S Third St, Champaign",40.1048771,-88.2352028,Criminal Sexual Assault - Victim Unable to Understand or give Consent,Pending Investigation
-001775,FI26006489,2026-01-31T01:26:00.000000Z,2026-01-31T01:26:00.000000Z,"102 E GREEN ST, CHAMPAIGN",40.1104381,-88.2384162,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
-001775,FI26006490,2026-01-31T02:00:00.000000Z,2026-01-31T02:00:00.000000Z,"102 E GREEN ST, CHAMPAIGN",40.1104381,-88.2384162,SIMPLE ASSAULT X2,ADMINISTRATIVELY CLOSED
-001775,FI26006488,2026-01-31T02:51:00.000000Z,2026-01-31T02:51:00.000000Z,"1005 S LINCOLN, URBANA",40.1041175,-88.2205999,LIQUOR-UNDERAGE,STUDENT DISC REFERRAL
-001775,FI26006487,2026-01-31T02:56:00.000000Z,2026-01-31T02:56:00.000000Z,"601 S FIRST ST, CHAMPAIGN",40.1111747,-88.2389303,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
+001775,FI26006489,2026-01-31T01:26:00.000000Z,2026-01-31T01:26:00.000000Z,"102 E GREEN ST, CHAMPAIGN",40.1104381,-88.2384162,LIQUOR-UNDERAGE,Administratively Closed
+001775,FI26006490,2026-01-31T02:00:00.000000Z,2026-01-31T02:00:00.000000Z,"102 E GREEN ST, CHAMPAIGN",40.1104381,-88.2384162,SIMPLE ASSAULT X2,Administratively Closed
+001775,FI26006488,2026-01-31T02:51:00.000000Z,2026-01-31T02:51:00.000000Z,"1005 S LINCOLN, URBANA",40.1041175,-88.2205999,LIQUOR-UNDERAGE,Student Disc Referral
+001775,FI26006487,2026-01-31T02:56:00.000000Z,2026-01-31T02:56:00.000000Z,"601 S FIRST ST, CHAMPAIGN",40.1111747,-88.2389303,LIQUOR-UNDERAGE,Administratively Closed
 001775,2026-00001421,2026-01-31T04:07:00.000000Z,2026-01-31T04:07:00.000000Z,"1208 S First St, Champaign",40.102442,-88.2377792,Liquor Underage X2,Administratively Closed
 001775,2026-00001477,2026-02-01T02:19:00.000000Z,2026-02-01T01:41:00.000000Z,"211 E Green St, Champaign",40.1099746,-88.2356425,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00001504,2026-02-01T14:24:00.000000Z,2026-02-01T11:25:00.000000Z,"1102 Gregory Dr, Urbana",40.1044075,-88.2219122,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
@@ -187,8 +187,8 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-00001506,2026-02-01T14:45:00.000000Z,2025-10-27T09:00:00.000000Z,"707 S Fourth St, Champaign",40.1096008,-88.2341874,Identity Theft,Pending Investigation
 001775,2026-00001509,2026-02-01T16:38:00.000000Z,2026-01-31T21:00:00.000000Z,"809 Locust St, Champaign",40.1082715,-88.2405916,Theft of Lost or Mislaid Property,Administratively Closed
 001775,2026-00001529,2026-02-01T22:44:00.000000Z,2026-02-01T22:44:00.000000Z,"S Race St/W Elm St, Urbana",40.1115911,-88.2088779,Liquor Law Violation X3,Administratively Closed
-001775,2026-00001542,2026-02-02T05:45:00.000000Z,2026-02-02T05:45:00.000000Z,"S Fifth St, Champaign",40.1108293,-88.2320535,DUI - Alcohol Concentration in Blood or Breath 0.08 or More,Cleared by Arrest
-001775,2026-00001542,2026-02-02T05:45:00.000000Z,2026-02-02T05:45:00.000000Z,"S Fifth St, Champaign",40.1108293,-88.2320535,DUI - Under the Influence of Alcohol,Cleared by Arrest
+001775,2026-00001542,2026-02-02T05:45:00.000000Z,2026-02-02T05:45:00.000000Z,"S Fifth St, Champaign",40.1108293,-88.2320535,DUI - Alcohol Concentration in Blood or Breath 0.08 or More,Cleared By Arrest
+001775,2026-00001542,2026-02-02T05:45:00.000000Z,2026-02-02T05:45:00.000000Z,"S Fifth St, Champaign",40.1108293,-88.2320535,DUI - Under the Influence of Alcohol,Cleared By Arrest
 001775,2026-00001543,2026-02-02T08:19:00.000000Z,2026-02-02T04:17:00.000000Z,"32 E Green St, Champaign",40.1104059,-88.2410247,Intimidation,Pending Investigation
 001775,2026-00001543,2026-02-02T08:19:00.000000Z,2026-02-02T04:17:00.000000Z,"32 E Green St, Champaign",40.1104059,-88.2410247,Harassment Through Electronic Communications,Pending Investigation
 001775,2026-00001555,2026-02-02T11:13:00.000000Z,2026-02-02T11:00:00.000000Z,"603 E Green St, Champaign",40.1101875,-88.2301298,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Unfounded
@@ -200,9 +200,9 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-00001582,2026-02-02T18:29:00.000000Z,2026-01-31T16:10:00.000000Z,"601 S First St, Champaign",40.1111747,-88.2389303,Identity Theft,Administratively Closed
 001775,2026-00001588,2026-02-02T19:13:00.000000Z,2026-02-01T19:00:00.000000Z,"107 E Springfield Av, Champaign",40.1122649,-88.2380733,Burglary - From Motor Vehicle,Administratively Closed
 001775,2026-99900033,2026-02-02T20:39:00.000000Z,2026-01-24T23:00:00.000000Z,"615 S Wright St, Champaign",40.1109984,-88.2290655,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Administratively Closed
-001775,2026-00001604,2026-02-03T01:40:00.000000Z,2026-02-03T01:40:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared by Arrest
-001775,2026-00001604,2026-02-03T01:40:00.000000Z,2026-02-03T01:40:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,"Aggravated Battery - Peace Officer, Policing Volunteer, Fireman, Security Ofc - Minor/No Injury - No Dangerous Weapon",Cleared by Arrest
-001775,2026-00001614,2026-02-03T09:17:00.000000Z,2026-02-02T23:00:00.000000Z,"101 E Green St, Champaign",40.1098692,-88.2383548,Criminal Trespass to Real Property,Cleared by Arrest
+001775,2026-00001604,2026-02-03T01:40:00.000000Z,2026-02-03T01:40:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared By Arrest
+001775,2026-00001604,2026-02-03T01:40:00.000000Z,2026-02-03T01:40:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,"Aggravated Battery - Peace Officer, Policing Volunteer, Fireman, Security Ofc - Minor/No Injury - No Dangerous Weapon",Cleared By Arrest
+001775,2026-00001614,2026-02-03T09:17:00.000000Z,2026-02-02T23:00:00.000000Z,"101 E Green St, Champaign",40.1098692,-88.2383548,Criminal Trespass to Real Property,Cleared By Arrest
 001775,00394-2026,2026-02-03T13:29:00.000000Z,2026-01-31T15:00:00.000000Z,Nugent Residence Hall,40.6331249,-89.3985283,Liquor-Underage,Student Discipline Referral
 001775,00407-2026,2026-02-03T13:40:00.000000Z,2026-02-01T00:08:00.000000Z,Leonard Residence Hall,40.7686459,-87.9219823,Liquor-Underage X7,Student Discipline Referral
 001775,00408-2026,2026-02-03T13:43:00.000000Z,2026-02-01T01:30:00.000000Z,Babcock Resisdence Hall,41.5297953,-90.3964062,Liquor-Underage,Student Discipline Referral
@@ -212,8 +212,8 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-99900036,2026-02-03T18:35:00.000000Z,2026-02-02T12:25:00.000000Z,"2081 S Orchard St, Urbana",40.0914209,-88.2114995,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-99900034,2026-02-03T18:37:00.000000Z,2026-02-02T18:45:00.000000Z,"55 E Green St, Champaign",40.1100704,-88.2395789,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00001637,2026-02-03T18:44:00.000000Z,2026-02-02T11:59:00.000000Z,"1006 S Third St, Champaign",40.1060181,-88.2349009,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00001604,2026-02-03T01:40:00.000000Z,2026-02-03T01:40:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,Simple Assault X2,Cleared by Arrest
-001775,FI26006515,2026-02-03T02:00:00.000000Z,2026-02-03T02:00:00.000000Z,"211 E GREEN ST, CHAMPAIGN",40.1099746,-88.2356425,SIMPLE ASSAULT,ADMINISTRATIVELY CLOSED
+001775,2026-00001604,2026-02-03T01:40:00.000000Z,2026-02-03T01:40:00.000000Z,"306 E Green St, Champaign",40.1105524,-88.2344518,Simple Assault X2,Cleared By Arrest
+001775,FI26006515,2026-02-03T02:00:00.000000Z,2026-02-03T02:00:00.000000Z,"211 E GREEN ST, CHAMPAIGN",40.1099746,-88.2356425,SIMPLE ASSAULT,Administratively Closed
 001775,2026-00001663,2026-02-04T07:40:00.000000Z,2026-02-02T04:30:00.000000Z,"409 Chalmers St, Champaign",40.1064736,-88.2323801,Criminal Damage to Property,Administratively Closed
 001775,2026-00001663,2026-02-04T07:40:00.000000Z,2026-02-02T04:30:00.000000Z,"409 Chalmers St, Champaign",40.1064736,-88.2323801,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-99900037,2026-02-04T10:11:00.000000Z,2025-12-09T15:15:00.000000Z,"51 E John St, Champaign",40.1085291,-88.2397023,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
@@ -228,44 +228,44 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-00001741,2026-02-05T15:10:00.000000Z,2026-02-05T13:42:00.000000Z,"S Sixth St, Champaign",40.1084644,-88.2303521,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Pending Investigation
 001775,2026-00001741,2026-02-05T15:10:00.000000Z,2026-02-05T13:42:00.000000Z,"S Sixth St, Champaign",40.1084644,-88.2303521,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Pending Investigation
 001775,2026-99900040,2026-02-05T15:21:00.000000Z,2025-12-18T02:00:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00001743,2026-02-05T15:56:00.000000Z,2026-02-05T15:56:00.000000Z,"603 E Green St, Champaign",40.1101875,-88.2301298,Domestic Battery,Cleared by Arrest
-001775,2026-00001743,2026-02-05T15:56:00.000000Z,2026-02-05T15:56:00.000000Z,"603 E Green St, Champaign",40.1101875,-88.2301298,Unlawful Restraint,Cleared by Arrest
+001775,2026-00001743,2026-02-05T15:56:00.000000Z,2026-02-05T15:56:00.000000Z,"603 E Green St, Champaign",40.1101875,-88.2301298,Domestic Battery,Cleared By Arrest
+001775,2026-00001743,2026-02-05T15:56:00.000000Z,2026-02-05T15:56:00.000000Z,"603 E Green St, Champaign",40.1101875,-88.2301298,Unlawful Restraint,Cleared By Arrest
 001775,2026-99900039,2026-02-05T16:03:00.000000Z,2026-02-05T15:00:00.000000Z,"207 Gregory Dr, Champaign",40.1039195,-88.2372435,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Unfounded
-001775,2026-99900041,2026-02-05T23:02:00.000000Z,2026-02-05T17:05:00.000000Z,"201 Peabody Dr, Champaign",40.1005955,-88.2359921,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Cleared by Arrest
+001775,2026-99900041,2026-02-05T23:02:00.000000Z,2026-02-05T17:05:00.000000Z,"201 Peabody Dr, Champaign",40.1005955,-88.2359921,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Cleared By Arrest
 001775,2026-00001731,2026-02-05T09:47:00.000000Z,2026-02-05T09:47:00.000000Z,"601 S First St, Champaign",40.1111747,-88.2389303,Domestic Violence,Administratively Closed
-001775,2026-00001764,2026-02-06T00:00:00.000000Z,2026-02-06T00:00:00.000000Z,"1406 W Green St, Urbana",40.1109106,-88.2282519,Criminal Trespass to State Supported Land,Cleared by Arrest
-001775,2026-00001764,2026-02-06T00:00:00.000000Z,2026-02-06T00:00:00.000000Z,"1406 W Green St, Urbana",40.1109106,-88.2282519,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
+001775,2026-00001764,2026-02-06T00:00:00.000000Z,2026-02-06T00:00:00.000000Z,"1406 W Green St, Urbana",40.1109106,-88.2282519,Criminal Trespass to State Supported Land,Cleared By Arrest
+001775,2026-00001764,2026-02-06T00:00:00.000000Z,2026-02-06T00:00:00.000000Z,"1406 W Green St, Urbana",40.1109106,-88.2282519,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
 001775,2026-00001785,2026-02-06T08:17:00.000000Z,2026-02-05T16:45:00.000000Z,"N Wright St, Urbana",40.1212733,-88.2288268,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Administratively Closed
-001775,FI26006532,2026-02-06T00:19:00.000000Z,2026-02-06T00:19:00.000000Z,"N GOODWIN AV/W PARK ST, URBANA",40.1173949,-88.22406,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
-001775,2026-00001794,2026-02-06T16:01:00.000000Z,2026-02-05T23:00:00.000000Z,"28 E Green St, Champaign",40.1106966,-88.2417068,Burglary - From Motor Vehicle,Cleared by Arrest
-001775,2026-00001794,2026-02-06T16:01:00.000000Z,2026-02-05T23:00:00.000000Z,"28 E Green St, Champaign",40.1106966,-88.2417068,Possession of Drug Paraphernalia,Cleared by Arrest
-001775,2026-00001794,2026-02-06T16:01:00.000000Z,2026-02-05T23:00:00.000000Z,"28 E Green St, Champaign",40.1106966,-88.2417068,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
-001775,2026-00001795,2026-02-06T16:12:00.000000Z,2026-02-06T16:10:00.000000Z,"302 E Green St, Champaign",40.1105121,-88.2351258,Public Indecency,Cleared by Arrest
+001775,FI26006532,2026-02-06T00:19:00.000000Z,2026-02-06T00:19:00.000000Z,"N GOODWIN AV/W PARK ST, URBANA",40.1173949,-88.22406,LIQUOR-UNDERAGE,Administratively Closed
+001775,2026-00001794,2026-02-06T16:01:00.000000Z,2026-02-05T23:00:00.000000Z,"28 E Green St, Champaign",40.1106966,-88.2417068,Burglary - From Motor Vehicle,Cleared By Arrest
+001775,2026-00001794,2026-02-06T16:01:00.000000Z,2026-02-05T23:00:00.000000Z,"28 E Green St, Champaign",40.1106966,-88.2417068,Possession of Drug Paraphernalia,Cleared By Arrest
+001775,2026-00001794,2026-02-06T16:01:00.000000Z,2026-02-05T23:00:00.000000Z,"28 E Green St, Champaign",40.1106966,-88.2417068,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
+001775,2026-00001795,2026-02-06T16:12:00.000000Z,2026-02-06T16:10:00.000000Z,"302 E Green St, Champaign",40.1105121,-88.2351258,Public Indecency,Cleared By Arrest
 001775,2026-00001801,2026-02-06T18:38:00.000000Z,2026-02-06T18:38:00.000000Z,"502 S Lierman Av, Urbana",40.1091316,-88.1865341,UI No Trespass - University Wide - University Ordinance,Administratively Closed
 001775,00485-2026,2026-02-06T08:30:00.000000Z,2026-02-05T00:15:00.000000Z,SDRP - Ikenberry Commons,40.1035008,-88.2347149,Liquor-Underage,Student Discipline Referral
 001775,00499-2026,2026-02-06T08:47:00.000000Z,2025-09-27T23:30:00.000000Z,Off Campus,42.0576656,-87.6757808,Domestic Violence X3,Administratively Closed
 001775,00509-2026,2026-02-06T08:55:00.000000Z,2026-02-05T23:03:00.000000Z,Florida Avenue Residence Hall,40.0991383,-88.2211566,Liquor-Underage,Student Discipline Referral
 001775,00512-2026,2026-02-06T08:58:00.000000Z,2026-02-06T01:00:00.000000Z,Townsend Residence Hall,40.6331249,-89.3985283,Liquor-Underage,Student Discipline Referral
-001775,2026-00001819,2026-02-07T00:11:00.000000Z,2026-02-07T00:00:00.000000Z,"112 E Green St, Champaign",40.1104327,-88.237485,Aggravated DUI - During Period When Driving Privileges Revoked or Suspended as a Result of DUI/Reckless Homicide,Cleared by Arrest
-001775,2026-00001819,2026-02-07T00:11:00.000000Z,2026-02-07T00:00:00.000000Z,"112 E Green St, Champaign",40.1104327,-88.237485,Possession of Drug Paraphernalia,Cleared by Arrest
-001775,2026-00001819,2026-02-07T00:11:00.000000Z,2026-02-07T00:00:00.000000Z,"112 E Green St, Champaign",40.1104327,-88.237485,DUI - Alcohol Concentration in Blood or Breath 0.08 or More,Cleared by Arrest
+001775,2026-00001819,2026-02-07T00:11:00.000000Z,2026-02-07T00:00:00.000000Z,"112 E Green St, Champaign",40.1104327,-88.237485,Aggravated DUI - During Period When Driving Privileges Revoked or Suspended as a Result of DUI/Reckless Homicide,Cleared By Arrest
+001775,2026-00001819,2026-02-07T00:11:00.000000Z,2026-02-07T00:00:00.000000Z,"112 E Green St, Champaign",40.1104327,-88.237485,Possession of Drug Paraphernalia,Cleared By Arrest
+001775,2026-00001819,2026-02-07T00:11:00.000000Z,2026-02-07T00:00:00.000000Z,"112 E Green St, Champaign",40.1104327,-88.237485,DUI - Alcohol Concentration in Blood or Breath 0.08 or More,Cleared By Arrest
 001775,2026-00001831,2026-02-07T02:31:00.000000Z,2026-02-07T02:31:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Fighting - Champaign Ordinance,Administratively Closed
 001775,2026-00001842,2026-02-07T13:40:00.000000Z,2026-02-06T11:00:00.000000Z,"1012 W Illinois St, Urbana",40.1094699,-88.2217312,Residential Burglary,Unfounded
 001775,2026-00001864,2026-02-07T22:27:00.000000Z,2026-02-07T22:27:00.000000Z,"1002 College Ct, Urbana",40.0997174,-88.2209482,Domestic Battery,Administratively Closed
-001775,FI26006538,2026-02-07T22:56:00.000000Z,2026-02-07T22:56:00.000000Z,"308 E GREEN ST, CHAMPAIGN",40.1105109,-88.2342474,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
-001775,FI26006535,2026-02-07T02:18:00.000000Z,2026-02-07T02:18:00.000000Z,"1401 W GREEN ST, URBANA",40.1094131,-88.2271693,LIQUOR-UNDERAGE,STUDENT DISC REFERRAL
+001775,FI26006538,2026-02-07T22:56:00.000000Z,2026-02-07T22:56:00.000000Z,"308 E GREEN ST, CHAMPAIGN",40.1105109,-88.2342474,LIQUOR-UNDERAGE,Administratively Closed
+001775,FI26006535,2026-02-07T02:18:00.000000Z,2026-02-07T02:18:00.000000Z,"1401 W GREEN ST, URBANA",40.1094131,-88.2271693,LIQUOR-UNDERAGE,Student Disc Referral
 001775,2026-00001831,2026-02-07T02:31:00.000000Z,2026-02-07T02:31:00.000000Z,"212 E Green St, Champaign",40.1104106,-88.2356253,Liquor Law Violations,Administratively Closed
 001775,2026-99900043,2026-02-08T06:14:00.000000Z,2026-02-04T18:05:00.000000Z,"1010 W Illinois St, Urbana",40.1101134,-88.2218778,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00001897,2026-02-08T08:52:00.000000Z,2026-02-08T08:42:00.000000Z,"S Sixth St, Champaign",40.1084644,-88.2303521,Theft of Lost or Mislaid Property,Cleared by Arrest
+001775,2026-00001897,2026-02-08T08:52:00.000000Z,2026-02-08T08:42:00.000000Z,"S Sixth St, Champaign",40.1084644,-88.2303521,Theft of Lost or Mislaid Property,Cleared By Arrest
 001775,2026-99900044,2026-02-08T16:04:00.000000Z,2026-02-08T13:55:00.000000Z,"407 E Green St, Champaign",40.1100026,-88.2326644,Criminal Damage to Property,Administratively Closed
 001775,2026-00001913,2026-02-08T18:54:00.000000Z,2026-02-08T02:00:00.000000Z,"1202 S First St, Champaign",40.1034728,-88.2378223,Criminal Sexual Assault - Victim Unable to Understand or give Consent,Pending Investigation
-001775,FI26006541,2026-02-08T01:53:00.000000Z,2026-02-08T01:53:00.000000Z,"906 COLLEGE CT, URBANA",40.0997851,-88.2203591,CRIMINAL TRESPASS,ADMINISTRATIVELY CLOSED
-001775,FI26006542,2026-02-08T02:57:00.000000Z,2026-02-08T02:57:00.000000Z,"E GREEN ST/S WRIGHT ST, CHAMPAIGN",40.1103024,-88.2288748,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
+001775,FI26006541,2026-02-08T01:53:00.000000Z,2026-02-08T01:53:00.000000Z,"906 COLLEGE CT, URBANA",40.0997851,-88.2203591,CRIMINAL TRESPASS,Administratively Closed
+001775,FI26006542,2026-02-08T02:57:00.000000Z,2026-02-08T02:57:00.000000Z,"E GREEN ST/S WRIGHT ST, CHAMPAIGN",40.1103024,-88.2288748,LIQUOR-UNDERAGE,Administratively Closed
 001775,2026-00001935,2026-02-09T11:59:00.000000Z,2026-02-07T21:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Theft of Lost or Mislaid Property,Pending Investigation
 001775,2026-99900045,2026-02-09T18:37:00.000000Z,2026-02-07T10:00:00.000000Z,"301 Gregory Dr, Champaign",40.1037322,-88.2354153,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Pending Investigation
-001775,2026-00001956,2026-02-09T20:47:00.000000Z,2026-01-03T03:17:00.000000Z,"309 E John St, Champaign",40.1088073,-88.2342412,Cyberstalking,Cleared by Arrest
-001775,2026-00001956,2026-02-09T20:47:00.000000Z,2026-01-03T03:17:00.000000Z,"309 E John St, Champaign",40.1088073,-88.2342412,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
-001775,2026-00001956,2026-02-09T20:47:00.000000Z,2026-01-03T03:17:00.000000Z,"309 E John St, Champaign",40.1088073,-88.2342412,Stalking,Cleared by Arrest
+001775,2026-00001956,2026-02-09T20:47:00.000000Z,2026-01-03T03:17:00.000000Z,"309 E John St, Champaign",40.1088073,-88.2342412,Cyberstalking,Cleared By Arrest
+001775,2026-00001956,2026-02-09T20:47:00.000000Z,2026-01-03T03:17:00.000000Z,"309 E John St, Champaign",40.1088073,-88.2342412,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
+001775,2026-00001956,2026-02-09T20:47:00.000000Z,2026-01-03T03:17:00.000000Z,"309 E John St, Champaign",40.1088073,-88.2342412,Stalking,Cleared By Arrest
 001775,2026-99900048,2026-02-10T02:04:00.000000Z,2026-02-07T21:00:00.000000Z,"201 N Goodwin Av, Urbana",40.1138194,-88.2250361,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00001983,2026-02-10T11:13:00.000000Z,2026-02-10T09:43:00.000000Z,"1212 Springfield Av, Urbana",40.1131254,-88.225261,Harassment by Telephone,Administratively Closed
 001775,2026-00001986,2026-02-10T12:13:00.000000Z,2026-02-09T11:47:00.000000Z,"611 S First St, Champaign",40.1105054,-88.2389188,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
@@ -274,7 +274,7 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,00528-2026,2026-02-10T08:36:00.000000Z,2026-02-07T01:57:00.000000Z,Weston Residence Hall,40.7472568,-88.6220046,Liquor-Underage,Student Discipline Referral
 001775,00537-2026,2026-02-10T08:49:00.000000Z,2026-02-07T23:00:00.000000Z,Lincoln Avenue Residence Hall,40.1043281,-88.2199577,Liquor-Underage,Student Discipline Referral
 001775,00550-2026,2026-02-10T08:56:00.000000Z,2026-02-10T01:36:00.000000Z,Bousfield Residence Hall,40.6331249,-89.3985283,Liquor-Underage X4,Student Discipline Referral
-001775,2026-00002044,2026-02-11T10:27:00.000000Z,2026-02-11T08:00:00.000000Z,"1206 S Fourth St, Champaign",40.1035793,-88.232748,Motor Vehicle Theft,Cleared by Arrest
+001775,2026-00002044,2026-02-11T10:27:00.000000Z,2026-02-11T08:00:00.000000Z,"1206 S Fourth St, Champaign",40.1035793,-88.232748,Motor Vehicle Theft,Cleared By Arrest
 001775,2026-99900051,2026-02-11T10:50:00.000000Z,2026-01-23T14:14:00.000000Z,"512 E Green St, Champaign",40.1105766,-88.2314774,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Administratively Closed
 001775,2026-99900050,2026-02-11T16:09:00.000000Z,2026-02-05T13:05:00.000000Z,"54 E John St, Champaign",40.1091948,-88.2395478,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00002066,2026-02-11T19:46:00.000000Z,2026-02-10T00:00:00.000000Z,"UNKNOWN LOCATION,",40.6331249,-89.3985283,Criminal Sexual Assault - Victim Unable to Understand or give Consent,Pending Investigation
@@ -285,10 +285,10 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-99900053,2026-02-12T11:29:00.000000Z,2026-02-12T09:50:00.000000Z,"1900 S Orchard St, Urbana",40.0948239,-88.2128873,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Pending Investigation
 001775,00558-2026,2026-02-12T07:53:00.000000Z,2026-02-10T01:48:00.000000Z,Off Campus,42.0576656,-87.6757808,Liquor-Underage,Administratively Closed
 001775,2026-00002148,2026-02-13T15:14:00.000000Z,2026-02-13T15:13:00.000000Z,"E Springfield Av, Champaign",40.1126489,-88.2362084,Battery,Pending Prosecution
-001775,2026-00002169,2026-02-13T21:34:00.000000Z,2026-02-13T21:34:00.000000Z,"102 E Green St, Champaign",40.1104381,-88.2384162,Mob Action,Cleared by Arrest
-001775,2026-00002169,2026-02-13T21:34:00.000000Z,2026-02-13T21:34:00.000000Z,"102 E Green St, Champaign",40.1104381,-88.2384162,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared by Arrest
-001775,2026-00002217,2026-02-14T15:17:00.000000Z,2026-02-14T15:17:00.000000Z,"E Green St, Champaign",40.1102235,-88.2379271,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared by Arrest
-001775,2026-00002217,2026-02-14T15:17:00.000000Z,2026-02-14T15:17:00.000000Z,"E Green St, Champaign",40.1102235,-88.2379271,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
+001775,2026-00002169,2026-02-13T21:34:00.000000Z,2026-02-13T21:34:00.000000Z,"102 E Green St, Champaign",40.1104381,-88.2384162,Mob Action,Cleared By Arrest
+001775,2026-00002169,2026-02-13T21:34:00.000000Z,2026-02-13T21:34:00.000000Z,"102 E Green St, Champaign",40.1104381,-88.2384162,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared By Arrest
+001775,2026-00002217,2026-02-14T15:17:00.000000Z,2026-02-14T15:17:00.000000Z,"E Green St, Champaign",40.1102235,-88.2379271,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Cleared By Arrest
+001775,2026-00002217,2026-02-14T15:17:00.000000Z,2026-02-14T15:17:00.000000Z,"E Green St, Champaign",40.1102235,-88.2379271,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
 001775,2026-99900054,2026-02-14T15:27:00.000000Z,2026-02-14T12:30:00.000000Z,"303 Chalmers St, Champaign",40.1062589,-88.234779,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00002195,2026-02-14T03:02:00.000000Z,2026-02-14T03:02:00.000000Z,"E Green St/Locust St, Champaign",40.1102127,-88.2402578,Liquor Law Violations,Administratively Closed
 001775,2026-00002246,2026-02-15T02:35:00.000000Z,2026-02-15T00:20:00.000000Z,"1214 S First St, Champaign",40.1018696,-88.237906,Domestic Battery,Administratively Closed
@@ -296,22 +296,22 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,2026-00002250,2026-02-15T07:52:00.000000Z,2026-02-15T07:52:00.000000Z,"1800 S First St, Champaign",40.096253,-88.2359041,UI No Trespass - University Wide - University Ordinance,Administratively Closed
 001775,2026-00002254,2026-02-15T11:42:00.000000Z,2026-02-14T20:00:00.000000Z,"303 Chalmers St, Champaign",40.1062589,-88.234779,Motor Vehicle Theft,Pending Investigation
 001775,U26-03263,2026-02-15T01:54:00.000000Z,2026-02-15T01:54:00.000000Z,"708 S Goodwin Av, Urbana",40.1066524,-88.2233873,Aggravated Assault,Pending Investigation
-001775,FI26006591,2026-02-15T21:13:00.000000Z,2026-02-15T21:13:00.000000Z,"E GREEN ST/S SECOND ST, CHAMPAIGN",40.110231,-88.237045,THEFT,ADMINISTRATIVELY CLOSED
+001775,FI26006591,2026-02-15T21:13:00.000000Z,2026-02-15T21:13:00.000000Z,"E GREEN ST/S SECOND ST, CHAMPAIGN",40.110231,-88.237045,THEFT,Administratively Closed
 001775,2026-00002246,2026-02-15T02:35:00.000000Z,2026-02-15T00:20:00.000000Z,"1214 S First St, Champaign",40.1018696,-88.237906,Fondling,Pending Investigation
 001775,2026-00002282,2026-02-16T11:06:00.000000Z,2026-01-23T00:00:00.000000Z,"1001 College Ct, Urbana",40.0990345,-88.2209464,Criminal Sexual Abuse - Sexual Conduct - Use or Threat of Force,Administratively Closed
-001775,FI26006594,2026-02-16T13:50:00.000000Z,2026-02-16T13:50:00.000000Z,"1005 S LINCOLN, URBANA",40.1041175,-88.2205999,DISORDERLY,ADMINISTRATIVELY CLOSED
+001775,FI26006594,2026-02-16T13:50:00.000000Z,2026-02-16T13:50:00.000000Z,"1005 S LINCOLN, URBANA",40.1041175,-88.2205999,DISORDERLY,Administratively Closed
 001775,2026-00002288,2026-02-16T16:56:00.000000Z,2026-02-10T12:18:00.000000Z,"711 S Fourth St, Champaign",40.1092633,-88.234096,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Pending Investigation
 001775,2026-99900056,2026-02-16T22:05:00.000000Z,2025-12-10T19:00:00.000000Z,"1214 S First St, Champaign",40.1018696,-88.237906,Motor Vehicle Theft,Administratively Closed
 001775,2026-99900059,2026-02-17T10:54:00.000000Z,2026-02-16T09:30:00.000000Z,"1202 S First St, Champaign",40.1034728,-88.2378223,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Pending Investigation
 001775,2026-00002322,2026-02-17T11:15:00.000000Z,2026-02-17T11:00:00.000000Z,"512 S Neil St, Champaign",40.1107061,-88.2429904,Retail Theft - Taking Merchandise from Retail Establishment With Intent to Deprive Merchant Without Paying,Pending Investigation
-001775,2026-00002323,2026-02-17T11:21:00.000000Z,2026-02-17T10:39:00.000000Z,"102 Chalmers St, Champaign",40.1068433,-88.2382469,Residential Burglary,Cleared by Arrest
+001775,2026-00002323,2026-02-17T11:21:00.000000Z,2026-02-17T10:39:00.000000Z,"102 Chalmers St, Champaign",40.1068433,-88.2382469,Residential Burglary,Cleared By Arrest
 001775,2026-00002372,2026-02-17T14:00:00.000000Z,2026-02-17T14:00:00.000000Z,"1214 S First St, Champaign",40.1018696,-88.237906,Motor Vehicle Theft,Pending Investigation
-001775,FI26006609,2026-02-17T14:47:00.000000Z,2026-02-17T14:47:00.000000Z,"505 S FIRST ST, CHAMPAIGN",40.1118896,-88.2389341,THEFT,ADMINISTRATIVELY CLOSED
+001775,FI26006609,2026-02-17T14:47:00.000000Z,2026-02-17T14:47:00.000000Z,"505 S FIRST ST, CHAMPAIGN",40.1118896,-88.2389341,THEFT,Administratively Closed
 001775,2026-99900058,2026-02-17T14:53:00.000000Z,2026-02-14T14:15:00.000000Z,"101 E Daniel St, Champaign",40.1076461,-88.2383979,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00002345,2026-02-17T18:24:00.000000Z,2026-02-17T18:23:00.000000Z,"1110 Springfield Av, Urbana",40.1130035,-88.2234825,Aggravated Robbery,"Cleared by Arrest, Juvenile"
-001775,2026-00002345,2026-02-17T18:24:00.000000Z,2026-02-17T18:23:00.000000Z,"1110 Springfield Av, Urbana",40.1130035,-88.2234825,Threatening Public Officials or Human Service Providers,"Cleared by Arrest, Juvenile"
-001775,2026-00002345,2026-02-17T18:24:00.000000Z,2026-02-17T18:23:00.000000Z,"1110 Springfield Av, Urbana",40.1130035,-88.2234825,Mob Action,"Cleared by Arrest, Juvenile"
-001775,2026-00002345,2026-02-17T18:24:00.000000Z,2026-02-17T18:23:00.000000Z,"1110 Springfield Av, Urbana",40.1130035,-88.2234825,Intimidation,"Cleared by Arrest, Juvenile"
+001775,2026-00002345,2026-02-17T18:24:00.000000Z,2026-02-17T18:23:00.000000Z,"1110 Springfield Av, Urbana",40.1130035,-88.2234825,Aggravated Robbery,"Cleared By Arrest, Juvenile"
+001775,2026-00002345,2026-02-17T18:24:00.000000Z,2026-02-17T18:23:00.000000Z,"1110 Springfield Av, Urbana",40.1130035,-88.2234825,Threatening Public Officials or Human Service Providers,"Cleared By Arrest, Juvenile"
+001775,2026-00002345,2026-02-17T18:24:00.000000Z,2026-02-17T18:23:00.000000Z,"1110 Springfield Av, Urbana",40.1130035,-88.2234825,Mob Action,"Cleared By Arrest, Juvenile"
+001775,2026-00002345,2026-02-17T18:24:00.000000Z,2026-02-17T18:23:00.000000Z,"1110 Springfield Av, Urbana",40.1130035,-88.2234825,Intimidation,"Cleared By Arrest, Juvenile"
 001775,00691-2026,2026-02-17T08:04:00.000000Z,2026-02-13T21:20:00.000000Z,Hopkins Residence Hall,40.6331249,-89.3985283,Liquor-Underage,Student Discipline Referral
 001775,00696-2026,2026-02-17T08:07:00.000000Z,2026-02-14T02:03:00.000000Z,Weston Residence Hall,40.7472568,-88.6220046,Liquor-Underage,Student Discipline Referral
 001775,00698-2026,2026-02-17T08:11:00.000000Z,2026-02-14T02:56:00.000000Z,Weston Residence Hall,40.7472568,-88.6220046,Liquor-Underage,Student Discipline Referral
@@ -319,54 +319,54 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,00718-2026,2026-02-17T08:26:00.000000Z,2026-02-14T23:35:00.000000Z,Carr Residence Hall,40.6331249,-89.3985283,Liquor-Underage,Student Discipline Referral
 001775,00720-2026,2026-02-17T08:28:00.000000Z,2026-02-15T02:25:00.000000Z,Snyder Residence Hall,39.2825,-87.6675,Liquor-Underage,Student Discipline Referral
 001775,00732-2026,2026-02-17T08:55:00.000000Z,2026-01-31T00:00:00.000000Z,Off Campus,42.0576656,-87.6757808,Simple Assault,Administratively Closed
-001775,2026-00002370,2026-02-18T08:42:00.000000Z,2026-02-18T08:24:00.000000Z,"102 Chalmers St, Champaign",40.1068433,-88.2382469,Residential Burglary,Cleared by Arrest
-001775,2026-00002370,2026-02-18T08:42:00.000000Z,2026-02-18T08:24:00.000000Z,"102 Chalmers St, Champaign",40.1068433,-88.2382469,Assault,Cleared by Arrest
-001775,2026-00002370,2026-02-18T08:42:00.000000Z,2026-02-18T08:24:00.000000Z,"102 Chalmers St, Champaign",40.1068433,-88.2382469,UI No Trespass - University Wide - University Ordinance,Cleared by Arrest
+001775,2026-00002370,2026-02-18T08:42:00.000000Z,2026-02-18T08:24:00.000000Z,"102 Chalmers St, Champaign",40.1068433,-88.2382469,Residential Burglary,Cleared By Arrest
+001775,2026-00002370,2026-02-18T08:42:00.000000Z,2026-02-18T08:24:00.000000Z,"102 Chalmers St, Champaign",40.1068433,-88.2382469,Assault,Cleared By Arrest
+001775,2026-00002370,2026-02-18T08:42:00.000000Z,2026-02-18T08:24:00.000000Z,"102 Chalmers St, Champaign",40.1068433,-88.2382469,UI No Trespass - University Wide - University Ordinance,Cleared By Arrest
 001775,2026-99900061,2026-02-18T09:04:00.000000Z,2026-02-18T00:45:00.000000Z,"202 Peabody Dr, Champaign",40.1019657,-88.2366545,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Pending Investigation
 001775,2026-00002372,2026-02-18T10:12:00.000000Z,2026-02-17T14:00:00.000000Z,"1214 S First St, Champaign",40.1018696,-88.237906,Motor Vehicle Theft,Pending Investigation
 001775,2026-00002372,2026-02-18T10:12:00.000000Z,2026-02-17T14:00:00.000000Z,"1214 S First St, Champaign",40.1018696,-88.237906,Criminal Damage to Property,Pending Investigation
 001775,2026-00002378,2026-02-18T11:51:00.000000Z,2026-02-18T10:55:00.000000Z,"505 E Armory Av, Champaign",40.1047515,-88.2319563,Motor Vehicle Theft,Administratively Closed
-001775,2026-00002379,2026-02-18T11:56:00.000000Z,2026-02-18T11:56:00.000000Z,"616 E Green St, Champaign",40.1106254,-88.2296083,Criminal Trespass to Real Property,Cleared by Arrest
-001775,2026-00002401,2026-02-18T15:31:00.000000Z,2026-02-17T21:45:00.000000Z,"500 S Second St, Champaign",40.112465,-88.237061,Criminal Damage to Property,Cleared by Arrest
+001775,2026-00002379,2026-02-18T11:56:00.000000Z,2026-02-18T11:56:00.000000Z,"616 E Green St, Champaign",40.1106254,-88.2296083,Criminal Trespass to Real Property,Cleared By Arrest
+001775,2026-00002401,2026-02-18T15:31:00.000000Z,2026-02-17T21:45:00.000000Z,"500 S Second St, Champaign",40.112465,-88.237061,Criminal Damage to Property,Cleared By Arrest
 001775,2026-00002411,2026-02-18T19:46:00.000000Z,2026-02-17T15:00:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Criminal Defacement of Property,Administratively Closed
-001775,2026-00002432,2026-02-19T00:44:00.000000Z,2026-02-19T00:44:00.000000Z,"E Springfield Av, Champaign",40.1126489,-88.2362084,DUI - Under the Influence of Alcohol,Cleared by Arrest
+001775,2026-00002432,2026-02-19T00:44:00.000000Z,2026-02-19T00:44:00.000000Z,"E Springfield Av, Champaign",40.1126489,-88.2362084,DUI - Under the Influence of Alcohol,Cleared By Arrest
 001775,2026-99900062,2026-02-19T11:36:00.000000Z,2026-02-18T06:50:00.000000Z,"211 E Green St, Champaign",40.1099746,-88.2356425,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00002454,2026-02-19T12:52:00.000000Z,2026-01-19T01:00:00.000000Z,"1110 Stoughton St, Urbana",40.113707,-88.2236387,Residential Burglary,Administratively Closed
 001775,2026-00002474,2026-02-19T19:18:00.000000Z,2026-02-19T19:03:00.000000Z,"1214 S First St, Champaign",40.1018696,-88.237906,Harassment by Telephone,Administratively Closed
 001775,00762-2026,2026-02-19T08:04:00.000000Z,2026-02-17T20:40:00.000000Z,Scott Residence Hall,40.6331249,-89.3985283,Simple Assault X3,Administratively Closed
-001775,FI26006623,2026-02-19T09:49:00.000000Z,2026-02-19T09:49:00.000000Z,"805 S FIFTH ST, CHAMPAIGN",40.1088445,-88.2327444,STALKING/SEXTORTION,ADMINISTRATIVELY CLOSED
-001775,2026-00002497,2026-02-20T00:10:00.000000Z,2026-02-20T00:10:00.000000Z,"211 E Green St, Champaign",40.1099746,-88.2356425,"Aggravated Battery - Peace Officer, Policing Volunteer, Fireman, Security Ofc - Minor/No Injury - No Dangerous Weapon",Cleared by Arrest
+001775,FI26006623,2026-02-19T09:49:00.000000Z,2026-02-19T09:49:00.000000Z,"805 S FIFTH ST, CHAMPAIGN",40.1088445,-88.2327444,STALKING/SEXTORTION,Administratively Closed
+001775,2026-00002497,2026-02-20T00:10:00.000000Z,2026-02-20T00:10:00.000000Z,"211 E Green St, Champaign",40.1099746,-88.2356425,"Aggravated Battery - Peace Officer, Policing Volunteer, Fireman, Security Ofc - Minor/No Injury - No Dangerous Weapon",Cleared By Arrest
 001775,2026-00002527,2026-02-20T13:47:00.000000Z,2026-02-20T03:15:00.000000Z,"303 E John St, Champaign",40.1087232,-88.2350359,Criminal Defacement of Property,Administratively Closed
 001775,2026-99900064,2026-02-20T18:48:00.000000Z,2026-02-20T13:30:00.000000Z,"201 N Goodwin Av, Urbana",40.1138194,-88.2250361,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,2026-00002543,2026-02-20T19:01:00.000000Z,2026-02-20T18:58:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Assault,Cleared by Arrest
-001775,FI26006641,2026-02-21T00:00:00.000000Z,2026-02-21T00:00:00.000000Z,"102 E GREEN ST, CHAMPAIGN",40.1104381,-88.2384162,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
+001775,2026-00002543,2026-02-20T19:01:00.000000Z,2026-02-20T18:58:00.000000Z,"1401 W Green St, Urbana",40.1094131,-88.2271693,Assault,Cleared By Arrest
+001775,FI26006641,2026-02-21T00:00:00.000000Z,2026-02-21T00:00:00.000000Z,"102 E GREEN ST, CHAMPAIGN",40.1104381,-88.2384162,LIQUOR-UNDERAGE,Administratively Closed
 001775,2026-00002583,2026-02-21T14:19:00.000000Z,2026-02-21T14:10:00.000000Z,"805 S Mathews Av, Urbana",40.1057148,-88.2260257,Aggravated Battery - Based on Location - Minor or No Injury - No Dangerous Weapon,Administratively Closed
 001775,2026-00002583,2026-02-21T14:19:00.000000Z,2026-02-21T14:10:00.000000Z,"805 S Mathews Av, Urbana",40.1057148,-88.2260257,Criminal Sexual Abuse - Sexual Conduct - Use or Threat of Force,Administratively Closed
 001775,2026-99900065,2026-02-21T14:55:00.000000Z,2026-01-29T14:35:00.000000Z,"507 S Second St, Champaign",40.1117063,-88.2374267,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00002600,2026-02-21T20:53:00.000000Z,2026-02-20T23:00:00.000000Z,"1010 S Second St, Champaign",40.1056527,-88.2367121,Motor Vehicle Theft,Administratively Closed
-001775,2026-00002604,2026-02-21T22:55:00.000000Z,2026-02-21T22:49:00.000000Z,"102 E Green St, Champaign",40.1104381,-88.2384162,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Cleared by Arrest
-001775,2026-00002616,2026-02-22T01:54:00.000000Z,2026-02-22T01:53:00.000000Z,"805 S Fifth St, Champaign",40.1088445,-88.2327444,"Aggravated Assault - Offense Based on Use of Firearm, Device, Motor Vehicle, or Other Deadly Weapon",Cleared by Arrest
-001775,2026-00002627,2026-02-22T12:55:00.000000Z,2026-02-22T12:45:00.000000Z,"406 E Armory Av, Champaign",40.1058443,-88.2324857,Aggravated Assault - Offense Based ONLY on Location (public way/property/amusement place/sports venue),Cleared by Arrest
-001775,2026-00002616,2026-02-22T01:54:00.000000Z,2026-02-22T01:53:00.000000Z,"805 S Fifth St, Champaign",40.1088445,-88.2327444,Domestic Violence,Cleared by Arrest
+001775,2026-00002604,2026-02-21T22:55:00.000000Z,2026-02-21T22:49:00.000000Z,"102 E Green St, Champaign",40.1104381,-88.2384162,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Cleared By Arrest
+001775,2026-00002616,2026-02-22T01:54:00.000000Z,2026-02-22T01:53:00.000000Z,"805 S Fifth St, Champaign",40.1088445,-88.2327444,"Aggravated Assault - Offense Based on Use of Firearm, Device, Motor Vehicle, or Other Deadly Weapon",Cleared By Arrest
+001775,2026-00002627,2026-02-22T12:55:00.000000Z,2026-02-22T12:45:00.000000Z,"406 E Armory Av, Champaign",40.1058443,-88.2324857,Aggravated Assault - Offense Based ONLY on Location (public way/property/amusement place/sports venue),Cleared By Arrest
+001775,2026-00002616,2026-02-22T01:54:00.000000Z,2026-02-22T01:53:00.000000Z,"805 S Fifth St, Champaign",40.1088445,-88.2327444,Domestic Violence,Cleared By Arrest
 001775,2026-00002649,2026-02-23T08:56:00.000000Z,2026-02-22T22:45:00.000000Z,"1408 Gregory Dr, Urbana",40.1046889,-88.2290382,Criminal Trespass to State Supported Land,Administratively Closed
 001775,2026-99900066,2026-02-23T11:47:00.000000Z,2026-02-20T20:30:00.000000Z,"2044 S Orchard St, Urbana",40.0922216,-88.2108898,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00002658,2026-02-23T13:59:00.000000Z,2026-02-22T20:53:00.000000Z,"706 S Sixth St, Champaign",40.1097451,-88.2300792,Theft of Labor or Services or Use of Property,Administratively Closed
 001775,2026-00002659,2026-02-23T15:43:00.000000Z,2026-02-23T13:00:00.000000Z,"601 S First St, Champaign",40.1111747,-88.2389303,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2026-00002659,2026-02-23T15:43:00.000000Z,2026-02-23T13:00:00.000000Z,"601 S First St, Champaign",40.1111747,-88.2389303,Theft X2,Administratively Closed
-001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Methamphetamine Possession,Cleared by Arrest
-001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Burglary - Building,Cleared by Arrest
-001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Motor Vehicle Theft,Cleared by Arrest
-001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Possession of Drug Paraphernalia,Cleared by Arrest
-001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Motor Vehicle Theft X3,Cleared by Arrest
+001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Methamphetamine Possession,Cleared By Arrest
+001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Burglary - Building,Cleared By Arrest
+001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Motor Vehicle Theft,Cleared By Arrest
+001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Possession of Drug Paraphernalia,Cleared By Arrest
+001775,2026-00002668,2026-02-23T21:09:00.000000Z,2026-02-23T21:09:00.000000Z,"501 E Healey St, Champaign",40.1111263,-88.2318221,Motor Vehicle Theft X3,Cleared By Arrest
 001775,2026-99900070,2026-02-24T11:10:00.000000Z,2026-02-23T16:00:00.000000Z,"507 E Green St, Champaign",40.1099361,-88.231107,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Pending Investigation
 001775,CSA26-012,2026-02-24T11:44:00.000000Z,2026-02-18T21:54:00.000000Z,On Campus Res Hall,40.6331249,-89.3985283,Harassment,Administratively Closed
 001775,2026-00002692,2026-02-24T13:00:00.000000Z,2026-02-08T00:44:00.000000Z,"308 E Daniel St, Champaign",40.1081244,-88.2345607,Disorderly Conduct - Actions Alarm or Disturb Another Provoking Breach of Peace,Pending Investigation
 001775,2026-00002698,2026-02-24T15:02:00.000000Z,2020-02-15T08:00:00.000000Z,"918 W Illinois St, Urbana",40.109867,-88.2213548,Mail and Wire Fraud - Wire Fraud,Pending Investigation
-001775,2026-00002699,2026-02-24T15:47:00.000000Z,2026-02-24T15:47:00.000000Z,"1010 W Illinois St, Urbana",40.1101134,-88.2218778,Criminal Trespass to State Supported Land,Cleared by Arrest
+001775,2026-00002699,2026-02-24T15:47:00.000000Z,2026-02-24T15:47:00.000000Z,"1010 W Illinois St, Urbana",40.1101134,-88.2218778,Criminal Trespass to State Supported Land,Cleared By Arrest
 001775,2026-99900072,2026-02-24T19:28:00.000000Z,2026-02-24T17:50:00.000000Z,"201 Peabody Dr, Champaign",40.1005955,-88.2359921,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,FI26006665,2026-02-24T01:06:00.000000Z,2026-02-24T01:06:00.000000Z,"304 E DANIEL ST, CHAMPAIGN",40.1083031,-88.2348557,LIQUOR-UNDERAGE X2,ADMINISTRATIVELY CLOSED
+001775,FI26006665,2026-02-24T01:06:00.000000Z,2026-02-24T01:06:00.000000Z,"304 E DANIEL ST, CHAMPAIGN",40.1083031,-88.2348557,LIQUOR-UNDERAGE X2,Administratively Closed
 001775,2026-00002730,2026-02-25T04:45:00.000000Z,2026-02-25T04:45:00.000000Z,"1301 Springfield Av, Urbana",40.1124445,-88.2267916,UI No Trespass - University Wide - University Ordinance,Administratively Closed
-001775,FI26006676,2026-02-25T00:56:00.000000Z,2026-02-25T00:56:00.000000Z,"505 E ARMORY AV, CHAMPAIGN",40.1047515,-88.2319563,TRESPASS,ADMINISTRATIVELY CLOSED
+001775,FI26006676,2026-02-25T00:56:00.000000Z,2026-02-25T00:56:00.000000Z,"505 E ARMORY AV, CHAMPAIGN",40.1047515,-88.2319563,TRESPASS,Administratively Closed
 001775,01278-2026,2026-02-25T11:12:00.000000Z,2026-02-24T01:19:00.000000Z,Snyder Residence Hall,39.2825,-87.6675,Liquor-Underage,Student Discipline Referral
 001775,01280-2026,2026-02-25T11:23:00.000000Z,2026-02-24T00:33:00.000000Z,Trelease Residence Hall,40.6331249,-89.3985283,Liquor-Underage,Student Discipline Referral
 001775,2026-99900074,2026-02-25T16:34:00.000000Z,2026-02-23T22:00:00.000000Z,"614 E Daniel St, Champaign",40.1081698,-88.2295916,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Unfounded
@@ -378,12 +378,12 @@ school_code,case_number,report_datetime,occurred_datetime,location,latitude,long
 001775,00832-2026,2026-02-25T09:19:00.000000Z,2026-02-22T04:32:00.000000Z,Oglesby Residence Hall,41.2953126,-89.0595266,Liquor-Underage,Student Discipline Referral
 001775,2026-00002788,2026-02-26T11:15:00.000000Z,2026-02-24T20:39:00.000000Z,"1103 Euclid St, Champaign",40.1048818,-88.2348073,Mail and Wire Fraud - Wire Fraud,Pending Investigation
 001775,2026-99900078,2026-02-26T11:54:00.000000Z,2026-02-25T17:00:00.000000Z,"906 S Goodwin Av, Urbana",40.1048635,-88.2228019,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Over $500,Administratively Closed
-001775,FI26006680,2026-02-26T12:58:00.000000Z,2026-02-26T12:58:00.000000Z,"906 COLLEGE CT, URBANA",40.0997851,-88.2203591,TRESPASS,ADMINISTRATIVELY CLOSED
+001775,FI26006680,2026-02-26T12:58:00.000000Z,2026-02-26T12:58:00.000000Z,"906 COLLEGE CT, URBANA",40.0997851,-88.2203591,TRESPASS,Administratively Closed
 001775,2026-00002796,2026-02-26T14:53:00.000000Z,2026-02-25T13:00:00.000000Z,"102 Gregory Dr, Champaign",40.104253,-88.2381198,Motor Vehicle Theft,Administratively Closed
 001775,2026-00002813,2026-02-26T22:29:00.000000Z,2026-02-26T22:29:00.000000Z,"1010 W Illinois St, Urbana",40.1101134,-88.2218778,Retail Theft - Taking Merchandise from Retail Establishment With Intent to Deprive Merchant Without Paying,Administratively Closed
 001775,2026-00002814,2026-02-26T22:44:00.000000Z,2026-02-12T18:00:00.000000Z,"407 S Goodwin Av, Urbana",40.1092479,-88.2248818,Criminal Damage to Government Supported Property,Administratively Closed
-001775,FI26006681,2026-02-26T23:38:00.000000Z,2026-02-26T23:38:00.000000Z,"211 E GREEN ST, CHAMPAIGN",40.1099746,-88.2356425,LIQUOR-UNDERAGE,ADMINISTRATIVELY CLOSED
+001775,FI26006681,2026-02-26T23:38:00.000000Z,2026-02-26T23:38:00.000000Z,"211 E GREEN ST, CHAMPAIGN",40.1099746,-88.2356425,LIQUOR-UNDERAGE,Administratively Closed
 001775,2026-00002824,2026-02-27T00:19:00.000000Z,2026-02-25T13:00:00.000000Z,"1101 Springfield Av, Urbana",40.1124265,-88.2235401,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
 001775,2025-00020190,2025-12-29T12:35:00.000000Z,2025-12-24T11:56:00.000000Z,"54 Chalmers St, Champaign",40.1069094,-88.2398003,Theft - Obtains/Exerts Unauthorized Control Over Property of the Owner Less Than $500,Administratively Closed
-001775,FI25006332,2025-12-29T20:54:00.000000Z,2025-12-29T20:54:00.000000Z,"306 E GREEN ST, CHAMPAIGN",40.1105524,-88.2344518,THEFT,ADMINISTRATIVELY CLOSED
+001775,FI25006332,2025-12-29T20:54:00.000000Z,2025-12-29T20:54:00.000000Z,"306 E GREEN ST, CHAMPAIGN",40.1105524,-88.2344518,THEFT,Administratively Closed
 001775,2025-00020232,2025-12-30T20:37:00.000000Z,2025-12-30T20:37:00.000000Z,"E Green St/S Fifth St, Champaign",40.110284,-88.232058,Illegal Transport of Alcohol,Administratively Closed
