@@ -1,4 +1,6 @@
 import time
+from pathlib import Path
+
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -52,9 +54,10 @@ def scrape_uiuc_crime_log():
                 
         # 6. Save the target table to a CSV file
         if crime_df is not None:
-            output_filename = 'uiuc_daily_crime_log.csv'
-            crime_df.to_csv(output_filename, index=False)
-            print(f"Success! Saved {len(crime_df)} records to '{output_filename}'.")
+            output_path = Path(__file__).resolve().parent.parent / "crime_logs" / "001775_uiuc.csv"
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            crime_df.to_csv(output_path, index=False)
+            print(f"Success! Saved {len(crime_df)} records to '{output_path}'.")
         else:
             print("Error: Could not find the crime log table on the page.")
             

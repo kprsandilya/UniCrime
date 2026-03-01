@@ -21,7 +21,7 @@ BLOTTER_PAGES = [
     "blotter_ch-feb2026.html",
     "blotter_ch-mar2026.html",
 ]
-OUTPUT_PATH = Path(__file__).resolve().parent / "northwestern_crime_log.csv"
+OUTPUT_PATH = Path(__file__).resolve().parent.parent / "crime_logs" / "001739_northwestern.csv"
 SCHOOL_CODE = "001740"  # Northwestern University IPEDS
 
 FIELDNAMES = [

@@ -19,7 +19,7 @@ from bs4 import BeautifulSoup
 INDEX_URL = "https://www.purdue.edu/ehps/police/statistics-policies/daily-crime-log-archives/index.php"
 ARCHIVES_BASE = "https://www.purdue.edu/ehps/police/statistics-policies/daily-crime-log-archives/"
 SCHOOL_CODE = "001825"  # Purdue University-Main Campus (West Lafayette) IPEDS
-OUTPUT_PATH = Path(__file__).parent / "crime_logs" / f"{SCHOOL_CODE}_purdue.csv"
+OUTPUT_PATH = Path(__file__).resolve().parent.parent / "crime_logs" / f"{SCHOOL_CODE}_purdue.csv"
 REQUEST_DELAY_S = 0.5
 
 FIELDNAMES = [

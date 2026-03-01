@@ -9,7 +9,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from preprocess import (
+from preprocess.shared import (
     CASE_NUMBER,
     DESCRIPTION,
     DISPOSITION,
@@ -116,7 +116,7 @@ def process_uiuc_csv(
 
 
 def main():
-    base = Path(__file__).resolve().parent
+    base = Path(__file__).resolve().parent.parent
     crime_logs_dir = base / "crime_logs"
     if not crime_logs_dir.exists():
         print(f"Crime logs directory not found: {crime_logs_dir}")

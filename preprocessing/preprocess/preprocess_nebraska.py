@@ -1,6 +1,6 @@
 """
-Process Northwestern crime log CSV into the same schema as the other processed data.
-Expects filename to start with school code (e.g. 001739_northwestern.csv).
+Process Nebraska crime log CSV into the same schema as the other processed data.
+Expects filename to start with school code (e.g. 002554_nebraska.csv).
 Output matches: school_code, case_number, report_datetime, occurred_datetime, location,
 latitude, longitude, description, disposition, narrative.
 """
@@ -10,7 +10,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from preprocess import (
+from preprocess.shared import (
     CASE_NUMBER,
     DESCRIPTION,
     DISPOSITION,
@@ -28,40 +28,40 @@ from preprocess import (
     geocode_location,
 )
 
-# Northwestern CSV column names (same structure as UMich/Purdue)
-NW_NUMBER = "Number"
-NW_REPORTED = "Reported_Date_Time"
-NW_OCCURRED = "Occurred_From_Date_Time"
-NW_LOCATION = "Location"
-NW_DESCRIPTION = "Description"
-NW_DISPOSITION = "Disposition"
-NW_NARRATIVE = "Narrative"
-NW_LAT = "latitude"
-NW_LON = "longitude"
+# Nebraska CSV column names (same structure as UMich/Purdue)
+NEBRASKA_NUMBER = "Number"
+NEBRASKA_REPORTED = "Reported_Date_Time"
+NEBRASKA_OCCURRED = "Occurred_From_Date_Time"
+NEBRASKA_LOCATION = "Location"
+NEBRASKA_DESCRIPTION = "Description"
+NEBRASKA_DISPOSITION = "Disposition"
+NEBRASKA_NARRATIVE = "Narrative"
+NEBRASKA_LAT = "latitude"
+NEBRASKA_LON = "longitude"
 
 
 def _school_code_from_filename(path: Path) -> str:
-    """e.g. 001739_northwestern.csv -> 001739"""
+    """e.g. 002554_nebraska.csv -> 002554"""
     stem = path.stem
     match = re.match(r"^(\d+)", stem)
     return match.group(1) if match else stem.split("_")[0] if "_" in stem else stem
 
 
-def _parse_northwestern_datetime(series: pd.Series) -> pd.Series:
-    """Parse Northwestern datetime (e.g. February 01, 2026 at 11:25:24 PM) to UTC."""
-    return pd.to_datetime(series, format="%B %d, %Y at %I:%M:%S %p", utc=True, errors="coerce")
+def _parse_nebraska_datetime(series: pd.Series) -> pd.Series:
+    """Parse Nebraska datetime (e.g. 01/04/2026 00:44) to UTC."""
+    return pd.to_datetime(series, format="%m/%d/%Y %H:%M", utc=True, errors="coerce")
 
 
-def process_northwestern_csv(
+def process_nebraska_csv(
     csv_path: str | Path,
     geocode: bool = True,
     use_geocode_cache_file: bool = True,
 ) -> pd.DataFrame:
     """
-    Load Northwestern crime log CSV and transform to the same schema as the other processed data.
+    Load Nebraska crime log CSV and transform to the same schema as the other processed data.
 
-    - csv_path: path to CSV (e.g. preprocessing/crime_logs/001739_northwestern.csv)
-    - geocode: if True, resolve location to lat/lon via Google Maps (address + "Illinois, USA")
+    - csv_path: path to CSV (e.g. preprocessing/crime_logs/002554_nebraska.csv)
+    - geocode: if True, resolve location to lat/lon via Google Maps (address + "Nebraska, USA")
     - use_geocode_cache_file: if True, use shared geocode_cache.json
 
     Returns DataFrame with: school_code, case_number, report_datetime, occurred_datetime,
@@ -73,13 +73,13 @@ def process_northwestern_csv(
 
     df = pd.read_csv(csv_path)
     df.columns = df.columns.str.strip()
-    required = (NW_NUMBER, NW_OCCURRED, NW_LOCATION)
+    required = (NEBRASKA_NUMBER, NEBRASKA_OCCURRED, NEBRASKA_LOCATION)
     for col in required:
         if col not in df.columns:
             raise ValueError(f"Expected column '{col}' in {csv_path.name}")
 
     # Drop rows where occurred datetime is invalid (required)
-    occurred_parsed = _parse_northwestern_datetime(df[NW_OCCURRED])
+    occurred_parsed = _parse_nebraska_datetime(df[NEBRASKA_OCCURRED])
     valid_mask = occurred_parsed.notna()
     n_dropped = (~valid_mask).sum()
     if n_dropped > 0:
@@ -88,44 +88,34 @@ def process_northwestern_csv(
         print(f"Dropped {n_dropped} row(s) with invalid occurred date-time.")
 
     # Report datetime
-    if NW_REPORTED in df.columns:
-        report_parsed = _parse_northwestern_datetime(df[NW_REPORTED])
+    if NEBRASKA_REPORTED in df.columns:
+        report_parsed = _parse_nebraska_datetime(df[NEBRASKA_REPORTED])
     else:
         report_parsed = pd.Series([pd.NaT] * len(df))
 
     school_code = _school_code_from_filename(csv_path)
 
-    # Location: pandas reads unquoted "NA" as NaN; normalize to "Unknown Location"
-    location_series = (
-        df[NW_LOCATION]
-        .fillna("Unknown Location")
-        .astype(str)
-        .str.strip()
-        .replace(["NA", "nan", "<NA>"], "Unknown Location")
-    )
-    location_series = location_series.replace("", "Unknown Location")
-
     # Use lat/lon from CSV when both present and numeric
-    lat_raw = pd.to_numeric(df[NW_LAT], errors="coerce") if NW_LAT in df.columns else pd.Series([float("nan")] * len(df))
-    lon_raw = pd.to_numeric(df[NW_LON], errors="coerce") if NW_LON in df.columns else pd.Series([float("nan")] * len(df))
+    lat_raw = pd.to_numeric(df[NEBRASKA_LAT], errors="coerce") if NEBRASKA_LAT in df.columns else pd.Series([float("nan")] * len(df))
+    lon_raw = pd.to_numeric(df[NEBRASKA_LON], errors="coerce") if NEBRASKA_LON in df.columns else pd.Series([float("nan")] * len(df))
     has_csv_coords = lat_raw.notna() & lon_raw.notna()
 
     out = pd.DataFrame({
         SCHOOL_CODE: school_code,
-        CASE_NUMBER: df[NW_NUMBER].astype(str),
+        CASE_NUMBER: df[NEBRASKA_NUMBER].astype(str),
         REPORT_DATETIME: report_parsed,
         OCCURRED_DATETIME: occurred_parsed,
-        LOCATION: location_series,
+        LOCATION: df[NEBRASKA_LOCATION].astype(str),
         LATITUDE: lat_raw.where(has_csv_coords),
         LONGITUDE: lon_raw.where(has_csv_coords),
-        DESCRIPTION: df[NW_DESCRIPTION].astype(str).replace("nan", None) if NW_DESCRIPTION in df.columns else None,
-        DISPOSITION: _normalize_disposition(df[NW_DISPOSITION]) if NW_DISPOSITION in df.columns else None,
-        NARRATIVE: df[NW_NARRATIVE].astype(str).replace("nan", None).replace("", None) if NW_NARRATIVE in df.columns else [None] * len(df),
+        DESCRIPTION: df[NEBRASKA_DESCRIPTION].astype(str).replace("nan", None) if NEBRASKA_DESCRIPTION in df.columns else None,
+        DISPOSITION: _normalize_disposition(df[NEBRASKA_DISPOSITION]) if NEBRASKA_DISPOSITION in df.columns else None,
+        NARRATIVE: df[NEBRASKA_NARRATIVE].astype(str).replace("nan", None).replace("", None) if NEBRASKA_NARRATIVE in df.columns else [None] * len(df),
     })
 
     ensure_location_has_city(out, school_code)
 
-    # Geocode rows that have no lat/lon and have a non-empty location
+    # Geocode rows that have no lat/lon
     if geocode:
         cache = _load_geocode_cache() if use_geocode_cache_file else {}
         for idx, row in out.iterrows():
@@ -134,7 +124,7 @@ def process_northwestern_csv(
             loc = row[LOCATION]
             if not str(loc).strip():
                 continue
-            lat, lon = geocode_location(loc, cache=cache, region="Illinois, USA")
+            lat, lon = geocode_location(loc, cache=cache, region="Nebraska, USA")
             out.at[idx, LATITUDE] = lat
             out.at[idx, LONGITUDE] = lon
         if use_geocode_cache_file and cache:
@@ -146,20 +136,20 @@ def process_northwestern_csv(
 
 
 def main():
-    base = Path(__file__).resolve().parent
+    base = Path(__file__).resolve().parent.parent
     crime_logs_dir = base / "crime_logs"
     if not crime_logs_dir.exists():
         print(f"Crime logs directory not found: {crime_logs_dir}")
         return
 
-    csv_path = crime_logs_dir / "001739_northwestern.csv"
+    csv_path = crime_logs_dir / "002554_nebraska.csv"
     if not csv_path.exists():
         print(f"File not found: {csv_path}")
         return
 
-    print(f"Processing {csv_path.name} (geocoding via Google Maps API, Illinois, USA)...")
-    df = process_northwestern_csv(csv_path, geocode=True, use_geocode_cache_file=True)
-    out_path = crime_logs_dir / "001739_northwestern_processed.csv"
+    print(f"Processing {csv_path.name} (geocoding via Google Maps API, Nebraska, USA)...")
+    df = process_nebraska_csv(csv_path, geocode=True, use_geocode_cache_file=True)
+    out_path = crime_logs_dir / "002554_nebraska_processed.csv"
     df.to_csv(out_path, index=False, date_format="%Y-%m-%dT%H:%M:%S.%fZ")
     print(f"Wrote {len(df)} rows to {out_path}")
 

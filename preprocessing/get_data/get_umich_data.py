@@ -1,7 +1,9 @@
-import requests
+import csv
 import datetime
 import time
-import csv
+from pathlib import Path
+
+import requests
 
 BASE_URL = "https://www.dpss.umich.edu/api/GetCrimeLogCache"
 
@@ -9,7 +11,7 @@ BASE_URL = "https://www.dpss.umich.edu/api/GetCrimeLogCache"
 START_DATE = "02/01/2026"
 END_DATE = "02/28/2026"
 SCHOOL_CODE = "002325"
-OUTPUT_FILE = f"./crime_logs/{SCHOOL_CODE}_umich.csv"
+OUTPUT_FILE = Path(__file__).resolve().parent.parent / "crime_logs" / f"{SCHOOL_CODE}_umich.csv"
 
 
 FIELDNAMES = [
@@ -77,12 +79,13 @@ def main():
     print(f"Fetched {len(all_records)} total unique records.")
 
     # Write CSV
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
         writer.writeheader()
         writer.writerows(all_records.values())
 
-    print(f"Saved to {OUTPUT_FILE}")
+    print(f"Saved to {OUTPUT_FILE.resolve()}")
 
 
 if __name__ == "__main__":

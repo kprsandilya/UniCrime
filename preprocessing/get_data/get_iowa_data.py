@@ -6,7 +6,7 @@ import csv
 # CONFIG
 # ----------------------------
 URL = "https://safety.uiowa.edu/crime-log#accordion-item-2146-1"  # The Drupal page URL
-OUTPUT_PATH = Path("crime_log.csv")
+OUTPUT_PATH = Path(__file__).resolve().parent.parent / "crime_logs" / "iowa_crime_log.csv"
 
 ARG_MIN = "2025-12-29"  # start_date
 ARG_MAX = "2026-02-27"  # end_date
@@ -52,6 +52,7 @@ def scrape_crime_table_with_dates():
                 rows.append(cells)
 
         # 5️⃣ Write CSV
+        OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
         with open(OUTPUT_PATH, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerow(headers)

@@ -15,8 +15,8 @@ from bs4 import BeautifulSoup
 # Config
 # ----------------------------
 ARCHIVE_URL = "https://scsapps.unl.edu/policereports/ArchiveFile.aspx"
-OUTPUT_PATH = Path(__file__).resolve().parent / "nebraska_crime_log.csv"
 SCHOOL_CODE = "002565"  # University of Nebraska-Lincoln IPEDS
+OUTPUT_PATH = Path(__file__).resolve().parent.parent / "crime_logs" / f"{SCHOOL_CODE}_nebraska.csv"
 
 FIELDNAMES = [
     "Number",

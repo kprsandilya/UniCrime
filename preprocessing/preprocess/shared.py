@@ -1,7 +1,6 @@
 """
 Shared preprocessing utilities: geocoding (Google Maps API + cache), schema constants,
-and disposition normalization. Use preprocess_uiuc.py or preprocess_umich.py to process
-school-specific CSVs into the common schema.
+and disposition normalization. Used by preprocess_uiuc, preprocess_umich, etc.
 """
 
 import json
@@ -13,8 +12,9 @@ from urllib.request import urlopen
 import pandas as pd
 from dotenv import load_dotenv
 
-# Load .env from the preprocessing directory (where this script lives)
-load_dotenv(Path(__file__).resolve().parent / ".env")
+# Paths relative to preprocessing/ root (parent of this package)
+_PREPROCESSING_ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(_PREPROCESSING_ROOT / ".env")
 
 # Entity columns (match crime-log.entity.ts)
 SCHOOL_CODE = "school_code"
@@ -28,9 +28,9 @@ DESCRIPTION = "description"
 DISPOSITION = "disposition"
 NARRATIVE = "narrative"
 
-# Cache to avoid re-querying same addresses (Google Maps API has usage quotas)
-GEOCODE_CACHE_PATH = Path(__file__).parent / "geocode_cache.json"
-FEDERAL_SCHOOL_CODE_CSV = Path(__file__).parent / "2627FederalSchoolCodeList2ndQuarter.csv"
+# Cache and federal CSV in preprocessing/
+GEOCODE_CACHE_PATH = _PREPROCESSING_ROOT / "geocode_cache.json"
+FEDERAL_SCHOOL_CODE_CSV = _PREPROCESSING_ROOT / "2627FederalSchoolCodeList2ndQuarter.csv"
 
 
 def get_school_city_lookup(csv_path: str | Path | None = None) -> dict[str, str]:
@@ -63,14 +63,13 @@ def ensure_location_has_city(
     city = city_lookup.get(str(school_code).strip())
     if not city:
         return
+    city_str = city.title()
     for idx in out.index:
-        city = city.title()
         loc = out.at[idx, location_column]
         if pd.isna(loc) or not str(loc).strip():
             continue
         if "," not in str(loc):
-            out.at[idx, location_column] = f"{str(loc).strip()}, {city}"
-
+            out.at[idx, location_column] = f"{str(loc).strip()}, {city_str}"
 
 
 def _load_geocode_cache() -> dict[str, tuple[float, float] | None]:
@@ -167,7 +166,7 @@ def _normalize_disposition(series: pd.Series) -> pd.Series:
 def clean_federal_school_code_csv(csv_path: str | Path | None = None) -> None:
     """Remove '/' characters from the 'School Name' column of the federal school code CSV."""
     if csv_path is None:
-        csv_path = Path(__file__).parent / "2627FederalSchoolCodeList2ndQuarter.csv"
+        csv_path = FEDERAL_SCHOOL_CODE_CSV
     df = pd.read_csv(csv_path, encoding="cp1252")
     df["School Name"] = df["School Name"].astype(str).str.replace("/", "", regex=False)
     df.to_csv(csv_path, index=False, encoding="utf-8")
@@ -175,4 +174,4 @@ def clean_federal_school_code_csv(csv_path: str | Path | None = None) -> None:
 
 if __name__ == "__main__":
     clean_federal_school_code_csv()
-    print("Run preprocess_uiuc.py or preprocess_umich.py to process school crime log CSVs.")
+    print("Run preprocess scripts from the preprocess/ folder (e.g. python -m preprocess.preprocess_uiuc).")

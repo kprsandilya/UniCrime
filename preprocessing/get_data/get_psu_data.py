@@ -16,8 +16,8 @@ from bs4 import BeautifulSoup
 # Config
 # ----------------------------
 BASE_URL = "https://www.police.psu.edu/daily-crime-log"
-OUTPUT_PATH = Path(__file__).resolve().parent / "psu_crime_log.csv"
 SCHOOL_CODE = "003329"  # Pennsylvania State University-Main Campus (University Park) IPEDS
+OUTPUT_PATH = Path(__file__).resolve().parent.parent / "crime_logs" / f"{SCHOOL_CODE}_psu.csv"
 REQUEST_DELAY_S = 0.3
 
 FIELDNAMES = [
