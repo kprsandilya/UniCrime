@@ -31,11 +31,14 @@ MODEL_REVISION = "953532f942706930ec4bb870569932ef63038fdf"  # avoid nasty surpr
 hf_cache_vol = modal.Volume.from_name("huggingface-cache", create_if_missing=True)
 vllm_cache_vol = modal.Volume.from_name("vllm-cache", create_if_missing=True)
 
-FAST_BOOT = True
+# Trade-off: True = faster cold start, slower inference (eager mode, no CUDA graphs).
+# False = slower cold start, much faster inference (CUDA graphs + torch.compile).
+# Set to False for better inference speed once the replica is warm.
+FAST_BOOT = False
 
 app = modal.App("example-vllm-inference")
 
-N_GPU = 1
+N_GPU = 8
 MINUTES = 60  # seconds
 VLLM_PORT = 8000
 
@@ -79,6 +82,13 @@ def serve():
 
     # assume multiple GPUs are for splitting up large matrix multiplications
     cmd += ["--tensor-parallel-size", str(N_GPU)]
+
+    # Inference speed tuning (4B FP8 on H100 has plenty of headroom)
+    if not FAST_BOOT:
+        cmd += [
+            "--gpu-memory-utilization", "0.95",   # more KV cache → fewer preemptions
+            "--max-num-batched-tokens", "16384", # higher prefill batch → better throughput
+        ]
 
     print(*cmd)
 

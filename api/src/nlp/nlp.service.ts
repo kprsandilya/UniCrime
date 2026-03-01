@@ -35,7 +35,7 @@ export class NlpService {
   ) {
     this.apiKey = this.configService.get<string>('API_KEY') ?? '';
     this.baseUrl =
-      this.configService.get<string>('BASE_URL') ?? 'https://api.openai.com/v1';
+      this.configService.get<string>('BASE_URL') ?? 'https://api.openai.com';
     const schemaPath = join(process.cwd(), 'src/schema.gql');
     this.schemaSdl = readFileSync(schemaPath, 'utf-8');
   }
@@ -79,7 +79,7 @@ export class NlpService {
             Authorization: `Bearer ${apiKey}`,
           },
           body: JSON.stringify({
-            model: this.configService.get<string>('MODEL') ?? 'gpt-4o-mini',
+            model: this.configService.get<string>('MODEL') ?? 'gpt-4.1-nano',
             messages,
             max_tokens: 4096,
             temperature: 0,

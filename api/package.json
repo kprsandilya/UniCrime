@@ -34,7 +34,8 @@
     "@nestjs/typeorm": "^10.0.2",
     "pg": "^8.13.0",
     "typeorm": "^0.3.20",
-    "@nestjs/config": "^3.2.0"
+    "@nestjs/config": "^3.2.0",
+    "openai": "^4.77.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
