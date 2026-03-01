@@ -17,9 +17,4 @@ export class NlpController {
     }
     return this.nlpService.nlpQuery(query);
   }
-
-  @Post('nlpquery')
-  async nlpquery(@Body() dto: NlpQueryDto): Promise<NlpQueryResult> {
-    return this.nlpQuery(dto);
-  }
 }

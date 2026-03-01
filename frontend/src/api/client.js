@@ -1,7 +1,7 @@
 const API_URL =
 	import.meta.env.VITE_GRAPHQL_URL || "http://localhost:3000/graphql";
 
-/** Base URL for REST endpoints (e.g. /nlpquery) */
+/** Base URL for REST endpoints (e.g. /nlp_query) */
 const API_BASE = API_URL.replace(/\/graphql\/?$/, "") || "http://localhost:3000";
 
 /**
@@ -96,14 +96,14 @@ export async function fetchCrimeLogs({
 }
 
 /**
- * Call POST /nlpquery with a user prompt. The API runs an LLM to generate a GraphQL query,
+ * Call POST /nlp_query with a user prompt. The API runs an LLM to generate a GraphQL query,
  * executes it, and returns { data?, errors?, llmError? }. If data.crimeLogs exists, returns
  * normalized crime log records; otherwise throws.
  * @param {string} prompt - Natural language prompt (e.g. "Show thefts at Purdue last week")
  * @returns {Promise<Array>} Normalized crime log records for table/map
  */
 export async function fetchNlpQuery(prompt) {
-	const res = await fetch(`${API_BASE}/nlpquery`, {
+	const res = await fetch(`${API_BASE}/nlp_query`, {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify({ query: prompt }),
