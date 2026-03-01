@@ -6154,5 +6154,373 @@
   "200 E 15th Ave, Columbus, Ohio, USA": [
     40.0000608,
     -83.0025264
+  ],
+  "HOLDREGE ST & N 33RD ST (STREET), Lincoln, Nebraska, USA": [
+    40.828021,
+    -96.672861
+  ],
+  "2075 N 38th St (GOV'T LOT/FIELD (UNL)), Lincoln, Nebraska, USA": [
+    40.8344572,
+    -96.6638609
+  ],
+  "N 22ND ST & VINE ST (STREET), Lincoln, Nebraska, USA": [
+    40.8208938,
+    -96.6900156
+  ],
+  "N 33RD ST & HWY CORNHUSKER (STREET), Lincoln, Nebraska, USA": [
+    40.8427543,
+    -96.6728053
+  ],
+  "1220 N 14th St (GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.8257725,
+    -96.6998572
+  ],
+  "2222 R Street (MULTI-DWELLING (7 + UNITS) off campus), Lincoln, Nebraska, USA": [
+    40.817153,
+    -96.6890835
+  ],
+  "N 40TH ST & EAST CAMPUS LOOP (UNL OWNED STREETS), Lincoln, Nebraska, USA": [
+    40.8331745,
+    -96.6630398
+  ],
+  "625 Stadium Dr (GOV'T PARKING GARAGE (UNL)), Lincoln, Nebraska, USA": [
+    40.8193739,
+    -96.7073793
+  ],
+  "On-Campus Housing, Lincoln, Nebraska, USA": [
+    40.8136634,
+    -96.7025764
+  ],
+  "On-Campus, Lincoln, Nebraska, USA": [
+    40.8136634,
+    -96.7025764
+  ],
+  "1830 Vine St (GOV'T PARKING GARAGE (UNL)), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "ANTELOPE VALLEY PARKWAY & N ST (STREET), Lincoln, Nebraska, USA": [
+    40.8125088,
+    -96.6938626
+  ],
+  "300 N 17th St (SIDEWALK), Lincoln, Nebraska, USA": [
+    40.8163668,
+    -96.6960007
+  ],
+  "530 N 17th St (GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.818668,
+    -96.6962862
+  ],
+  "451 N 12th St (SIDEWALK), Lincoln, Nebraska, USA": [
+    40.8175598,
+    -96.704464
+  ],
+  "820 N 17th St (UNL RESIDENCE HALL), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "2222 Vine St (UNL APARTMENT), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "1548 Vine St (OFF CAMPUS/GREEK HOUSING), Lincoln, Nebraska, USA": [
+    40.8211085,
+    -96.6985123
+  ],
+  "33RD ST & W ST (STREET), Lincoln, Nebraska, USA": [
+    40.8217546,
+    -96.6729128
+  ],
+  "1120 N 14th St (INTERNET/CYBERSPACE), Lincoln, Nebraska, USA": [
+    40.8246909,
+    -96.7001183
+  ],
+  "N 35TH ST & HOLDREGE ST (UNL OWNED STREETS), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "880 N 17th St (UNL RESIDENCE HALL), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "SALT CREEK RDWY & STADIUM DR (STREET), Lincoln, Nebraska, USA": [
+    40.8201111,
+    -96.7069695
+  ],
+  "1430 Vine St (UNL ACADEMIC BUILDING), Lincoln, Nebraska, USA": [
+    40.8210632,
+    -96.6998208
+  ],
+  "N 16TH ST & Q ST (STREET), Lincoln, Nebraska, USA": [
+    40.815831,
+    -96.698181
+  ],
+  "33RD ST & U ST (STREET), Lincoln, Nebraska, USA": [
+    40.820153,
+    -96.672919
+  ],
+  "1111 N 14th St (GOV'T PARKING GARAGE (UNL)), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "WHITTIER ST & W ST (STREET), Lincoln, Nebraska, USA": [
+    40.8225956,
+    -96.6888328
+  ],
+  "433 N 19th St (GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.8175027,
+    -96.6943432
+  ],
+  "N 16TH ST & S ST (STREET), Lincoln, Nebraska, USA": [
+    40.818039,
+    -96.698169
+  ],
+  "N 14TH ST & R ST (STREET), Lincoln, Nebraska, USA": [
+    40.8169285,
+    -96.701134
+  ],
+  "440 N 17th St (UNL RESIDENCE HALL), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "1880 Transformation Dr (OTHER LOT/FIELD), Lincoln, Nebraska, USA": [
+    40.8328641,
+    -96.6972345
+  ],
+  "880 N 17th St (INTERNET/CYBERSPACE), Lincoln, Nebraska, USA": [
+    40.8222919,
+    -96.6960912
+  ],
+  "1140 N 14th St (INTERNET/CYBERSPACE), Lincoln, Nebraska, USA": [
+    40.8250349,
+    -96.7003783
+  ],
+  "1855 N 35th St (GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.8314082,
+    -96.6700519
+  ],
+  "(GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "1600 Court St (SIDEWALK), Lincoln, Nebraska, USA": [
+    40.8292143,
+    -96.6969712
+  ],
+  "1531 S St (OFF CAMPUS/GREEK HOUSING), Lincoln, Nebraska, USA": [
+    40.8177137,
+    -96.6986896
+  ],
+  "N 39TH ST & CENTER ST (GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "N 16TH ST & R ST (STREET), Lincoln, Nebraska, USA": [
+    40.816929,
+    -96.698174
+  ],
+  "1120 N 14th St (UNL RESIDENCE HALL), Lincoln, Nebraska, USA": [
+    40.8246909,
+    -96.7001183
+  ],
+  "N 46TH ST & HOLDREGE ST (STREET), Lincoln, Nebraska, USA": [
+    40.828026,
+    -96.656145
+  ],
+  "N 33RD ST & HOLDREGE ST (STREET), Lincoln, Nebraska, USA": [
+    40.828021,
+    -96.672861
+  ],
+  "1535 R St (OFF CAMPUS/GREEK HOUSING), Lincoln, Nebraska, USA": [
+    40.8166753,
+    -96.6988815
+  ],
+  "1600 Court St (SPORT FACILITIES), Lincoln, Nebraska, USA": [
+    40.8292143,
+    -96.6969712
+  ],
+  "900 N 16th St (UNL ACADEMIC BUILDING), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "N 23RD ST & VINE ST (STREET), Lincoln, Nebraska, USA": [
+    40.820821,
+    -96.6870269
+  ],
+  "730 N 14th St (UNL ACADEMIC BUILDING), Lincoln, Nebraska, USA": [
+    40.8204361,
+    -96.700181
+  ],
+  "(INTERNET/CYBERSPACE), Lincoln, Nebraska, USA": [
+    40.8674668,
+    -96.7227354
+  ],
+  "625 N 14th St (UNL ACADEMIC BUILDING), Lincoln, Nebraska, USA": [
+    40.8193433,
+    -96.7018503
+  ],
+  "300 N 17th St (INTERNET/CYBERSPACE), Lincoln, Nebraska, USA": [
+    40.8163668,
+    -96.6960007
+  ],
+  "1150 N 14th St (UNL RESIDENCE HALL), Lincoln, Nebraska, USA": [
+    40.8253204,
+    -96.6996443
+  ],
+  "N 10TH ST & T ST (STREET), Lincoln, Nebraska, USA": [
+    40.8191902,
+    -96.7081975
+  ],
+  "1801 R St (GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.8163384,
+    -96.6947288
+  ],
+  "426 N 16th St (OFF CAMPUS/GREEK HOUSING), Lincoln, Nebraska, USA": [
+    40.8176008,
+    -96.6977278
+  ],
+  "ANTELOPE VALLEY PARKWAY & M ST (STREET), Lincoln, Nebraska, USA": [
+    40.8113619,
+    -96.6941264
+  ],
+  "HOLDREGE ST & IDYLWILD DR (SIDEWALK), Lincoln, Nebraska, USA": [
+    40.8280283,
+    -96.6688022
+  ],
+  "601 N 16th St (OFF CAMPUS/GREEK HOUSING), Lincoln, Nebraska, USA": [
+    40.8191832,
+    -96.6985991
+  ],
+  "1700 Vine St (UNL ACADEMIC BUILDING), Lincoln, Nebraska, USA": [
+    40.8211775,
+    -96.6964054
+  ],
+  "1880 Transformation Dr (SPORT FACILITIES), Lincoln, Nebraska, USA": [
+    40.8328641,
+    -96.6972345
+  ],
+  "1150 N 14th St (INTERNET/CYBERSPACE), Lincoln, Nebraska, USA": [
+    40.825318,
+    -96.6996505
+  ],
+  "1433 W St (GOV'T LOT/FIELD (UNL)), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "1801 R St (GOV'T PARKING GARAGE (UNL)), Lincoln, Nebraska, USA": [
+    40.8163384,
+    -96.6947288
+  ],
+  "1505 S St (STREET), Lincoln, Nebraska, USA": [
+    40.8179206,
+    -96.6997973
+  ],
+  "1150 N 14th St (GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.825318,
+    -96.6996505
+  ],
+  "400 Pinnacle Arena Dr (SPORT FACILITIES), Lincoln, Nebraska, USA": [
+    40.8172345,
+    -96.7131396
+  ],
+  "ANTELOPE VALLEY PARKWAY & O ST (STREET), Lincoln, Nebraska, USA": [
+    40.8136049,
+    -96.6941028
+  ],
+  "33RD ST & HOLDREGE ST (STREET), Lincoln, Nebraska, USA": [
+    40.828021,
+    -96.672861
+  ],
+  "1300 R St (LIBRARY), Lincoln, Nebraska, USA": [
+    40.8186576,
+    -96.7024524
+  ],
+  "300 N 17th St (GOV'T PARKING GARAGE (UNL)), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "1055 N 16th St (UNL RESIDENCE HALL), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "1780 R St (UNL RESIDENCE HALL), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "1425 Q St (RESTAURANT), Lincoln, Nebraska, USA": [
+    40.8155497,
+    -96.7002326
+  ],
+  "1130 N 14th St (UNL RESIDENCE HALL), Lincoln, Nebraska, USA": [
+    40.8248477,
+    -96.699277
+  ],
+  "840 N 14th St (UNL ACADEMIC BUILDING), Lincoln, Nebraska, USA": [
+    40.8220005,
+    -96.700793
+  ],
+  "1901 Vine St (UNL ACADEMIC BUILDING), Lincoln, Nebraska, USA": [
+    40.8198855,
+    -96.6932544
+  ],
+  "VINE ST & N 33RD ST (STREET), Lincoln, Nebraska, USA": [
+    40.820699,
+    -96.67292
+  ],
+  "200 Centennial Mall N (UNL ACADEMIC BUILDING), Lincoln, Nebraska, USA": [
+    40.8152146,
+    -96.6992426
+  ],
+  "1710 Arbor Dr (INTERNET/CYBERSPACE), Lincoln, Nebraska, USA": [
+    40.8302188,
+    -96.6660968
+  ],
+  "N 33RD ST & HUNTINGTON AVE (STREET), Lincoln, Nebraska, USA": [
+    40.8372402,
+    -96.672811
+  ],
+  "1248 R St (INTERNET/CYBERSPACE), Lincoln, Nebraska, USA": [
+    40.8178538,
+    -96.7025817
+  ],
+  "433 N 19th St (UNL RESIDENCE HALL), Lincoln, Nebraska, USA": [
+    40.8201966,
+    -96.7004763
+  ],
+  "ANTELOPE VALLEY PARKWAY & MILITARY RD (STREET), Lincoln, Nebraska, USA": [
+    40.8308055,
+    -96.7009833
+  ],
+  "ANTELOPE VALLEY PARKWAY & Q ST (STREET), Lincoln, Nebraska, USA": [
+    40.8158161,
+    -96.6941018
+  ],
+  "N 17TH ST & P ST (STREET), Lincoln, Nebraska, USA": [
+    40.814724,
+    -96.696739
+  ],
+  "ANTELOPE VALLEY PARKWAY & N 17TH ST (STREET), Lincoln, Nebraska, USA": [
+    40.8237179,
+    -96.6960376
+  ],
+  "745 N. 14th ST (GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.8205975,
+    -96.7016309
+  ],
+  "1619 R St (OFF CAMPUS/GREEK HOUSING), Lincoln, Nebraska, USA": [
+    40.8165805,
+    -96.697572
+  ],
+  "451 N 12th St (GOV'T PARKING LOT (UNL)), Lincoln, Nebraska, USA": [
+    40.8175598,
+    -96.704464
+  ],
+  "N 23RD ST & W ST (STREET), Lincoln, Nebraska, USA": [
+    40.822588,
+    -96.687034
+  ],
+  "1111 Salt Creek Rdwy (INTERNET/CYBERSPACE), Lincoln, Nebraska, USA": [
+    40.8676287,
+    -96.6710599
   ]
 }
