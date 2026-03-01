@@ -95,8 +95,15 @@ def process_northwestern_csv(
 
     school_code = _school_code_from_filename(csv_path)
 
-    # Location: treat "NA" and empty as blank
-    location_series = df[NW_LOCATION].astype(str).str.strip().replace("nan", "").replace("NA", "")
+    # Location: pandas reads unquoted "NA" as NaN; normalize to "Unknown Location"
+    location_series = (
+        df[NW_LOCATION]
+        .fillna("Unknown Location")
+        .astype(str)
+        .str.strip()
+        .replace(["NA", "nan", "<NA>"], "Unknown Location")
+    )
+    location_series = location_series.replace("", "Unknown Location")
 
     # Use lat/lon from CSV when both present and numeric
     lat_raw = pd.to_numeric(df[NW_LAT], errors="coerce") if NW_LAT in df.columns else pd.Series([float("nan")] * len(df))

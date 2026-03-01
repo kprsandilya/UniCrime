@@ -3,6 +3,9 @@ from typing import Any
 
 import aiohttp
 import modal
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import StreamingResponse
+from pydantic import BaseModel
 
 vllm_image = (
     modal.Image.from_registry("nvidia/cuda:12.8.0-devel-ubuntu22.04", add_python="3.12")
@@ -12,6 +15,12 @@ vllm_image = (
         "huggingface-hub==0.36.0",
     )
     .env({"HF_XET_HIGH_PERFORMANCE": "1"})  # faster model transfers
+)
+
+# Lightweight image for the chat HTTP endpoint (no GPU).
+chat_endpoint_image = modal.Image.debian_slim(python_version="3.12").pip_install(
+    "fastapi[standard]",
+    "aiohttp",
 )
 
 
@@ -74,6 +83,75 @@ def serve():
     print(*cmd)
 
     subprocess.Popen(" ".join(cmd), shell=True)
+
+
+# --- Chat endpoint: accept a prompt and return the model response ---
+
+class ChatRequest(BaseModel):
+    """POST body for the /chat endpoint."""
+
+    prompt: str
+    stream: bool = False  # if True, stream SSE; if False, return full completion JSON
+
+
+@app.function(
+    image=chat_endpoint_image,
+    timeout=10 * MINUTES,  # allow time for vLLM cold start
+)
+@modal.fastapi_endpoint(label="llm-chat", docs=True)
+def chat_api() -> FastAPI:
+    """Expose an HTTP endpoint that forwards prompts to the deployed vLLM model."""
+
+    api = FastAPI(
+        title="UniCrime LLM Chat",
+        description="Send a prompt to the deployed model. Optionally request a GraphQL query for crime data.",
+    )
+
+    @api.post("/chat")
+    async def chat(request: ChatRequest) -> dict[str, Any]:
+        """Accept a prompt and return the model's completion (or stream)."""
+        vllm_url = await serve.get_web_url.aio()
+        messages = [
+            {"role": "user", "content": request.prompt},
+        ]
+        payload: dict[str, Any] = {
+            "messages": messages,
+            "model": MODEL_NAME,
+            "stream": request.stream,
+        }
+
+        headers = {"Content-Type": "application/json"}
+        if request.stream:
+            headers["Accept"] = "text/event-stream"
+
+        async with aiohttp.ClientSession() as session:
+            async with session.post(
+                f"{vllm_url}/v1/chat/completions",
+                json=payload,
+                headers=headers,
+                timeout=aiohttp.ClientTimeout(total=5 * MINUTES),
+            ) as resp:
+                if resp.status != 200:
+                    text = await resp.text()
+                    raise HTTPException(
+                        status_code=502,
+                        detail=f"vLLM returned {resp.status}: {text[:500]}",
+                    )
+                if request.stream:
+                    # Return streaming response (SSE)
+                    async def stream():
+                        async for line in resp.content:
+                            yield line
+
+                    return StreamingResponse(
+                        stream(),
+                        media_type="text/event-stream",
+                        headers={"Cache-Control": "no-cache"},
+                    )
+                data = await resp.json()
+                return data
+
+    return api
 
 
 @app.local_entrypoint()
