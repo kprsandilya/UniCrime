@@ -61,12 +61,18 @@ function App() {
         className="flex-shrink-0 min-h-0 flex flex-col relative"
         style={{ width: panelWidth }}
       >
-        {activeScreen === "query" && (
+        <div
+          className={`flex flex-col h-full min-h-0 ${activeScreen !== "query" ? "hidden" : ""}`}
+          aria-hidden={activeScreen !== "query"}
+        >
           <QueryScreen records={records} setRecords={setRecords} setSummaryData={setSummaryData} />
-        )}
-        {activeScreen === "chat" && (
+        </div>
+        <div
+          className={`flex flex-col h-full min-h-0 ${activeScreen !== "chat" ? "hidden" : ""}`}
+          aria-hidden={activeScreen !== "chat"}
+        >
           <ChatScreen setRecords={setRecords} setSummaryData={setSummaryData} />
-        )}
+        </div>
         <div
           role="separator"
           aria-label="Resize panel"
