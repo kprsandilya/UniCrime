@@ -2042,5 +2042,585 @@
   "Mt Hope Ave, East Lansing, Michigan, USA": [
     42.7117633,
     -84.4838106
+  ],
+  "Pao Hall, West Lafayette, Indiana, USA": [
+    40.4225322,
+    -86.9129705
+  ],
+  "CoRec, West Lafayette, Indiana, USA": [
+    40.4282417,
+    -86.9223556
+  ],
+  "Phi Gamma Delta, West Lafayette, Indiana, USA": [
+    40.4311348,
+    -86.9187224
+  ],
+  "Earhart Hall, West Lafayette, Indiana, USA": [
+    40.4257267,
+    -86.9248279
+  ],
+  "Aspire Apts, West Lafayette, Indiana, USA": [
+    40.423625,
+    -86.9246719
+  ],
+  "N Grant St/North St, West Lafayette, Indiana, USA": [
+    40.4258194,
+    -86.9103469
+  ],
+  "S River Rd/Bowen Dr, West Lafayette, Indiana, USA": [
+    40.4098422,
+    -86.9151755
+  ],
+  "On-Campus Grounds, West Lafayette, Indiana, USA": [
+    40.4258686,
+    -86.9080655
+  ],
+  "Hillenbrand Hall, West Lafayette, Indiana, USA": [
+    40.4268796,
+    -86.9264344
+  ],
+  "Tarkington Hall, West Lafayette, Indiana, USA": [
+    40.43082,
+    -86.920727
+  ],
+  "Wilmeth Active Learning Center, West Lafayette, Indiana, USA": [
+    40.4273666,
+    -86.9131699
+  ],
+  "Hilltop Apts, West Lafayette, Indiana, USA": [
+    40.4338794,
+    -86.9217225
+  ],
+  "Sheetz St/ Mitch Daniels Blvd, West Lafayette, Indiana, USA": [
+    40.4240179,
+    -86.9122325
+  ],
+  "Owen Hall, West Lafayette, Indiana, USA": [
+    40.4322429,
+    -86.9207113
+  ],
+  "University St Parking Garage, West Lafayette, Indiana, USA": [
+    40.426561,
+    -86.9172861
+  ],
+  "Unknown Campus Parking Garage, West Lafayette, Indiana, USA": [
+    40.4258686,
+    -86.9080655
+  ],
+  "Lilly Building, West Lafayette, Indiana, USA": [
+    40.42406,
+    -86.91716
+  ],
+  "Mackey Arena, West Lafayette, Indiana, USA": [
+    40.4333173,
+    -86.9161119
+  ],
+  "Frieda Parker Hall, West Lafayette, Indiana, USA": [
+    40.428475,
+    -86.919535
+  ],
+  "Wiley Hall, West Lafayette, Indiana, USA": [
+    40.4294753,
+    -86.9207055
+  ],
+  "Hawkins Graduate House, West Lafayette, Indiana, USA": [
+    40.4250669,
+    -86.9187976
+  ],
+  "Purdue West, West Lafayette, Indiana, USA": [
+    40.4249933,
+    -86.9296784
+  ],
+  "Zeta Tau Alpha, West Lafayette, Indiana, USA": [
+    40.425718,
+    -86.917531
+  ],
+  "900 Blk Cary Dr, West Lafayette, Indiana, USA": [
+    40.4258686,
+    -86.9080655
+  ],
+  "Northwestern Ave/ W Stadium Ave, West Lafayette, Indiana, USA": [
+    40.4313682,
+    -86.9139577
+  ],
+  "Purdue Memorial Union, West Lafayette, Indiana, USA": [
+    40.4247235,
+    -86.9105532
+  ],
+  "1st St Towers, West Lafayette, Indiana, USA": [
+    40.4252713,
+    -86.9208884
+  ],
+  "1200 Blk 1st St, West Lafayette, Indiana, USA": [
+    40.4253186,
+    -86.9233665
+  ],
+  "Stewart Center, West Lafayette, Indiana, USA": [
+    40.4250554,
+    -86.9129485
+  ],
+  "100 Blk N Russell St, West Lafayette, Indiana, USA": [
+    40.4252223,
+    -86.9191247
+  ],
+  "200 Blk McCutcheon Dr, West Lafayette, Indiana, USA": [
+    40.4260993,
+    -86.9289531
+  ],
+  "500 Blk Waldron St, West Lafayette, Indiana, USA": [
+    40.4292914,
+    -86.9179599
+  ],
+  "Pi Beta Phi, West Lafayette, Indiana, USA": [
+    40.4245452,
+    -86.9187504
+  ],
+  "Hawkins Hall, West Lafayette, Indiana, USA": [
+    40.4228211,
+    -86.9117542
+  ],
+  "Meredith South, West Lafayette, Indiana, USA": [
+    40.4255452,
+    -86.9233567
+  ],
+  "Harrison Hall, West Lafayette, Indiana, USA": [
+    40.4248226,
+    -86.9266029
+  ],
+  "Meredith Hall, West Lafayette, Indiana, USA": [
+    40.4263027,
+    -86.9232639
+  ],
+  "Kappa Sigma, West Lafayette, Indiana, USA": [
+    40.426031,
+    -86.909115
+  ],
+  "4th St/N University St, West Lafayette, Indiana, USA": [
+    40.4282685,
+    -86.9166632
+  ],
+  "N Martin Jischke Dr/Mitch Daniels Blvd, West Lafayette, Indiana, USA": [
+    40.424254,
+    -86.9217274
+  ],
+  "Cherry Ln/US HWY 231 N, West Lafayette, Indiana, USA": [
+    40.438732,
+    -86.9319647
+  ],
+  "500 Blk Northwestern Ave, West Lafayette, Indiana, USA": [
+    40.4297917,
+    -86.9113612
+  ],
+  "Meredith South Hall, West Lafayette, Indiana, USA": [
+    40.4255452,
+    -86.9233567
+  ],
+  "Honors College North, West Lafayette, Indiana, USA": [
+    40.4271263,
+    -86.9196382
+  ],
+  "US 231/ S River Rd, West Lafayette, Indiana, USA": [
+    40.4080575,
+    -86.9200355
+  ],
+  "McCutcheon Hall, West Lafayette, Indiana, USA": [
+    40.4246695,
+    -86.9280938
+  ],
+  "US 231/ S Martin Jischke Dr, West Lafayette, Indiana, USA": [
+    40.4170187,
+    -86.9244316
+  ],
+  "Northwestern Ave/ Northridge Dr, West Lafayette, Indiana, USA": [
+    40.4368595,
+    -86.9156594
+  ],
+  "US HWY 231 S/S River Rd, West Lafayette, Indiana, USA": [
+    40.4080575,
+    -86.9200355
+  ],
+  "3rd & West, West Lafayette, Indiana, USA": [
+    40.4099275,
+    -86.8945973
+  ],
+  "Shreve Hall, West Lafayette, Indiana, USA": [
+    40.4269878,
+    -86.9246771
+  ],
+  "Russell 414, West Lafayette, Indiana, USA": [
+    40.4289054,
+    -86.9188754
+  ],
+  "3rd & West Apts, West Lafayette, Indiana, USA": [
+    40.4258686,
+    -86.9080655
+  ],
+  "1100 Blk 3rd St, West Lafayette, Indiana, USA": [
+    40.4275236,
+    -86.9195125
+  ],
+  "Krannert Center, West Lafayette, Indiana, USA": [
+    40.4235193,
+    -86.9109128
+  ],
+  "Grant St Garage, West Lafayette, Indiana, USA": [
+    40.4252242,
+    -86.9097224
+  ],
+  "Beering Hall, West Lafayette, Indiana, USA": [
+    40.4255532,
+    -86.9163163
+  ],
+  "500 Blk US HWY 231 S, West Lafayette, Indiana, USA": [
+    39.5197639,
+    -86.7955061
+  ],
+  "Northwestern Ave/Lindberg Rd, West Lafayette, Indiana, USA": [
+    40.446016,
+    -86.9217594
+  ],
+  "900 Blk Mitch Daniels Blvd, West Lafayette, Indiana, USA": [
+    40.4244593,
+    -86.9170137
+  ],
+  "Academy Park, West Lafayette, Indiana, USA": [
+    40.425884,
+    -86.9119301
+  ],
+  "Wade Power Plant, West Lafayette, Indiana, USA": [
+    40.4258686,
+    -86.9080655
+  ],
+  "Acacia House, West Lafayette, Indiana, USA": [
+    40.4250669,
+    -86.9187976
+  ],
+  "Aspire Apts., West Lafayette, Indiana, USA": [
+    40.423625,
+    -86.9246719
+  ],
+  "W Stadium Ave/N Russell St, West Lafayette, Indiana, USA": [
+    40.4314009,
+    -86.9191788
+  ],
+  "3rd and West apts., West Lafayette, Indiana, USA": [
+    40.4264126,
+    -86.9084198
+  ],
+  "Winifred Parker Hall, West Lafayette, Indiana, USA": [
+    40.4278412,
+    -86.9201552
+  ],
+  "800 Blk Beering Dr, West Lafayette, Indiana, USA": [
+    40.4358186,
+    -86.9194816
+  ],
+  "Alpha Kappa Lambda, West Lafayette, Indiana, USA": [
+    40.4286943,
+    -86.9182764
+  ],
+  "400 Blk Waldron St, West Lafayette, Indiana, USA": [
+    40.428288,
+    -86.9179251
+  ],
+  "Harrison St/S Chauncey Ave, West Lafayette, Indiana, USA": [
+    40.4202513,
+    -86.9082897
+  ],
+  "Northwestern Ave/N Grant St, West Lafayette, Indiana, USA": [
+    40.4280332,
+    -86.9103841
+  ],
+  "Biochemistry Building, West Lafayette, Indiana, USA": [
+    40.4227784,
+    -86.9162757
+  ],
+  "Stanley Coulter, West Lafayette, Indiana, USA": [
+    40.4264038,
+    -86.9143489
+  ],
+  "First St Towers, West Lafayette, Indiana, USA": [
+    40.4249186,
+    -86.9245489
+  ],
+  "Young Hall, West Lafayette, Indiana, USA": [
+    40.4227643,
+    -86.9106962
+  ],
+  "US HWY 231 N/Lindberg Rd, West Lafayette, Indiana, USA": [
+    40.4452404,
+    -86.9099741
+  ],
+  "On-Campus Housing, West Lafayette, Indiana, USA": [
+    40.4258686,
+    -86.9080655
+  ],
+  "1300 Blk W Stadium Ave, West Lafayette, Indiana, USA": [
+    40.4319,
+    -86.9261689
+  ],
+  "US HWY 231 N/Cherry Ln, West Lafayette, Indiana, USA": [
+    40.438732,
+    -86.9319647
+  ],
+  "Materials and Electrical Engineering, West Lafayette, Indiana, USA": [
+    40.4293334,
+    -86.9127004
+  ],
+  "Hagle Hall, West Lafayette, Indiana, USA": [
+    40.4271005,
+    -86.9188353
+  ],
+  "Northwestern Ave/ Dodge St, West Lafayette, Indiana, USA": [
+    40.4333014,
+    -86.9152223
+  ],
+  "Cary Quad, West Lafayette, Indiana, USA": [
+    40.4320142,
+    -86.9179111
+  ],
+  "Waldron St/ 5th St, West Lafayette, Indiana, USA": [
+    40.4292819,
+    -86.91796
+  ],
+  "Phi Kappa Psi, West Lafayette, Indiana, USA": [
+    40.4258686,
+    -86.9080655
+  ],
+  "Cary Quadrangle, West Lafayette, Indiana, USA": [
+    40.4320142,
+    -86.9179111
+  ],
+  "Animal Holding Facility, West Lafayette, Indiana, USA": [
+    40.4186083,
+    -86.9141371
+  ],
+  "Mitch Daniels Blvd/S Grant St, West Lafayette, Indiana, USA": [
+    40.4239887,
+    -86.9103412
+  ],
+  "S River Rd/Ahlers Dr, West Lafayette, Indiana, USA": [
+    40.416321,
+    -86.9081474
+  ],
+  "Math Building, West Lafayette, Indiana, USA": [
+    40.4261431,
+    -86.9158915
+  ],
+  "Honors College South, West Lafayette, Indiana, USA": [
+    40.4259944,
+    -86.9194503
+  ],
+  "400 Blk W Wood St, West Lafayette, Indiana, USA": [
+    40.4221251,
+    -86.9103315
+  ],
+  "300 Blk Centennial Mall Dr, West Lafayette, Indiana, USA": [
+    40.4278695,
+    -86.913724
+  ],
+  "Wood St Garage, West Lafayette, Indiana, USA": [
+    40.422813,
+    -86.9100141
+  ],
+  "US HWY 231 S/Airport Rd, West Lafayette, Indiana, USA": [
+    40.4194302,
+    -86.9304916
+  ],
+  "Cary Quad East, West Lafayette, Indiana, USA": [
+    40.4320142,
+    -86.9179111
+  ],
+  "Mitch Daniels Blvd/Marsteller St, West Lafayette, Indiana, USA": [
+    40.4240652,
+    -86.9137555
+  ],
+  "Lilly Hall, West Lafayette, Indiana, USA": [
+    40.42406,
+    -86.91716
+  ],
+  "Provenance Apts, West Lafayette, Indiana, USA": [
+    40.423793,
+    -86.9308034
+  ],
+  "Fuse Apts., West Lafayette, Indiana, USA": [
+    40.4326307,
+    -86.9144615
+  ],
+  "Nelson Hall, West Lafayette, Indiana, USA": [
+    40.4448164,
+    -86.8741349
+  ],
+  "Elliott Hall of Music, West Lafayette, Indiana, USA": [
+    40.4278603,
+    -86.915007
+  ],
+  "US 231/ Cherry Ln, West Lafayette, Indiana, USA": [
+    40.438521,
+    -86.9464586
+  ],
+  "600 Blk S River Rd, West Lafayette, Indiana, USA": [
+    40.4165909,
+    -86.907926
+  ],
+  "Mitch Daniels Blvd/ US 231, West Lafayette, Indiana, USA": [
+    40.4242254,
+    -86.9391861
+  ],
+  "Cherry Ln/ US 231, West Lafayette, Indiana, USA": [
+    40.4359074,
+    -86.9456331
+  ],
+  "Mitch Daniels Blvd/ Marsteller St, West Lafayette, Indiana, USA": [
+    40.4240652,
+    -86.9137555
+  ],
+  "400 Block Mitch Daniels Blvd, West Lafayette, Indiana, USA": [
+    40.4239887,
+    -86.9103412
+  ],
+  "Northwestern Ave/W Stadium Ave, West Lafayette, Indiana, USA": [
+    40.4313682,
+    -86.9139577
+  ],
+  "Material Management and Distribution Center, West Lafayette, Indiana, USA": [
+    40.4258686,
+    -86.9080655
+  ],
+  "Mitch Daniels Blvd/ Martin Jischke Dr, West Lafayette, Indiana, USA": [
+    40.424254,
+    -86.9217274
+  ],
+  "Mitch Daniels Blvd/ Provenance Blvd, West Lafayette, Indiana, USA": [
+    40.4242564,
+    -86.9338123
+  ],
+  "Honors College, West Lafayette, Indiana, USA": [
+    40.4260368,
+    -86.9194183
+  ],
+  "Hilltop, West Lafayette, Indiana, USA": [
+    40.4340396,
+    -86.9224439
+  ],
+  "Lambertus Hall, West Lafayette, Indiana, USA": [
+    40.427197,
+    -86.9114995
+  ],
+  "Niswonger Building, West Lafayette, Indiana, USA": [
+    40.4162784,
+    -86.9293968
+  ],
+  "Glenwood Cooperative, West Lafayette, Indiana, USA": [
+    40.4294613,
+    -86.9170468
+  ],
+  "Purdue Memorial Union Hotel, West Lafayette, Indiana, USA": [
+    40.4249442,
+    -86.9106786
+  ],
+  "PMU, West Lafayette, Indiana, USA": [
+    40.4247239,
+    -86.9105463
+  ],
+  "1000 Mitch Daniels Blvd, West Lafayette, Indiana, USA": [
+    40.4245596,
+    -86.9182629
+  ],
+  "Northwestern Parking Garage, West Lafayette, Indiana, USA": [
+    40.4439701,
+    -86.9200809
+  ],
+  "Beta Upsilon Chi, West Lafayette, Indiana, USA": [
+    40.4319737,
+    -86.9270041
+  ],
+  "1st St/ N Martin Jischke Dr, West Lafayette, Indiana, USA": [
+    40.4286453,
+    -86.9216704
+  ],
+  "Grant St Parking Garage, West Lafayette, Indiana, USA": [
+    40.4252242,
+    -86.9097224
+  ],
+  "Continuum, West Lafayette, Indiana, USA": [
+    40.4231147,
+    -86.9274673
+  ],
+  "TREC, West Lafayette, Indiana, USA": [
+    40.4285,
+    -86.924256
+  ],
+  "414 N Russell St, West Lafayette, Indiana, USA": [
+    40.4289054,
+    -86.9188754
+  ],
+  "300 Blk Waldron St, West Lafayette, Indiana, USA": [
+    40.4272582,
+    -86.917923
+  ],
+  "1300 Blk Beering Dr, West Lafayette, Indiana, USA": [
+    40.437008,
+    -86.9195675
+  ],
+  "1200 Blk 3rd St, West Lafayette, Indiana, USA": [
+    40.427328,
+    -86.9207264
+  ],
+  "Hawkins, West Lafayette, Indiana, USA": [
+    40.4228211,
+    -86.9117542
+  ],
+  "Windsor Halls, West Lafayette, Indiana, USA": [
+    40.4263183,
+    -86.9209749
+  ],
+  "Wood St Parking Garage, West Lafayette, Indiana, USA": [
+    40.4228973,
+    -86.9099464
+  ],
+  "400 Blk N Martin Jischke Dr, West Lafayette, Indiana, USA": [
+    40.4285781,
+    -86.9216708
+  ],
+  "Airport Rd/ Aviation Dr, West Lafayette, Indiana, USA": [
+    40.4167737,
+    -86.9298844
+  ],
+  "Heine Pharmacy Building, West Lafayette, Indiana, USA": [
+    40.4297676,
+    -86.9159009
+  ],
+  "Ross-Ade Stadium, West Lafayette, Indiana, USA": [
+    40.434359,
+    -86.9184385
+  ],
+  "Cherry Ln/Northwestern Ave, West Lafayette, Indiana, USA": [
+    40.4388754,
+    -86.9173049
+  ],
+  "Phi Kappa Sigma, West Lafayette, Indiana, USA": [
+    40.4256273,
+    -86.9030777
+  ],
+  "W Stadum Ave/McCormick Rd, West Lafayette, Indiana, USA": [
+    40.4448461,
+    -86.9436735
+  ],
+  "3rd and West Apts., West Lafayette, Indiana, USA": [
+    40.4264126,
+    -86.9084198
+  ],
+  "Windsor Hall, West Lafayette, Indiana, USA": [
+    40.4263183,
+    -86.9209749
+  ],
+  "Ross Ade Stadium, West Lafayette, Indiana, USA": [
+    40.434359,
+    -86.9184385
+  ],
+  "Ahlers Dr/ S River Rd, West Lafayette, Indiana, USA": [
+    40.416321,
+    -86.9081474
   ]
 }
