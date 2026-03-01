@@ -23,6 +23,11 @@ export class CrimeLogService {
     schoolCode?: string,
     occurredAfter?: Date,
     occurredBefore?: Date,
+    caseNumber?: string,
+    location?: string,
+    description?: string,
+    disposition?: string,
+    narrative?: string,
   ): Promise<CrimeLog[]> {
     const qb = this.crimeLogRepo.createQueryBuilder('crime_log');
     if (schoolCode) {
@@ -36,6 +41,31 @@ export class CrimeLogService {
     if (occurredBefore != null) {
       qb.andWhere('crime_log.occurred_datetime <= :occurredBefore', {
         occurredBefore,
+      });
+    }
+    if (caseNumber != null && caseNumber !== '') {
+      qb.andWhere('crime_log.case_number ILIKE :caseNumber', {
+        caseNumber: `%${caseNumber}%`,
+      });
+    }
+    if (location != null && location !== '') {
+      qb.andWhere('crime_log.location ILIKE :location', {
+        location: `%${location}%`,
+      });
+    }
+    if (description != null && description !== '') {
+      qb.andWhere('crime_log.description ILIKE :description', {
+        description: `%${description}%`,
+      });
+    }
+    if (disposition != null && disposition !== '') {
+      qb.andWhere('crime_log.disposition ILIKE :disposition', {
+        disposition: `%${disposition}%`,
+      });
+    }
+    if (narrative != null && narrative !== '') {
+      qb.andWhere('crime_log.narrative ILIKE :narrative', {
+        narrative: `%${narrative}%`,
       });
     }
     return qb.orderBy('crime_log.report_datetime', 'DESC').getMany();

@@ -2,17 +2,39 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+"""A single crime log entry from campus safety / Clery Act reporting."""
 type CrimeLog {
+  """Unique identifier for the crime log."""
   id: ID!
+
+  """Institution code (e.g. Clery campus ID) the log belongs to."""
   schoolCode: String!
+
+  """Official case or report number from the institution."""
   caseNumber: String!
+
+  """When the incident was reported (ISO 8601)."""
   reportDatetime: DateTime
+
+  """When the incident occurred (ISO 8601)."""
   occurredDatetime: DateTime!
+
+  """Location or address where the incident occurred."""
   location: String!
+
+  """Latitude of the incident location."""
   latitude: Float!
+
+  """Longitude of the incident location."""
   longitude: Float!
+
+  """Short description or category of the incident (e.g. theft, assault)."""
   description: String!
+
+  """Disposition or outcome (e.g. closed, referred, unfounded)."""
   disposition: String!
+
+  """Full narrative or details of the incident."""
   narrative: String
 }
 
@@ -40,6 +62,31 @@ type Query {
 
     """Only include logs where occurredDatetime <= this time (inclusive)"""
     occurredBefore: DateTime
+
+    """
+    Only include logs where caseNumber contains this string (case-insensitive).
+    """
+    caseNumber: String
+
+    """
+    Only include logs where location contains this string (case-insensitive).
+    """
+    location: String
+
+    """
+    Only include logs where description contains this string (case-insensitive).
+    """
+    description: String
+
+    """
+    Only include logs where disposition contains this string (case-insensitive).
+    """
+    disposition: String
+
+    """
+    Only include logs where narrative contains this string (case-insensitive).
+    """
+    narrative: String
   ): [CrimeLog!]!
   crimeLog(id: String!): CrimeLog!
   schools(schoolCode: String, stateCode: String): [School!]!

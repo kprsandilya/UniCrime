@@ -4,8 +4,17 @@ import { GraphQLSchemaHost } from '@nestjs/graphql';
 import { execute, parse, GraphQLError } from 'graphql';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import { SchoolService } from '../school/school.service';
 
-const SYSTEM_PROMPT = `You are a GraphQL query generator. Given a natural language question and the GraphQL schema below, output only a valid GraphQL query that answers the question. Use only the types and fields defined in the schema. Do not use variables; use literal values where needed. Output nothing but the GraphQL query. If the question cannot be answered with this schema or is ambiguous, respond with a single line starting with "ERROR: " followed by a clear explanation.`;
+const SYSTEM_PROMPT = `You are a GraphQL query generator. Your response must contain ONLY one of these two things—nothing else:
+1. A single valid GraphQL query (no explanation, no reasoning, no text before or after), or
+2. A single line starting with "ERROR: " if the question cannot be answered or is ambiguous.
+
+Rules:
+- Use only types and fields from the schema below. Do not use variables; use literal values.
+- Unless the user asks for fewer fields, request all fields of the returned type.
+- Do not output <think> tags, commentary, or any text other than the query or ERROR line.
+- The current date for date calculations is ${new Date().toISOString()}.`;
 
 export interface NlpQueryResult {
   data?: unknown;
@@ -22,6 +31,7 @@ export class NlpService {
   constructor(
     private readonly configService: ConfigService,
     private readonly schemaHost: GraphQLSchemaHost,
+    private readonly schoolService: SchoolService,
   ) {
     this.apiKey = this.configService.get<string>('API_KEY') ?? '';
     this.baseUrl =
@@ -38,10 +48,20 @@ export class NlpService {
       };
     }
 
+    const schools = await this.schoolService.findAll();
+    const schoolList = schools
+      .filter((s) => s.schoolCode != null && s.schoolName != null)
+      .map((s) => ({ schoolCode: s.schoolCode!, schoolName: s.schoolName! }));
+    const schoolsContext =
+      schoolList.length > 0
+        ? `\n\nReference: schools in the database (use schoolCode in queries):\n${JSON.stringify(schoolList, null, 2)}`
+        : '';
+
     const messages = [
       {
         role: 'system' as const,
-        content: SYSTEM_PROMPT + '\n\nSchema:\n' + this.schemaSdl,
+        content:
+          SYSTEM_PROMPT + '\n\nSchema:\n' + this.schemaSdl + schoolsContext,
       },
       { role: 'user' as const, content: query },
     ];
@@ -66,9 +86,11 @@ export class NlpService {
           }),
         },
       );
+      console.log(response);
 
       if (!response.ok) {
         const errText = await response.text();
+        console.log(errText);
         return {
           llmError: `LLM API error (${response.status}): ${errText}`,
         };
@@ -79,16 +101,19 @@ export class NlpService {
         error?: { message?: string };
       };
 
+      console.log(json);
+
       if (json.error?.message) {
         return { llmError: json.error.message };
       }
 
       const content = json.choices?.[0]?.message?.content?.trim();
+      console.log(content);
       if (!content) {
         return { llmError: 'Empty response from LLM' };
       }
 
-      body = content;
+      body = this.stripThinkBlocks(content);
     } catch (e) {
       const message = e instanceof Error ? e.message : String(e);
       return { llmError: `LLM request failed: ${message}` };
@@ -99,6 +124,7 @@ export class NlpService {
     }
 
     const graphqlQuery = this.extractGraphQLQuery(body);
+    console.log(graphqlQuery);
     if (!graphqlQuery) {
       return {
         llmError: 'Could not extract a GraphQL query from the response',
@@ -129,18 +155,45 @@ export class NlpService {
     }
   }
 
+  private stripThinkBlocks(text: string): string {
+    // Remove everything at or before the final </think> (handles stray closing tag + preamble)
+    const closingTag = '</think>';
+    const lastClose = text.toLowerCase().lastIndexOf(closingTag);
+    if (lastClose !== -1) {
+      text = text.slice(lastClose + closingTag.length);
+    }
+    return text
+      .replace(/<think>[\s\S]*?<\/think>/gi, '')
+      .replace(/<think>[\s\S]*/gi, '')
+      .trim();
+  }
+
   private extractGraphQLQuery(text: string): string | null {
     const trimmed = text.trim();
     const codeBlockMatch = trimmed.match(/```(?:graphql)?\s*([\s\S]*?)```/i);
     if (codeBlockMatch) {
-      return codeBlockMatch[1].trim();
+      const inner = codeBlockMatch[1].trim();
+      const fromInner = this.extractGraphQLQueryFromText(inner);
+      return fromInner ?? inner;
     }
-    if (
-      trimmed.startsWith('query ') ||
-      trimmed.startsWith('{') ||
-      /^\s*query\s+\w+/m.test(trimmed)
-    ) {
-      return trimmed;
+    return this.extractGraphQLQueryFromText(trimmed);
+  }
+
+  /** Extracts the first complete GraphQL query (brace-matched) and drops any trailing text. */
+  private extractGraphQLQueryFromText(text: string): string | null {
+    const trimmed = text.trim();
+    const startMatch = trimmed.match(/(\bquery\s+\w*\s*)?\{/);
+    if (!startMatch || startMatch.index === undefined) return null;
+    const start = startMatch.index;
+    const firstBrace = start + startMatch[0].length - 1;
+    let depth = 1;
+    for (let i = firstBrace + 1; i < trimmed.length; i++) {
+      const c = trimmed[i];
+      if (c === '{') depth++;
+      else if (c === '}') {
+        depth--;
+        if (depth === 0) return trimmed.slice(start, i + 1).trim();
+      }
     }
     return null;
   }
