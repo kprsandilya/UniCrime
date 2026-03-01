@@ -46,10 +46,12 @@ export class NlpService {
       { role: 'user' as const, content: query },
     ];
 
+    console.log(messages);
+
     let body: string;
     try {
       const response = await fetch(
-        `${this.baseUrl.replace(/\/$/, '')}/chat/completions`,
+        `${this.baseUrl.replace(/\/$/, '')}/v1/chat/completions`,
         {
           method: 'POST',
           headers: {
