@@ -1,13 +1,12 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { GraphQLModule } from '@nestjs/graphql';
-import { MercuriusDriver, MercuriusDriverConfig } from '@nestjs/mercurius';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { join } from 'path';
 import { CrimeLogModule } from './crime-log/crime-log.module';
 import { CrimeLog } from './crime-log/crime-log.entity';
 import { SchoolModule } from './school/school.module';
 import { School } from './school/school.entity';
+import { NlpModule } from './nlp/nlp.module';
+import { GraphQLSchemaModule } from './graphql-schema.module';
 
 @Module({
   imports: [
@@ -20,13 +19,10 @@ import { School } from './school/school.entity';
       url: process.env.DATABASE_URL,
       entities: [CrimeLog, School],
     }),
-    GraphQLModule.forRoot<MercuriusDriverConfig>({
-      driver: MercuriusDriver,
-      graphiql: true,
-      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
-    }),
+    GraphQLSchemaModule,
     CrimeLogModule,
     SchoolModule,
+    NlpModule,
   ],
 })
 export class AppModule {}
