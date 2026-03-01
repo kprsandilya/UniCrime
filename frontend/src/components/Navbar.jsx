@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Database, MessageSquare } from "lucide-react";
 
 export default function Navbar({ activeScreen, setActiveScreen }) {
+  const [logoError, setLogoError] = useState(false);
   const navItems = [
     { id: "query", label: "Data Query", icon: Database },
     { id: "chat", label: "Chat", icon: MessageSquare },
@@ -8,10 +10,18 @@ export default function Navbar({ activeScreen, setActiveScreen }) {
 
   return (
     <nav className="w-20 flex-shrink-0 bg-white border-r border-neutral-200 h-screen flex flex-col items-center py-6">
-      
-      {/* Logo / Header */}
-      <div className="mb-10 text-neutral-800 font-semibold text-lg">
-        ⚡
+      {/* Logo: add your image as public/logo.svg (or public/logo.png and change src below) */}
+      <div className="mb-10 flex items-center justify-center h-10 w-10">
+        {logoError ? (
+          <span className="text-neutral-800 font-semibold text-2xl" aria-label="UniCrime">⚡</span>
+        ) : (
+          <img
+            src="/logo.svg"
+            alt="UniCrime"
+            className="h-10 w-10 object-contain"
+            onError={() => setLogoError(true)}
+          />
+        )}
       </div>
 
       {/* Navigation */}

@@ -71,3 +71,17 @@ export default defineConfig([
   },
 ])
 ```
+
+## Logo
+
+To use your own logo in the navbar:
+
+1. **Add your image** to the `public` folder:
+   - **SVG:** save as `frontend/public/logo.svg` (recommended for sharp scaling).
+   - **PNG:** save as `frontend/public/logo.png` (or another name).
+
+2. **Update the Navbar** if you use a different path or filename:
+   - Open `frontend/src/components/Navbar.jsx`.
+   - Change the `src` in the logo `<img>` from `"/logo.svg"` to your file, e.g. `"/logo.png"`.
+
+The logo appears in the left navbar only. If the image fails to load, the app shows a fallback (⚡).

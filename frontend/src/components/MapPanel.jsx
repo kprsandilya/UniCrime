@@ -116,8 +116,8 @@ export default function MapPanel({ records, summaryData }) {
       {mounted ? (
         <div key={containerKey} className="w-full h-full">
           <MapContainer
-            center={[40.4406, -79.9959]}
-            zoom={14}
+            center={[39.5, -98.5]}
+            zoom={4}
             className="w-full h-full"
             style={{ minHeight: "100%" }}
           >

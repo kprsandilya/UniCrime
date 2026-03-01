@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 10 120 160">
+  <defs>
+    <style>
+      .fp-line {
+        fill: none;
+        stroke: #7a0016;
+        stroke-width: 8;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <path class="fp-line" d="M40 40v80c0 50 100 50 100 0V40"/>
+  <path class="fp-line" d="M60 55v65c0 25 60 25 60 0V30" stroke-dasharray="80 15 50"/>
+  <path class="fp-line" d="M80 35v85c0 5 20 5 20 0V60" stroke-dasharray="30 15 100"/>
+  <path class="fp-line" d="M40 20v5m100-5v5m-60-5v5"/>
+</svg>
