@@ -79,7 +79,7 @@ export class NlpService {
             Authorization: `Bearer ${apiKey}`,
           },
           body: JSON.stringify({
-            model: this.configService.get<string>('MODEL') ?? 'gpt-4o-mini',
+            model: this.configService.get<string>('MODEL') ?? 'gpt-4.1-nano',
             messages,
             max_tokens: 4096,
             temperature: 0,
