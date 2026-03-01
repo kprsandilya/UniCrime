@@ -1,19 +1,10 @@
-import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
+import { Resolver, Query, Args } from '@nestjs/graphql';
 import { SchoolService } from './school.service';
-import {
-  School,
-  CreateSchoolInput,
-  UpdateSchoolInput,
-} from './school.entity';
+import { School } from './school.entity';
 
 @Resolver(() => School)
 export class SchoolResolver {
   constructor(private readonly schoolService: SchoolService) {}
-
-  @Mutation(() => School)
-  createSchool(@Args('input') input: CreateSchoolInput) {
-    return this.schoolService.create(input);
-  }
 
   @Query(() => [School], { name: 'schools' })
   findAll(
@@ -26,15 +17,5 @@ export class SchoolResolver {
   @Query(() => School, { name: 'school' })
   findOne(@Args('id') id: string) {
     return this.schoolService.findOne(id);
-  }
-
-  @Mutation(() => School)
-  updateSchool(@Args('input') input: UpdateSchoolInput) {
-    return this.schoolService.update(input);
-  }
-
-  @Mutation(() => School)
-  removeSchool(@Args('id') id: string) {
-    return this.schoolService.remove(id);
   }
 }

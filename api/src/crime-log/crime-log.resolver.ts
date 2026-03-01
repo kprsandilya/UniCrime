@@ -1,20 +1,11 @@
-import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
+import { Resolver, Query, Args } from '@nestjs/graphql';
 import { CrimeLogService } from './crime-log.service';
-import {
-  CrimeLog,
-  CreateCrimeLogInput,
-  UpdateCrimeLogInput,
-} from './crime-log.entity';
+import { CrimeLog } from './crime-log.entity';
 import { GraphQLISODateTime } from '@nestjs/graphql';
 
 @Resolver(() => CrimeLog)
 export class CrimeLogResolver {
   constructor(private readonly crimeLogService: CrimeLogService) {}
-
-  @Mutation(() => CrimeLog)
-  createCrimeLog(@Args('input') input: CreateCrimeLogInput) {
-    return this.crimeLogService.create(input);
-  }
 
   @Query(() => [CrimeLog], { name: 'crimeLogs' })
   findAll(
@@ -44,15 +35,5 @@ export class CrimeLogResolver {
   @Query(() => CrimeLog, { name: 'crimeLog' })
   findOne(@Args('id') id: string) {
     return this.crimeLogService.findOne(id);
-  }
-
-  @Mutation(() => CrimeLog)
-  updateCrimeLog(@Args('input') input: UpdateCrimeLogInput) {
-    return this.crimeLogService.update(input);
-  }
-
-  @Mutation(() => CrimeLog)
-  removeCrimeLog(@Args('id') id: string) {
-    return this.crimeLogService.remove(id);
   }
 }
