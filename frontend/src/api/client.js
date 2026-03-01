@@ -39,6 +39,9 @@ const SCHOOLS_QUERY = `
       city
       stateCode
       zipCode
+      primaryColor
+      secondaryColor
+      logo
     }
   }
 `;

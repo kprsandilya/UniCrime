@@ -38,7 +38,7 @@ export default function MapOverlay({ summaryData }) {
     lastUpdated,
   } = summaryData;
 
-  const TOP_N = 15;
+  const TOP_N = 10;
   const dispositionEntries = Object.entries(reportsByDisposition || {})
     .sort((a, b) => b[1] - a[1])
     .slice(0, TOP_N);

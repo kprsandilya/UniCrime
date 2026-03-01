@@ -1,8 +1,9 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { fetchCrimeLogs, fetchSchools } from "../api/client.js";
 import { generateSummary } from "../data/mockData.js";
 
 // Table shows: Description first, then School (name when All), Occurred, Location, Narrative. Number, Reported_Date_Time, Disposition are only in case popup.
+const UIUC_SCHOOL_CODE = "001775"; // University of Illinois Urbana-Champaign (default)
 const DATE_COLUMNS = new Set(["Occurred_From_Date_Time"]);
 const CASE_POPUP_FIELDS = [
   { key: "Number", label: "Case Number" },
@@ -60,7 +61,7 @@ function filterClientSide(data, filters) {
 export default function QueryScreen({ records, setRecords, setSummaryData }) {
   const [occurredAfter, setOccurredAfter] = useState("2026-02-01");
   const [occurredBefore, setOccurredBefore] = useState("2026-02-28");
-  const [selectedSchoolCode, setSelectedSchoolCode] = useState("");
+  const [selectedSchoolCode, setSelectedSchoolCode] = useState(UIUC_SCHOOL_CODE);
   const [schoolOptions, setSchoolOptions] = useState([]);
   const [caseNumber, setCaseNumber] = useState("");
   const [location, setLocation] = useState("");
@@ -73,7 +74,39 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
   const [sortDir, setSortDir] = useState("asc");
   const [popupRow, setPopupRow] = useState(null);
   // School column visibility is based on what was selected when the query was last run
-  const [schoolCodeAtLastQuery, setSchoolCodeAtLastQuery] = useState("");
+  const [schoolCodeAtLastQuery, setSchoolCodeAtLastQuery] = useState(UIUC_SCHOOL_CODE);
+  // Full school info (colors, logo) for popup branding
+  const [schoolByCode, setSchoolByCode] = useState({});
+  const hasInitialQueryRun = useRef(false);
+
+  // Run initial query with UIUC so the map shows default data on load
+  useEffect(() => {
+    if (hasInitialQueryRun.current) return;
+    hasInitialQueryRun.current = true;
+    const after = localStartOfDayToUTC(occurredAfter);
+    const before = localEndOfDayToUTC(occurredBefore);
+    if (!after || !before) return;
+    fetchCrimeLogs({
+      occurredAfter: after,
+      occurredBefore: before,
+      schoolCode: UIUC_SCHOOL_CODE,
+    })
+      .then((data) => {
+        const filtered = filterClientSide(data, {
+          caseNumber: null,
+          location: null,
+          description: null,
+          disposition: null,
+          narrative: null,
+        });
+        setRecords(filtered);
+        setSummaryData(generateSummary(filtered));
+      })
+      .catch(() => {
+        setRecords([]);
+        setSummaryData(generateSummary([]));
+      });
+  }, [occurredAfter, occurredBefore, setRecords, setSummaryData]);
 
   // Table columns: include School only when last query was "All schools"
   const displayColumns = useMemo(() => {
@@ -88,7 +121,7 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
     [schoolOptions]
   );
 
-  // Build dropdown: only schools that appear in crime log data (fetch with current date range)
+  // Build dropdown and schoolByCode: only schools that appear in crime log data (fetch with current date range)
   useEffect(() => {
     let cancelled = false;
     (async () => {
@@ -107,8 +140,22 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
           .map((s) => ({ code: String(s.schoolCode).trim(), name: s.schoolName || s.schoolCode }));
         options.sort((a, b) => (a.name || a.code).localeCompare(b.name || b.code));
         setSchoolOptions(options);
+        const byCode = {};
+        (schools || []).forEach((s) => {
+          if (s.schoolCode) {
+            const code = String(s.schoolCode).trim();
+            byCode[code] = {
+              schoolName: s.schoolName || s.schoolCode,
+              primaryColor: s.primaryColor || "#374151",
+              secondaryColor: s.secondaryColor || null,
+              logo: s.logo || null,
+            };
+          }
+        });
+        setSchoolByCode(byCode);
       } catch (e) {
         if (!cancelled) setSchoolOptions([]);
+        if (!cancelled) setSchoolByCode({});
       }
     })();
     return () => { cancelled = true; };
@@ -284,43 +331,59 @@ export default function QueryScreen({ records, setRecords, setSummaryData }) {
         )}
       </div>
 
-      {popupRow && (
-        <div
-          className="fixed inset-0 z-[1100] flex items-center justify-center bg-black/40 p-4"
-          onClick={() => setPopupRow(null)}
-        >
+      {popupRow && (() => {
+        const code = (popupRow.School_Code || "").trim();
+        const school = code ? schoolByCode[code] : null;
+        const primaryColor = school?.primaryColor || "#374151";
+        const secondaryColor = school?.secondaryColor || null;
+        const schoolName = school?.schoolName || codeToName[code] || code;
+        const logoUrl = school?.logo || null;
+        return (
           <div
-            className="bg-white rounded-xl shadow-xl max-w-lg w-full max-h-[85vh] overflow-auto p-5"
-            onClick={(e) => e.stopPropagation()}
+            className="fixed inset-0 z-[1100] flex items-center justify-center bg-black/40 p-4"
+            onClick={() => setPopupRow(null)}
           >
-            <div className="flex justify-between items-center mb-4">
-              <h3 className="text-sm font-semibold text-neutral-800">Case details</h3>
-              <button
-                type="button"
-                onClick={() => setPopupRow(null)}
-                className="text-neutral-500 hover:text-neutral-700 text-lg leading-none"
+            <div
+              className="bg-white rounded-xl shadow-xl max-w-lg w-full max-h-[85vh] overflow-hidden flex flex-col"
+              onClick={(e) => e.stopPropagation()}
+              style={secondaryColor ? { borderTop: `3px solid ${secondaryColor}` } : undefined}
+            >
+              <div
+                className="flex items-center gap-3 px-5 py-3 pr-12 relative flex-shrink-0"
+                style={{ background: primaryColor, color: "white" }}
               >
-                ×
-              </button>
+                {logoUrl && (
+                  <img src={logoUrl} alt="" className="w-9 h-9 object-contain rounded flex-shrink-0" />
+                )}
+                <span className="font-semibold truncate text-sm">{schoolName || "Case details"}</span>
+                <button
+                  type="button"
+                  onClick={() => setPopupRow(null)}
+                  className="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded text-white/90 hover:text-white hover:bg-white/15 text-xl leading-none transition"
+                  aria-label="Close"
+                >
+                  ×
+                </button>
+              </div>
+              <dl className="space-y-3 text-sm p-5 overflow-auto">
+                {CASE_POPUP_FIELDS.map(({ key, label }) => {
+                  const value = key === "School_Code"
+                    ? (codeToName[popupRow[key]] ? `${codeToName[popupRow[key]]} (${popupRow[key]})` : popupRow[key])
+                    : DATE_COLUMNS.has(key) || key === "Reported_Date_Time"
+                      ? formatDate(popupRow[key])
+                      : popupRow[key];
+                  return (
+                    <div key={key}>
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500 mb-0.5">{label}</dt>
+                      <dd className="text-neutral-800 break-words">{value ?? "—"}</dd>
+                    </div>
+                  );
+                })}
+              </dl>
             </div>
-            <dl className="space-y-3 text-sm">
-              {CASE_POPUP_FIELDS.map(({ key, label }) => {
-                const value = key === "School_Code"
-                  ? (codeToName[popupRow[key]] ? `${codeToName[popupRow[key]]} (${popupRow[key]})` : popupRow[key])
-                  : DATE_COLUMNS.has(key) || key === "Reported_Date_Time"
-                    ? formatDate(popupRow[key])
-                    : popupRow[key];
-                return (
-                  <div key={key}>
-                    <dt className="text-xs uppercase tracking-wide text-neutral-500 mb-0.5">{label}</dt>
-                    <dd className="text-neutral-800 break-words">{value ?? "—"}</dd>
-                  </div>
-                );
-              })}
-            </dl>
           </div>
-        </div>
-      )}
+        );
+      })()}
     </div>
   );
 }

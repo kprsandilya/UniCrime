@@ -51,6 +51,9 @@ type School {
   city: String
   stateCode: String
   zipCode: Int
+  primaryColor: String
+  secondaryColor: String
+  logo: String
 }
 
 type Query {
