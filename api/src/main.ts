@@ -1,4 +1,3 @@
-import type { IncomingMessage, ServerResponse } from 'node:http';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import {
@@ -6,11 +5,29 @@ import {
   NestFastifyApplication,
 } from '@nestjs/platform-fastify';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { apiReference } from '@scalar/nestjs-api-reference';
 import {
   graphqlRequestExamples,
   graphqlResponseExample,
 } from './openapi-examples';
+
+/** Scalar API Reference HTML (CDN-based; avoids ESM-only package in Node/serverless) */
+const SCALAR_HTML = `<!doctype html>
+<html>
+  <head>
+    <title>UniCrime API Reference</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+    <script>
+      Scalar.createApiReference('#app', {
+        url: '/openapi.json',
+      });
+    </script>
+  </body>
+</html>`;
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(
@@ -164,24 +181,18 @@ async function bootstrap() {
     swaggerOptions: { docExpansion: 'list', tryItOutEnabled: true },
   });
 
-  // Scalar API docs at /api-docs-scalar (detailed, serverless-friendly)
+  // Scalar API docs at /api-docs-scalar (CDN-based; no ESM package in Node → avoids ERR_REQUIRE_ESM on serverless)
   const httpAdapter = app.getHttpAdapter();
   const fastify = httpAdapter.getInstance();
-  const scalarHandler = apiReference({
-    url: '/openapi.json',
-    withFastify: true,
-  }) as (req: IncomingMessage, res: ServerResponse) => void;
 
   fastify.get('/openapi.json', (_request, reply) => {
     reply.type('application/json').send(document);
   });
-  fastify.get('/api-docs-scalar', (request, reply) => {
-    scalarHandler(request.raw, reply.raw as ServerResponse);
-    (reply as { sent?: boolean }).sent = true;
+  fastify.get('/api-docs-scalar', (_request, reply) => {
+    reply.type('text/html').send(SCALAR_HTML);
   });
-  fastify.get('/api-docs-scalar/', (request, reply) => {
-    scalarHandler(request.raw, reply.raw as ServerResponse);
-    (reply as { sent?: boolean }).sent = true;
+  fastify.get('/api-docs-scalar/', (_request, reply) => {
+    reply.type('text/html').send(SCALAR_HTML);
   });
 
   await app.listen(3000);
