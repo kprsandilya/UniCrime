@@ -5306,5 +5306,853 @@
   "Hershey - Dispatched To: HMC - Parking Lot - Lot A > HMC - Parking Lot - Lot A, University Park, Pennsylvania, USA": [
     40.8147955,
     -77.8653126
+  ],
+  "OSU East Hospital, Columbus, Ohio, USA": [
+    39.9705785,
+    -82.9625658
+  ],
+  "Northwood-High Building, Columbus, Ohio, USA": [
+    40.0078085,
+    -83.0102037
+  ],
+  "Dreese Laboratories, Columbus, Ohio, USA": [
+    40.0023557,
+    -83.0159597
+  ],
+  "Arps Hall, Columbus, Ohio, USA": [
+    40.0018032,
+    -83.0096037
+  ],
+  "Jones Tower, Columbus, Ohio, USA": [
+    40.0052417,
+    -83.0120328
+  ],
+  "McPherson Chemical Laboratory, Columbus, Ohio, USA": [
+    40.0025136,
+    -83.0123396
+  ],
+  "University Square North (1031), Columbus, Ohio, USA": [
+    40.0006275,
+    -83.0077161
+  ],
+  "Park-Stradley Hall, Columbus, Ohio, USA": [
+    39.9958328,
+    -83.0107037
+  ],
+  "Baker Hall - East, Columbus, Ohio, USA": [
+    39.9965117,
+    -83.0098746
+  ],
+  "Lincoln Tower, Columbus, Ohio, USA": [
+    39.9986486,
+    -83.0221152
+  ],
+  "Morrill Tower, Columbus, Ohio, USA": [
+    40.000208,
+    -83.0219719
+  ],
+  "Park-Stradely Hall, Columbus, Ohio, USA": [
+    39.9958328,
+    -83.0107037
+  ],
+  "Emergency Department - OSU East, Columbus, Ohio, USA": [
+    39.9705785,
+    -82.9625658
+  ],
+  "Optometry Clinic, Columbus, Ohio, USA": [
+    40.0005843,
+    -82.9280405
+  ],
+  "James Cancer Hospital, Columbus, Ohio, USA": [
+    39.9948848,
+    -83.0195209
+  ],
+  "Bowen House, Columbus, Ohio, USA": [
+    40.0053383,
+    -83.0094179
+  ],
+  "Wexner Center for the Arts, Columbus, Ohio, USA": [
+    40.0002119,
+    -83.0093697
+  ],
+  "Baker Hall West, Columbus, Ohio, USA": [
+    39.9965117,
+    -83.0098746
+  ],
+  "Jesse Owens Recreation Center South, Columbus, Ohio, USA": [
+    39.9946174,
+    -83.0103601
+  ],
+  "UNKNOWN CAMPUS LOCATION, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Smashburger, Columbus, Ohio, USA": [
+    39.9998094,
+    -83.0078336
+  ],
+  "Emergency Department - OSU Main, Columbus, Ohio, USA": [
+    40.0060889,
+    -83.0282624
+  ],
+  "Ohio State University Hospital, Columbus, Ohio, USA": [
+    39.9952162,
+    -83.0179869
+  ],
+  "Wexner Medical Center, Columbus, Ohio, USA": [
+    39.9952162,
+    -83.0179869
+  ],
+  "Pressey Hall, Columbus, Ohio, USA": [
+    40.0039766,
+    -83.0379837
+  ],
+  "Houston House, Columbus, Ohio, USA": [
+    40.0058023,
+    -83.0116918
+  ],
+  "Smith-Steeb Hall, Columbus, Ohio, USA": [
+    39.9957847,
+    -83.0092508
+  ],
+  "Hale Hall, Columbus, Ohio, USA": [
+    39.9969858,
+    -83.0117566
+  ],
+  "Ohio Union, Columbus, Ohio, USA": [
+    39.9978745,
+    -83.0086663
+  ],
+  "Schottenstein Center, Columbus, Ohio, USA": [
+    40.0075992,
+    -83.0248064
+  ],
+  "Raising Cane's Chicken Fingers, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Neil Ave, Columbus, Ohio, USA": [
+    39.9959158,
+    -83.0147689
+  ],
+  "Blackburn House, Columbus, Ohio, USA": [
+    40.0041155,
+    -83.0125709
+  ],
+  "Statehouse Norwich, Columbus, Ohio, USA": [
+    40.007709,
+    -83.0163099
+  ],
+  "Catfish Biff's (CLOSED), Columbus, Ohio, USA": [
+    39.9951723,
+    -83.0093992
+  ],
+  "Jameson Crane Sports Medicine Institute, Columbus, Ohio, USA": [
+    40.0178079,
+    -83.0316312
+  ],
+  "Baker Hall - West, Columbus, Ohio, USA": [
+    39.9965117,
+    -83.0098746
+  ],
+  "OSU Campus, Columbus, Ohio, USA": [
+    40.0071823,
+    -83.0092488
+  ],
+  "Barnes & Noble @ OSU, Columbus, Ohio, USA": [
+    39.9993865,
+    -83.0227103
+  ],
+  "Wiseman Hall, Columbus, Ohio, USA": [
+    39.9963923,
+    -83.018002
+  ],
+  "Blankenship Hall (0360), Columbus, Ohio, USA": [
+    40.0023626,
+    -83.0337041
+  ],
+  "Doan Hall, Columbus, Ohio, USA": [
+    39.9954113,
+    -83.0171652
+  ],
+  "Journalism Building, Columbus, Ohio, USA": [
+    40.0018214,
+    -83.0151585
+  ],
+  "Raney House, Columbus, Ohio, USA": [
+    40.0054748,
+    -83.0100293
+  ],
+  "Doan Hospital, Columbus, Ohio, USA": [
+    39.9954113,
+    -83.0171652
+  ],
+  "Main Oval, Columbus, Ohio, USA": [
+    39.8979661,
+    -83.0869406
+  ],
+  "Doan Hall (0089), Columbus, Ohio, USA": [
+    39.9954113,
+    -83.0171652
+  ],
+  "Wexner Center for the Arts - 1871 N. High St., Columbus, Ohio, USA": [
+    40.0002119,
+    -83.0093697
+  ],
+  "Coffey Road Recreation Complex, Columbus, Ohio, USA": [
+    40.0025549,
+    -83.0260565
+  ],
+  "Auntie Annes and Cinnabon, Columbus, Ohio, USA": [
+    40.1456242,
+    -82.9820576
+  ],
+  "Adventure Recreation Center, Columbus, Ohio, USA": [
+    40.0027253,
+    -83.0318248
+  ],
+  "Sloopy's Diner, Columbus, Ohio, USA": [
+    39.9973862,
+    -83.0091682
+  ],
+  "Jimmy John's, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "High St. at W. 12th Ave., Columbus, Ohio, USA": [
+    39.996832,
+    -83.0074437
+  ],
+  "Cunz Hall, Columbus, Ohio, USA": [
+    39.9986647,
+    -83.0170363
+  ],
+  "Stadium Lot West, Columbus, Ohio, USA": [
+    40.0220167,
+    -83.0274672
+  ],
+  "Dave's Hot Chicken, Columbus, Ohio, USA": [
+    39.9996029,
+    -83.0078067
+  ],
+  "East Hospital Tower, Columbus, Ohio, USA": [
+    39.9532936,
+    -82.979268
+  ],
+  "Gamma Phi Beta, Columbus, Ohio, USA": [
+    39.9985491,
+    -83.0064947
+  ],
+  "SafeAuto Parking Garage, Columbus, Ohio, USA": [
+    39.964305,
+    -83.0020405
+  ],
+  "N Oval Mall, Columbus, Ohio, USA": [
+    40.0001006,
+    -83.0145691
+  ],
+  "Drackett Tower, Columbus, Ohio, USA": [
+    40.0055299,
+    -83.0135225
+  ],
+  "Pomerene Hall, Columbus, Ohio, USA": [
+    39.9973485,
+    -83.0144735
+  ],
+  "Curl Market, Columbus, Ohio, USA": [
+    40.0042987,
+    -83.0109461
+  ],
+  "Siebert Hall, Columbus, Ohio, USA": [
+    39.9956761,
+    -83.012324
+  ],
+  "McCracken Power Plant, Columbus, Ohio, USA": [
+    40.0017666,
+    -83.016856
+  ],
+  "University Square South, Columbus, Ohio, USA": [
+    39.9997677,
+    -83.0075589
+  ],
+  "Ohio Union (0161), Columbus, Ohio, USA": [
+    39.9978745,
+    -83.0086663
+  ],
+  "Vet House Parking Lot, Columbus, Ohio, USA": [
+    39.9997735,
+    -83.0268431
+  ],
+  "OSU Wexner Medical Center- Dock Area, Columbus, Ohio, USA": [
+    39.9952162,
+    -83.0179869
+  ],
+  "Smith Laboratory, Columbus, Ohio, USA": [
+    40.0021591,
+    -83.0132831
+  ],
+  "N High St / Woodruff Ave, Columbus, Ohio, USA": [
+    40.0041013,
+    -83.0088687
+  ],
+  "BistrOH!, Columbus, Ohio, USA": [
+    39.995106,
+    -83.0185557
+  ],
+  "Cockins Hall, Columbus, Ohio, USA": [
+    40.0012742,
+    -83.0150181
+  ],
+  "Unknown location, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Harding Hospital, Columbus, Ohio, USA": [
+    39.9957344,
+    -83.0200081
+  ],
+  "RPAC Recreation and Physical Activity Center (0246), Columbus, Ohio, USA": [
+    39.9996195,
+    -83.0181668
+  ],
+  "Davis baseball stadium, Columbus, Ohio, USA": [
+    40.0220167,
+    -83.0274672
+  ],
+  "Torres House, Columbus, Ohio, USA": [
+    40.0059486,
+    -83.0136525
+  ],
+  "Blankenship Hall, Columbus, Ohio, USA": [
+    40.0023626,
+    -83.0337041
+  ],
+  "Canfield Hall, Columbus, Ohio, USA": [
+    39.9957738,
+    -83.0136388
+  ],
+  "University Hall, Columbus, Ohio, USA": [
+    40.0005227,
+    -83.0144319
+  ],
+  "RPAC, Columbus, Ohio, USA": [
+    39.9996195,
+    -83.0181668
+  ],
+  "Fontana Laboratories, Columbus, Ohio, USA": [
+    40.0032974,
+    -83.0121638
+  ],
+  "OSU Wexner Medical Center, Columbus, Ohio, USA": [
+    39.9952162,
+    -83.0179869
+  ],
+  "Emergency Department OSU Main, Columbus, Ohio, USA": [
+    40.0060889,
+    -83.0282624
+  ],
+  "Rhodes Hall, Columbus, Ohio, USA": [
+    39.9688591,
+    -82.9869479
+  ],
+  "Martha Morehouse Medical Plaza - Pavilion, Columbus, Ohio, USA": [
+    40.0012911,
+    -83.0328356
+  ],
+  "Drinko Hall, Columbus, Ohio, USA": [
+    39.9961107,
+    -83.0081752
+  ],
+  "Brain And Spine Hospital, Columbus, Ohio, USA": [
+    39.9955856,
+    -83.0165832
+  ],
+  "Brain & Spine Hospital, Columbus, Ohio, USA": [
+    39.9532936,
+    -82.979268
+  ],
+  "Postle Hall, Columbus, Ohio, USA": [
+    39.9960543,
+    -83.0164153
+  ],
+  "OSU Medical Center - Talbot Hall, Columbus, Ohio, USA": [
+    39.9954221,
+    -83.0178423
+  ],
+  "Neil Building Bike Rack, Columbus, Ohio, USA": [
+    39.9940949,
+    -83.0138778
+  ],
+  "UNKNOWN RESIDENCE HALL, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "18th Avenue Library Bike Rack, Columbus, Ohio, USA": [
+    40.0016229,
+    -83.0133167
+  ],
+  "12th Avenue Garage, Columbus, Ohio, USA": [
+    39.9966642,
+    -83.0173827
+  ],
+  "Student Academic Services, Columbus, Ohio, USA": [
+    40.0060908,
+    -83.0164369
+  ],
+  "W 10th Ave / Neil Ave, Columbus, Ohio, USA": [
+    39.9943934,
+    -83.0144663
+  ],
+  "Mason Hall, Columbus, Ohio, USA": [
+    40.0044715,
+    -83.015523
+  ],
+  "Ohio Stadium, Columbus, Ohio, USA": [
+    40.0023549,
+    -83.0196832
+  ],
+  "John Herrick Bridge, Columbus, Ohio, USA": [
+    39.9977978,
+    -83.0230914
+  ],
+  "Scott House, Columbus, Ohio, USA": [
+    40.004556,
+    -83.0132844
+  ],
+  "Panera Bread (Lane & Cohen), Columbus, Ohio, USA": [
+    40.0066305,
+    -83.0181186
+  ],
+  "UNKNOWN CAMPUS, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Norton House, Columbus, Ohio, USA": [
+    40.0048468,
+    -83.0137577
+  ],
+  "OSU Medical Center - James Cancer Hospital, Columbus, Ohio, USA": [
+    39.9948848,
+    -83.0195209
+  ],
+  "Archer House, Columbus, Ohio, USA": [
+    40.0051651,
+    -83.0141048
+  ],
+  "OSU East Tower 5, Columbus, Ohio, USA": [
+    39.9705785,
+    -82.9625658
+  ],
+  "Hagerty Hall, Columbus, Ohio, USA": [
+    39.9984393,
+    -83.0102061
+  ],
+  "OSU Main Emergency Department, Columbus, Ohio, USA": [
+    40.0060889,
+    -83.0282624
+  ],
+  "University Square North, Columbus, Ohio, USA": [
+    40.0006275,
+    -83.0077161
+  ],
+  "Hopkins Hall, Columbus, Ohio, USA": [
+    40.0010631,
+    -83.0115582
+  ],
+  "Busch House, Columbus, Ohio, USA": [
+    40.0046831,
+    -83.0093097
+  ],
+  "OSU Medical Center - Emergency Department, Columbus, Ohio, USA": [
+    39.9949733,
+    -83.0199164
+  ],
+  "Barnes & Noble at OSU, Columbus, Ohio, USA": [
+    39.9993865,
+    -83.0227103
+  ],
+  "Knowlton Fab Lab, Columbus, Ohio, USA": [
+    40.0036556,
+    -83.0170583
+  ],
+  "Pfahl Hall, Columbus, Ohio, USA": [
+    40.004316,
+    -83.0164573
+  ],
+  "Columbus Campus, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Morrison Tower, Columbus, Ohio, USA": [
+    39.9957013,
+    -83.0129433
+  ],
+  "Enarson Classroom Building, Columbus, Ohio, USA": [
+    40.0021772,
+    -83.0167752
+  ],
+  "Panera Bread Parking Lot, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Chadwick Arboretum, Columbus, Ohio, USA": [
+    40.0026252,
+    -83.0281234
+  ],
+  "9 E 15th Ave, Columbus, Ohio, USA": [
+    39.9998002,
+    -83.0076521
+  ],
+  "Recreation and Physical Activty Center, Columbus, Ohio, USA": [
+    39.9996195,
+    -83.0181668
+  ],
+  "Student Parking lot O, Columbus, Ohio, USA": [
+    39.9673273,
+    -82.9870466
+  ],
+  "Taylor Tower, Columbus, Ohio, USA": [
+    40.0056392,
+    -83.0106798
+  ],
+  "18th Ave Library, Columbus, Ohio, USA": [
+    40.0016229,
+    -83.0133167
+  ],
+  "Page Hall Bike Racks, Columbus, Ohio, USA": [
+    39.9991603,
+    -83.0097
+  ],
+  "Smith Steeb, Columbus, Ohio, USA": [
+    39.9957847,
+    -83.0092508
+  ],
+  "Residence on Tenth, Columbus, Ohio, USA": [
+    39.9945273,
+    -83.0129319
+  ],
+  "Snag Store, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Worthington Building - By the dumpsters, Columbus, Ohio, USA": [
+    39.8320197,
+    -83.0931441
+  ],
+  "Campbell Hall, Columbus, Ohio, USA": [
+    39.9977796,
+    -83.0159117
+  ],
+  "PAES Physical Activity and Education Services, Columbus, Ohio, USA": [
+    39.8581351,
+    -82.9707142
+  ],
+  "18th Avenue Library, Columbus, Ohio, USA": [
+    40.0016229,
+    -83.0133167
+  ],
+  "Brain and Spine Hospital, Columbus, Ohio, USA": [
+    39.9955856,
+    -83.0165832
+  ],
+  "Theta Chi Fraternity, Columbus, Ohio, USA": [
+    40.001999,
+    -83.0056709
+  ],
+  "Journalism Building bike rack, Columbus, Ohio, USA": [
+    40.0018214,
+    -83.0151585
+  ],
+  "Paterson Hall, Columbus, Ohio, USA": [
+    39.9963562,
+    -83.0124413
+  ],
+  "W 10th Ave / High St, Columbus, Ohio, USA": [
+    39.9939113,
+    -83.0068399
+  ],
+  "Sigma Alpha Epsilon Fraternity, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Nosker House, Columbus, Ohio, USA": [
+    40.0048423,
+    -83.0121122
+  ],
+  "12th Ave Garage, Columbus, Ohio, USA": [
+    39.9966642,
+    -83.0173827
+  ],
+  "University Square South Pavilion, Columbus, Ohio, USA": [
+    39.9997677,
+    -83.0075589
+  ],
+  "Baker Hall- west, Columbus, Ohio, USA": [
+    39.9965117,
+    -83.0098746
+  ],
+  "Arps Garage, Columbus, Ohio, USA": [
+    40.0027387,
+    -83.0099245
+  ],
+  "Ohio Union South Garage, Columbus, Ohio, USA": [
+    39.9983478,
+    -83.0088566
+  ],
+  "Jersey Mike's, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Houck House, Columbus, Ohio, USA": [
+    40.005305,
+    -83.0109515
+  ],
+  "Mirror Lake, Columbus, Ohio, USA": [
+    39.9744363,
+    -83.1519693
+  ],
+  "OSU Medical Center - Rhodes Hall, Columbus, Ohio, USA": [
+    39.9922577,
+    -83.0199404
+  ],
+  "Vet house Parking lot, Columbus, Ohio, USA": [
+    39.9997735,
+    -83.0268431
+  ],
+  "Dulles Hall, Columbus, Ohio, USA": [
+    40.0011152,
+    -83.0144049
+  ],
+  "Halloran House, Columbus, Ohio, USA": [
+    40.0045704,
+    -83.0103401
+  ],
+  "Blackwell Inn, Columbus, Ohio, USA": [
+    40.0046873,
+    -83.0168672
+  ],
+  "Wexner Medical Center Main Pharmacy, Columbus, Ohio, USA": [
+    39.9952162,
+    -83.0179869
+  ],
+  "Columbus Campus Online, Columbus, Ohio, USA": [
+    39.957424,
+    -83.019546
+  ],
+  "North Recreation Center, Columbus, Ohio, USA": [
+    40.0052167,
+    -83.0127857
+  ],
+  "Emergency Department-OSU Main, Columbus, Ohio, USA": [
+    40.0060889,
+    -83.0282624
+  ],
+  "OSU Main Emergnecy Department, Columbus, Ohio, USA": [
+    40.0060889,
+    -83.0282624
+  ],
+  "Traditions at Scott, Columbus, Ohio, USA": [
+    40.0040871,
+    -83.0132289
+  ],
+  "Baker Hall East bike racks, Columbus, Ohio, USA": [
+    39.9965117,
+    -83.0098746
+  ],
+  "John & Annie Glenn Ave., Columbus, Ohio, USA": [
+    40.0010173,
+    -83.0133248
+  ],
+  "OSU Main Hospital, Columbus, Ohio, USA": [
+    40.0060889,
+    -83.0282624
+  ],
+  "Starbucks High St and Lane Ave, Columbus, Ohio, USA": [
+    40.0060662,
+    -83.0092431
+  ],
+  "Sidewalk just east of Pearl Alley and E. 9th ave, Columbus, Ohio, USA": [
+    39.9886829,
+    -82.9277091
+  ],
+  "Neil Building, Columbus, Ohio, USA": [
+    39.9940949,
+    -83.0138778
+  ],
+  "Buckeye Lot 3, Columbus, Ohio, USA": [
+    39.8288088,
+    -82.9400724
+  ],
+  "Mershon Center, Columbus, Ohio, USA": [
+    39.9918227,
+    -83.0143473
+  ],
+  "Parks Hall, Columbus, Ohio, USA": [
+    39.9963146,
+    -83.0208902
+  ],
+  "Fisher Hall, Columbus, Ohio, USA": [
+    40.0049783,
+    -83.0160522
+  ],
+  "SafeAuto Garage, Columbus, Ohio, USA": [
+    39.9934397,
+    -83.0182555
+  ],
+  "Hamilton Hall, Columbus, Ohio, USA": [
+    39.995053,
+    -83.0150304
+  ],
+  "OSU Medical Center - Ross Heart Hospital, Columbus, Ohio, USA": [
+    39.9944223,
+    -83.0184629
+  ],
+  "OSU Wexner Medical Center Hospital, Columbus, Ohio, USA": [
+    39.9952162,
+    -83.0179869
+  ],
+  "East Hospital - Main, Columbus, Ohio, USA": [
+    39.8979661,
+    -83.0869406
+  ],
+  "Phi Sigma Kappa, Columbus, Ohio, USA": [
+    40.005977,
+    -83.0026692
+  ],
+  "Snag, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Not known, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "East Hospital - Tower, Columbus, Ohio, USA": [
+    39.9532936,
+    -82.979268
+  ],
+  "OSU East Tower, Columbus, Ohio, USA": [
+    39.9705785,
+    -82.9625658
+  ],
+  "Jennings Hall, Columbus, Ohio, USA": [
+    39.996833,
+    -83.0152985
+  ],
+  "COLUMBUS CAMPUS, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Neil Ave. Parking Garage, Columbus, Ohio, USA": [
+    40.0054823,
+    -83.0157949
+  ],
+  "Barnes and Noble, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Morrill Tower Bike Racks, Columbus, Ohio, USA": [
+    39.9888905,
+    -83.0494324
+  ],
+  "Gateway A, Columbus, Ohio, USA": [
+    40.0003092,
+    -82.932677
+  ],
+  "Parker Food Science and Technology Parking Lot, Columbus, Ohio, USA": [
+    40.0030116,
+    -83.0287858
+  ],
+  "RPAC Recreation and Physical Activity Center, Columbus, Ohio, USA": [
+    39.9996195,
+    -83.0181668
+  ],
+  "Mack Hall, Columbus, Ohio, USA": [
+    39.9961943,
+    -83.0144494
+  ],
+  "Stillman Hall, Columbus, Ohio, USA": [
+    40.0018637,
+    -83.010994
+  ],
+  "Tuttle Park Garage, Columbus, Ohio, USA": [
+    40.0128628,
+    -83.0133096
+  ],
+  "Central Production Kitchen, Columbus, Ohio, USA": [
+    39.9194116,
+    -82.8305257
+  ],
+  "Knowlton Hall, Columbus, Ohio, USA": [
+    40.0037574,
+    -83.0163596
+  ],
+  "Alpha Gamma Rho - Iuka Ave., Columbus, Ohio, USA": [
+    40.0033493,
+    -83.0047007
+  ],
+  "OSU Carepoint East, Columbus, Ohio, USA": [
+    39.9786991,
+    -82.9630938
+  ],
+  "CVS Pharmacy, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Vivian Lots, Columbus, Ohio, USA": [
+    40.0366351,
+    -82.8762486
+  ],
+  "T-Mobile, Columbus, Ohio, USA": [
+    39.9625112,
+    -83.0032218
+  ],
+  "Converse Hall, Columbus, Ohio, USA": [
+    40.0050524,
+    -83.0174226
+  ],
+  "Kunz-Brundige Extension Building, Columbus, Ohio, USA": [
+    40.0110629,
+    -83.0377319
+  ],
+  "Hitchcock Hall, Columbus, Ohio, USA": [
+    40.0037896,
+    -83.0150181
+  ],
+  "Old Cannon Parking Garage, Columbus, Ohio, USA": [
+    39.992414,
+    -83.0206533
+  ],
+  "W Lane Ave & Fyffe Rd, Columbus, Ohio, USA": [
+    40.0064307,
+    -83.027768
+  ],
+  "Univserity Square South, Columbus, Ohio, USA": [
+    39.9997677,
+    -83.0075589
+  ],
+  "North Wall Street/ West 8th Avenue, Columbus, Ohio, USA": [
+    39.9919133,
+    -83.0071913
+  ],
+  "Gateway B, Columbus, Ohio, USA": [
+    40.0003092,
+    -82.932677
+  ],
+  "Rhodes Hall bike racks, Columbus, Ohio, USA": [
+    39.9688591,
+    -82.9869479
+  ],
+  "Fred Beekman Park, Columbus, Ohio, USA": [
+    40.0056992,
+    -83.0393306
+  ],
+  "Campus Parc, Columbus, Ohio, USA": [
+    39.9941309,
+    -83.0058485
+  ],
+  "200 E 15th Ave, Columbus, Ohio, USA": [
+    40.0000608,
+    -83.0025264
   ]
 }

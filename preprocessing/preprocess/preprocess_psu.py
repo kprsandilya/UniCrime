@@ -113,6 +113,14 @@ def process_psu_csv(
         NARRATIVE: df[PSU_NARRATIVE].astype(str).replace("nan", None).replace("", None) if PSU_NARRATIVE in df.columns else [None] * len(df),
     })
 
+    # Drop rows with null or empty description
+    desc = out[DESCRIPTION].astype(str).str.strip()
+    has_description = out[DESCRIPTION].notna() & (desc.ne("") & ~desc.str.lower().isin(("nan", "none")))
+    n_dropped_desc = (~has_description).sum()
+    if n_dropped_desc > 0:
+        out = out.loc[has_description].reset_index(drop=True)
+        print(f"Dropped {n_dropped_desc} row(s) with null or empty description.")
+
     ensure_location_has_city(out, school_code)
 
     # Geocode rows that have no lat/lon
