@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, Tooltip, useMap } from "react-l
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import MapOverlay from "./MapOverlay.jsx";
-import { fetchSchools } from "../api/client.js";
+import { fetchSchools } from "../api/client";
 
 function FitBounds({ records }) {
   const map = useMap();

@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useRef } from "react";
-import { fetchCrimeLogs, fetchSchools } from "../api/client.js";
+import { fetchCrimeLogs, fetchSchools } from "../api/client";
 import { generateSummary } from "../data/mockData.js";
 
 // Table shows: Description first, then School (name when All), Occurred, Location, Narrative. Number, Reported_Date_Time, Disposition are only in case popup.

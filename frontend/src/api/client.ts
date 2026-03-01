@@ -1,8 +1,86 @@
 const API_URL =
-	import.meta.env.VITE_GRAPHQL_URL || "http://localhost:3000/graphql";
+	(import.meta.env.VITE_API_URL as string) || "http://localhost:3000";
 
-/** Base URL for REST endpoints (e.g. /nlp_query) */
-const API_BASE = API_URL.replace(/\/graphql\/?$/, "") || "http://localhost:3000";
+/**
+ * Raw crime log as returned by GraphQL API. Matches api/src/crime-log/crime-log.entity.ts
+ */
+export interface CrimeLogRow {
+	id: string;
+	schoolCode: string | null;
+	caseNumber: string | null;
+	reportDatetime: string | null;
+	occurredDatetime: string | null;
+	location: string | null;
+	latitude: number | null;
+	longitude: number | null;
+	description: string | null;
+	disposition: string | null;
+	narrative: string | null;
+}
+
+/**
+ * Normalized crime log shape for dashboard (table, map, summary).
+ * Field names align with UI columns: Number (case #), School_Code, Reported_Date_Time, etc.
+ */
+export interface NormalizedCrimeLog {
+	id: string;
+	Number: string;
+	School_Code: string;
+	Reported_Date_Time: string;
+	Occurred_From_Date_Time: string;
+	Location: string;
+	Description: string;
+	Disposition: string;
+	Narrative: string;
+	latitude: number | null;
+	longitude: number | null;
+}
+
+/**
+ * School as returned by GraphQL API. Matches api/src/school/school.entity.ts
+ */
+export interface School {
+	id: string;
+	schoolCode: string | null;
+	schoolName: string | null;
+	address: string | null;
+	city: string | null;
+	stateCode: string | null;
+	zipCode: number | null;
+	primaryColor: string | null;
+	secondaryColor: string | null;
+	logo: string | null;
+}
+
+/** GraphQL error entry */
+interface GraphQLError {
+	message: string;
+	locations?: unknown;
+	path?: unknown;
+}
+
+/** Generic GraphQL response wrapper */
+interface GraphQLResponse<T> {
+	data?: T;
+	errors?: GraphQLError[];
+}
+
+/** Crime logs query result */
+interface CrimeLogsData {
+	crimeLogs: CrimeLogRow[];
+}
+
+/** Schools query result */
+interface SchoolsData {
+	schools: School[];
+}
+
+/** NLP query response from POST /nlp_query */
+interface NlpQueryResponse {
+	data?: { crimeLogs?: CrimeLogRow[] };
+	errors?: GraphQLError[];
+	llmError?: string;
+}
 
 /**
  * GraphQL query for crimeLogs. Matches api/src/crime-log/crime-log.entity.ts
@@ -51,10 +129,10 @@ const SCHOOLS_QUERY = `
  * Field names align with entity: schoolCode, caseNumber, reportDatetime, occurredDatetime,
  * location, latitude, longitude, description, disposition, narrative.
  */
-export function normalizeCrimeLog(row) {
+export function normalizeCrimeLog(row: CrimeLogRow): NormalizedCrimeLog {
 	return {
 		id: row.id,
-		Number: row.caseNumber,
+		Number: row.caseNumber ?? "",
 		School_Code: row.schoolCode ?? "",
 		Reported_Date_Time: row.reportDatetime ?? row.occurredDatetime ?? "",
 		Occurred_From_Date_Time: row.occurredDatetime ?? "",
@@ -67,17 +145,21 @@ export function normalizeCrimeLog(row) {
 	};
 }
 
+export interface FetchCrimeLogsParams {
+	occurredAfter: string;
+	occurredBefore: string;
+	schoolCode?: string;
+}
+
 /**
  * Fetch crime logs from GraphQL API.
- * @param {{ occurredAfter: string, occurredBefore: string, schoolCode?: string }} params
- * @returns {Promise<Array>} Normalized records
  */
 export async function fetchCrimeLogs({
 	occurredAfter,
 	occurredBefore,
 	schoolCode,
-}) {
-	const res = await fetch(API_URL, {
+}: FetchCrimeLogsParams): Promise<NormalizedCrimeLog[]> {
+	const res = await fetch(`${API_URL}/graphql`, {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify({
@@ -85,13 +167,12 @@ export async function fetchCrimeLogs({
 			variables: {
 				occurredAfter,
 				occurredBefore,
-				schoolCode: schoolCode && schoolCode.trim() ? schoolCode.trim() : null,
+				schoolCode: schoolCode?.trim() ? schoolCode.trim() : null,
 			},
 		}),
 	});
 	if (!res.ok) throw new Error(`HTTP ${res.status}`);
-	const json = await res.json();
-	console.log(json);
+	const json: GraphQLResponse<CrimeLogsData> = await res.json();
 	if (json.errors?.length)
 		throw new Error(json.errors[0].message ?? "GraphQL error");
 	const list = json.data?.crimeLogs ?? [];
@@ -102,19 +183,18 @@ export async function fetchCrimeLogs({
  * Call POST /nlp_query with a user prompt. The API runs an LLM to generate a GraphQL query,
  * executes it, and returns { data?, errors?, llmError? }. If data.crimeLogs exists, returns
  * normalized crime log records; otherwise throws.
- * @param {string} prompt - Natural language prompt (e.g. "Show thefts at Purdue last week")
- * @returns {Promise<Array>} Normalized crime log records for table/map
  */
-export async function fetchNlpQuery(prompt) {
-	const res = await fetch(`${API_BASE}/nlp_query`, {
+export async function fetchNlpQuery(
+	prompt: string,
+): Promise<NormalizedCrimeLog[]> {
+	const res = await fetch(`${API_URL}/nlp_query`, {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify({ query: prompt }),
 	});
 	if (!res.ok) throw new Error(`HTTP ${res.status}`);
-	const json = await res.json();
-	if (json.llmError)
-		throw new Error(json.llmError);
+	const json: NlpQueryResponse = await res.json();
+	if (json.llmError) throw new Error(json.llmError);
 	if (json.errors?.length)
 		throw new Error(json.errors[0].message ?? "GraphQL error");
 	const data = json.data ?? {};
@@ -124,16 +204,15 @@ export async function fetchNlpQuery(prompt) {
 
 /**
  * Fetch all schools from GraphQL API. Matches api/src/school/school.entity.ts
- * @returns {Promise<Array<{ id: string, schoolCode: string|null, schoolName: string|null, ... }>>}
  */
-export async function fetchSchools() {
-	const res = await fetch(API_URL, {
+export async function fetchSchools(): Promise<School[]> {
+	const res = await fetch(`${API_URL}/graphql`, {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify({ query: SCHOOLS_QUERY }),
 	});
 	if (!res.ok) throw new Error(`HTTP ${res.status}`);
-	const json = await res.json();
+	const json: GraphQLResponse<SchoolsData> = await res.json();
 	if (json.errors?.length)
 		throw new Error(json.errors[0].message ?? "GraphQL error");
 	return json.data?.schools ?? [];

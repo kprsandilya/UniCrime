@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { fetchNlpQuery } from "../api/client.js";
+import { fetchNlpQuery } from "../api/client";
 import { generateSummary } from "../data/mockData.js";
 
 function formatCell(value) {

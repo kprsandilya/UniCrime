@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchSchools } from "../api/client.js";
+import { fetchSchools } from "../api/client";
 
 export default function MapOverlay({ summaryData }) {
   const [codeToName, setCodeToName] = useState({});
