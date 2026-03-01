@@ -1,3 +1,4 @@
+import type { IncomingMessage, ServerResponse } from 'node:http';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import {
@@ -169,17 +170,17 @@ async function bootstrap() {
   const scalarHandler = apiReference({
     url: '/openapi.json',
     withFastify: true,
-  }) as (req: import('node:http').IncomingMessage, res: import('node:http').ServerResponse) => void;
+  }) as (req: IncomingMessage, res: ServerResponse) => void;
 
   fastify.get('/openapi.json', (_request, reply) => {
     reply.type('application/json').send(document);
   });
   fastify.get('/api-docs-scalar', (request, reply) => {
-    scalarHandler(request.raw, reply.raw as import('node:http').ServerResponse);
+    scalarHandler(request.raw, reply.raw as ServerResponse);
     (reply as { sent?: boolean }).sent = true;
   });
   fastify.get('/api-docs-scalar/', (request, reply) => {
-    scalarHandler(request.raw, reply.raw as import('node:http').ServerResponse);
+    scalarHandler(request.raw, reply.raw as ServerResponse);
     (reply as { sent?: boolean }).sent = true;
   });
 
