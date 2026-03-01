@@ -1,7 +1,9 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, Check } from 'typeorm';
 import { ObjectType, Field, ID, Int, InputType } from '@nestjs/graphql';
 
 @Entity('schools')
+@Check(`primary_color IS NULL OR primary_color ~ '^#[0-9A-Fa-f]{6}$'`)
+@Check(`secondary_color IS NULL OR secondary_color ~ '^#[0-9A-Fa-f]{6}$'`)
 @ObjectType()
 export class School {
   @PrimaryGeneratedColumn({ type: 'bigint' })
@@ -31,6 +33,18 @@ export class School {
   @Column({ type: 'integer', name: 'zip_code', nullable: true })
   @Field(() => Int, { nullable: true })
   zipCode: number | null;
+
+  @Column({ type: 'text', name: 'primary_color', nullable: true })
+  @Field(() => String, { nullable: true })
+  primaryColor: string | null;
+
+  @Column({ type: 'text', name: 'secondary_color', nullable: true })
+  @Field(() => String, { nullable: true })
+  secondaryColor: string | null;
+
+  @Column({ type: 'text', nullable: true })
+  @Field(() => String, { nullable: true })
+  logo: string | null;
 }
 
 @InputType()
@@ -52,6 +66,15 @@ export class CreateSchoolInput {
 
   @Field(() => Int, { nullable: true })
   zipCode?: number | null;
+
+  @Field(() => String, { nullable: true })
+  primaryColor?: string | null;
+
+  @Field(() => String, { nullable: true })
+  secondaryColor?: string | null;
+
+  @Field(() => String, { nullable: true })
+  logo?: string | null;
 }
 
 @InputType()
@@ -76,4 +99,13 @@ export class UpdateSchoolInput {
 
   @Field(() => Int, { nullable: true })
   zipCode?: number | null;
+
+  @Field(() => String, { nullable: true })
+  primaryColor?: string | null;
+
+  @Field(() => String, { nullable: true })
+  secondaryColor?: string | null;
+
+  @Field(() => String, { nullable: true })
+  logo?: string | null;
 }
