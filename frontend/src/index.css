@@ -35,3 +35,26 @@ body {
   color: white !important;
   opacity: 0.9;
 }
+
+/* ChatScreen: jumping ellipses while AI is reasoning */
+@keyframes chat-dot-jump {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+}
+.chat-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: chat-dot-jump 1s ease-in-out infinite;
+}
+.chat-dot-2 {
+  animation-delay: 0.15s;
+}
+.chat-dot-3 {
+  animation-delay: 0.3s;
+}
