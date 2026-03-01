@@ -3030,5 +3030,45 @@
   "1111 Salt Creek Rdwy (INTERNET/CYBERSPACE), Omaha, Nebraska, USA": [
     41.2565369,
     -95.9345034
+  ],
+  "222 HURON ST (Lot A), Evanston, Illinois, USA": [
+    41.8948934,
+    -87.6351931
+  ],
+  "321 ERIE ST (D-Lot), Evanston, Illinois, USA": [
+    41.8937139,
+    -87.6369744
+  ],
+  "345 SUPERIOR ST (RIC - Former Rehab Inst), Evanston, Illinois, USA": [
+    42.0568276,
+    -87.6872172
+  ],
+  "350 SUPERIOR ST (McCormick Hall), Evanston, Illinois, USA": [
+    42.0568276,
+    -87.6872172
+  ],
+  "420 SUPERIOR ST (Arthur Rubloff), Evanston, Illinois, USA": [
+    41.7625123,
+    -88.3032127
+  ],
+  "357 CHICAGO AVE (Levy Mayer Hall), Evanston, Illinois, USA": [
+    42.0255824,
+    -87.6776587
+  ],
+  "211 SUPERIOR ST (University Police), Evanston, Illinois, USA": [
+    42.0568276,
+    -87.6872172
+  ],
+  "nan, Illinois, USA": [
+    40.6331249,
+    -89.3985283
+  ],
+  "240 HURON ST (McGaw Pavilion), Evanston, Illinois, USA": [
+    42.0568276,
+    -87.6872172
+  ],
+  "710 LAKE SHORE DR (Abbott Hall), Evanston, Illinois, USA": [
+    41.8953266,
+    -87.616948
   ]
 }
