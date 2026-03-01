@@ -1,9 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { GraphQLSchemaHost } from '@nestjs/graphql';
-import { execute, parse, GraphQLError } from 'graphql';
-import { readFileSync } from 'fs';
-import { join } from 'path';
+import { execute, parse, GraphQLError, printSchema } from 'graphql';
 import { SchoolService } from '../school/school.service';
 
 const SYSTEM_PROMPT = `You are a GraphQL query generator. Your response must contain ONLY one of these two things—nothing else:
@@ -26,7 +24,6 @@ export interface NlpQueryResult {
 export class NlpService {
   private readonly apiKey: string;
   private readonly baseUrl: string;
-  private readonly schemaSdl: string;
 
   constructor(
     private readonly configService: ConfigService,
@@ -35,9 +32,12 @@ export class NlpService {
   ) {
     this.apiKey = this.configService.get<string>('API_KEY') ?? '';
     this.baseUrl =
-      this.configService.get<string>('BASE_URL') ?? 'https://api.openai.com';
-    const schemaPath = join(process.cwd(), 'src/schema.gql');
-    this.schemaSdl = readFileSync(schemaPath, 'utf-8');
+      this.configService.get<string>('BASE_URL') ?? 'https://api.openai.com/v1';
+  }
+
+  /** Schema SDL from the in-memory GraphQL schema (avoids depending on schema.gql file). */
+  private get schemaSdl(): string {
+    return printSchema(this.schemaHost.schema);
   }
 
   async nlpQuery(query: string): Promise<NlpQueryResult> {
